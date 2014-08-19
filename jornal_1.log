@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.8.14)  19 AUG 2014 14:12
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.8.14)  19 AUG 2014 14:16
 entering extended mode
 **jornal_1.tex
 (C:\Users\JesseChuang\Documents\GitHub\joournalpaper_1\jornal_1.tex
@@ -339,88 +339,89 @@ File: CJK.enc 2012/05/07 4.8.3
 LaTeX Info: Redefining \selectfont on input line 755.
 \CJK@indent=\box31
 )
-Package caption Info: We need package `newfloat' on input line 387.
+Package caption Info: We need package `newfloat' on input line 278.
 
 ("f:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\newfloat.sty"
 Package: newfloat 2013/05/11 v1.1-91 Defining new floating environments (AR)
 )
-No file jornal_1.aux.
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 389.
-LaTeX Font Info:    ... okay on input line 389.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 389.
-LaTeX Font Info:    ... okay on input line 389.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 389.
-LaTeX Font Info:    ... okay on input line 389.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 389.
-LaTeX Font Info:    ... okay on input line 389.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 389.
-LaTeX Font Info:    ... okay on input line 389.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 389.
-LaTeX Font Info:    ... okay on input line 389.
-LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 389.
-LaTeX Font Info:    ... okay on input line 389.
-LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 389.
-LaTeX Font Info:    ... okay on input line 389.
-LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 389.
-LaTeX Font Info:    ... okay on input line 389.
-LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 389.
-LaTeX Font Info:    ... okay on input line 389.
-LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 389.
-LaTeX Font Info:    ... okay on input line 389.
-LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 389.
-LaTeX Font Info:    ... okay on input line 389.
-LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 389.
-LaTeX Font Info:    ... okay on input line 389.
-LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 389.
-LaTeX Font Info:    ... okay on input line 389.
-LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 389.
-LaTeX Font Info:    ... okay on input line 389.
-LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 389.
-LaTeX Font Info:    ... okay on input line 389.
-LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 389.
-LaTeX Font Info:    ... okay on input line 389.
-LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 389.
-LaTeX Font Info:    ... okay on input line 389.
-LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 389.
-LaTeX Font Info:    ... okay on input line 389.
-LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 389.
-LaTeX Font Info:    ... okay on input line 389.
-LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 389.
-LaTeX Font Info:    ... okay on input line 389.
-LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 389.
-LaTeX Font Info:    ... okay on input line 389.
-LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 389.
-LaTeX Font Info:    ... okay on input line 389.
-LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 389.
-LaTeX Font Info:    ... okay on input line 389.
-LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 389.
-LaTeX Font Info:    ... okay on input line 389.
-LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 389.
-LaTeX Font Info:    ... okay on input line 389.
-LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 389.
-LaTeX Font Info:    ... okay on input line 389.
-LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 389.
-LaTeX Font Info:    ... okay on input line 389.
-LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 389.
-LaTeX Font Info:    ... okay on input line 389.
-LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 389.
-LaTeX Font Info:    ... okay on input line 389.
-LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 389.
-LaTeX Font Info:    ... okay on input line 389.
-LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 389.
-LaTeX Font Info:    ... okay on input line 389.
-LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 389.
-LaTeX Font Info:    ... okay on input line 389.
-LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 389.
-LaTeX Font Info:    ... okay on input line 389.
-LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 389.
-LaTeX Font Info:    ... okay on input line 389.
-LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 389.
-LaTeX Font Info:    ... okay on input line 389.
-LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 389.
-LaTeX Font Info:    ... okay on input line 389.
-LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 389.
-LaTeX Font Info:    ... okay on input line 389.
+(C:\Users\JesseChuang\Documents\GitHub\joournalpaper_1\jornal_1.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+
 ("f:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count120
@@ -439,12 +440,12 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 460.
-LaTeX Font Info:    Try loading font information for U+msa on input line 460.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 313.
+LaTeX Font Info:    Try loading font information for U+msa on input line 313.
  ("f:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 460.
+LaTeX Font Info:    Try loading font information for U+msb on input line 313.
 
 ("f:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -459,68 +460,68 @@ Missing character: There is no ™ in font ptmr7t!
 <j_img/fig1.jpg, id=9, 843.15pt x 585.18625pt>
 File: j_img/fig1.jpg Graphic file (type jpg)
  <use j_img/fig1.jpg>
-Package pdftex.def Info: j_img/fig1.jpg used on input line 528.
+Package pdftex.def Info: j_img/fig1.jpg used on input line 381.
 (pdftex.def)             Requested size: 258.0pt x 179.0664pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 528--529
+Overfull \hbox (6.0pt too wide) in paragraph at lines 381--382
  [] 
  []
 
 <j_img/fig2a.jpg, id=10, 747.7536pt x 200.9106pt>
 File: j_img/fig2a.jpg Graphic file (type jpg)
  <use j_img/fig2a.jpg>
-Package pdftex.def Info: j_img/fig2a.jpg used on input line 542.
+Package pdftex.def Info: j_img/fig2a.jpg used on input line 395.
 (pdftex.def)             Requested size: 252.94499pt x 67.96227pt.
 
 <j_img/fig2b.jpg, id=11, 317.988pt x 263.5446pt>
 File: j_img/fig2b.jpg Graphic file (type jpg)
  <use j_img/fig2b.jpg>
-Package pdftex.def Info: j_img/fig2b.jpg used on input line 543.
+Package pdftex.def Info: j_img/fig2b.jpg used on input line 396.
 (pdftex.def)             Requested size: 180.67499pt x 149.73941pt.
 
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 542--544
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 395--397
  [] 
  []
 
 <j_img/fig3.jpg, id=12, 1185.42876pt x 569.12625pt>
 File: j_img/fig3.jpg Graphic file (type jpg)
  <use j_img/fig3.jpg>
-Package pdftex.def Info: j_img/fig3.jpg used on input line 552.
+Package pdftex.def Info: j_img/fig3.jpg used on input line 405.
 (pdftex.def)             Requested size: 361.34999pt x 173.48338pt.
 
 [2 <C:/Users/JesseChuang/Documents/GitHub/joournalpaper_1/j_img/fig1.jpg> <C:/U
 sers/JesseChuang/Documents/GitHub/joournalpaper_1/j_img/fig2a.jpg> <C:/Users/Je
 sseChuang/Documents/GitHub/joournalpaper_1/j_img/fig2b.jpg>] [3 <C:/Users/Jesse
 Chuang/Documents/GitHub/joournalpaper_1/j_img/fig3.jpg>]
-Underfull \hbox (badness 1466) in paragraph at lines 575--576
+Underfull \hbox (badness 1466) in paragraph at lines 428--429
 []\OT1/ptm/m/n/10 Markov logic net-work L is a set of pairs $\OT1/cmr/m/n/10 (\
 OML/cmm/m/it/10 F[]; W[]\OT1/cmr/m/n/10 )$\OT1/ptm/m/n/10 ,
  []
 
 
-Overfull \hbox (7.645pt too wide) in paragraph at lines 592--632
+Overfull \hbox (7.645pt too wide) in paragraph at lines 445--485
  [][] 
  []
 
 [4]
-Overfull \hbox (6.15709pt too wide) detected at line 696
+Overfull \hbox (6.15709pt too wide) detected at line 549
 []
  []
 
 <j_img/fig4.png, id=35, 828.2142pt x 290.5254pt>
 File: j_img/fig4.png Graphic file (type png)
  <use j_img/fig4.png>
-Package pdftex.def Info: j_img/fig4.png used on input line 708.
+Package pdftex.def Info: j_img/fig4.png used on input line 561.
 (pdftex.def)             Requested size: 216.81pt x 76.05348pt.
 
 <j_img/fig5.png, id=38, 858.5676pt x 640.794pt>
 File: j_img/fig5.png Graphic file (type png)
  <use j_img/fig5.png>
-Package pdftex.def Info: j_img/fig5.png used on input line 733.
+Package pdftex.def Info: j_img/fig5.png used on input line 586.
 (pdftex.def)             Requested size: 216.81pt x 161.81143pt.
  [5 <C:/Users/JesseChuang/Documents/GitHub/joournalpaper_1/j_img/fig4.png> <C:/
 Users/JesseChuang/Documents/GitHub/joournalpaper_1/j_img/fig5.png>]
-Overfull \hbox (6.777pt too wide) detected at line 749
+Overfull \hbox (6.777pt too wide) detected at line 602
 []
  []
 
@@ -531,145 +532,145 @@ Underfull \vbox (badness 2617) has occurred while \output is active []
 <j_img/wp11.jpg, id=48, 132.0132pt x 88.1694pt>
 File: j_img/wp11.jpg Graphic file (type jpg)
  <use j_img/wp11.jpg>
-Package pdftex.def Info: j_img/wp11.jpg used on input line 774.
+Package pdftex.def Info: j_img/wp11.jpg used on input line 627.
 (pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
 
 <j_img/wp15.jpg, id=49, 132.0132pt x 88.1694pt>
 File: j_img/wp15.jpg Graphic file (type jpg)
  <use j_img/wp15.jpg>
-Package pdftex.def Info: j_img/wp15.jpg used on input line 775.
+Package pdftex.def Info: j_img/wp15.jpg used on input line 628.
 (pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
 
 <j_img/wp21.jpg, id=50, 132.495pt x 88.1694pt>
 File: j_img/wp21.jpg Graphic file (type jpg)
  <use j_img/wp21.jpg>
-Package pdftex.def Info: j_img/wp21.jpg used on input line 776.
+Package pdftex.def Info: j_img/wp21.jpg used on input line 629.
 (pdftex.def)             Requested size: 72.26999pt x 43.36212pt.
 
 <j_img/wp25.jpg, id=51, 132.0132pt x 88.1694pt>
 File: j_img/wp25.jpg Graphic file (type jpg)
  <use j_img/wp25.jpg>
-Package pdftex.def Info: j_img/wp25.jpg used on input line 777.
+Package pdftex.def Info: j_img/wp25.jpg used on input line 630.
 (pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
 
 <j_img/wp31.jpg, id=52, 132.0132pt x 88.1694pt>
 File: j_img/wp31.jpg Graphic file (type jpg)
  <use j_img/wp31.jpg>
-Package pdftex.def Info: j_img/wp31.jpg used on input line 778.
+Package pdftex.def Info: j_img/wp31.jpg used on input line 631.
 (pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
 
 <j_img/wp35.jpg, id=53, 132.0132pt x 88.1694pt>
 File: j_img/wp35.jpg Graphic file (type jpg)
  <use j_img/wp35.jpg>
-Package pdftex.def Info: j_img/wp35.jpg used on input line 779.
+Package pdftex.def Info: j_img/wp35.jpg used on input line 632.
 (pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
 
 <j_img/wp12.jpg, id=54, 132.0132pt x 88.1694pt>
 File: j_img/wp12.jpg Graphic file (type jpg)
  <use j_img/wp12.jpg>
-Package pdftex.def Info: j_img/wp12.jpg used on input line 783.
+Package pdftex.def Info: j_img/wp12.jpg used on input line 636.
 (pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
 
 <j_img/wp16.jpg, id=55, 132.0132pt x 88.1694pt>
 File: j_img/wp16.jpg Graphic file (type jpg)
  <use j_img/wp16.jpg>
-Package pdftex.def Info: j_img/wp16.jpg used on input line 784.
+Package pdftex.def Info: j_img/wp16.jpg used on input line 637.
 (pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
 
 <j_img/wp22.jpg, id=56, 132.495pt x 88.1694pt>
 File: j_img/wp22.jpg Graphic file (type jpg)
  <use j_img/wp22.jpg>
-Package pdftex.def Info: j_img/wp22.jpg used on input line 785.
+Package pdftex.def Info: j_img/wp22.jpg used on input line 638.
 (pdftex.def)             Requested size: 72.26999pt x 43.36212pt.
 
 <j_img/wp26.jpg, id=57, 132.495pt x 88.1694pt>
 File: j_img/wp26.jpg Graphic file (type jpg)
  <use j_img/wp26.jpg>
-Package pdftex.def Info: j_img/wp26.jpg used on input line 786.
+Package pdftex.def Info: j_img/wp26.jpg used on input line 639.
 (pdftex.def)             Requested size: 72.26999pt x 43.36212pt.
 
 <j_img/wp32.jpg, id=58, 132.0132pt x 88.1694pt>
 File: j_img/wp32.jpg Graphic file (type jpg)
  <use j_img/wp32.jpg>
-Package pdftex.def Info: j_img/wp32.jpg used on input line 787.
+Package pdftex.def Info: j_img/wp32.jpg used on input line 640.
 (pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
 
 <j_img/wp36.jpg, id=59, 132.0132pt x 88.1694pt>
 File: j_img/wp36.jpg Graphic file (type jpg)
  <use j_img/wp36.jpg>
-Package pdftex.def Info: j_img/wp36.jpg used on input line 788.
+Package pdftex.def Info: j_img/wp36.jpg used on input line 641.
 (pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
 
 <j_img/wp13.jpg, id=60, 132.0132pt x 88.1694pt>
 File: j_img/wp13.jpg Graphic file (type jpg)
  <use j_img/wp13.jpg>
-Package pdftex.def Info: j_img/wp13.jpg used on input line 793.
+Package pdftex.def Info: j_img/wp13.jpg used on input line 646.
 (pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
 
 <j_img/wp17.jpg, id=61, 132.0132pt x 88.1694pt>
 File: j_img/wp17.jpg Graphic file (type jpg)
  <use j_img/wp17.jpg>
-Package pdftex.def Info: j_img/wp17.jpg used on input line 794.
+Package pdftex.def Info: j_img/wp17.jpg used on input line 647.
 (pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
 
 <j_img/wp23.jpg, id=62, 132.0132pt x 88.1694pt>
 File: j_img/wp23.jpg Graphic file (type jpg)
  <use j_img/wp23.jpg>
-Package pdftex.def Info: j_img/wp23.jpg used on input line 795.
+Package pdftex.def Info: j_img/wp23.jpg used on input line 648.
 (pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
 
 <j_img/wp33.jpg, id=63, 132.495pt x 88.1694pt>
 File: j_img/wp33.jpg Graphic file (type jpg)
  <use j_img/wp33.jpg>
-Package pdftex.def Info: j_img/wp33.jpg used on input line 797.
+Package pdftex.def Info: j_img/wp33.jpg used on input line 650.
 (pdftex.def)             Requested size: 72.26999pt x 43.36212pt.
 
 <j_img/wp37.jpg, id=64, 132.0132pt x 88.1694pt>
 File: j_img/wp37.jpg Graphic file (type jpg)
  <use j_img/wp37.jpg>
-Package pdftex.def Info: j_img/wp37.jpg used on input line 798.
+Package pdftex.def Info: j_img/wp37.jpg used on input line 651.
 (pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
 
 <j_img/wp14.jpg, id=65, 132.0132pt x 88.1694pt>
 File: j_img/wp14.jpg Graphic file (type jpg)
  <use j_img/wp14.jpg>
-Package pdftex.def Info: j_img/wp14.jpg used on input line 803.
+Package pdftex.def Info: j_img/wp14.jpg used on input line 656.
 (pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
 
 <j_img/wp24.jpg, id=66, 132.495pt x 88.1694pt>
 File: j_img/wp24.jpg Graphic file (type jpg)
  <use j_img/wp24.jpg>
-Package pdftex.def Info: j_img/wp24.jpg used on input line 805.
+Package pdftex.def Info: j_img/wp24.jpg used on input line 658.
 (pdftex.def)             Requested size: 72.26999pt x 43.36212pt.
 
 <j_img/wp34.jpg, id=67, 132.0132pt x 88.1694pt>
 File: j_img/wp34.jpg Graphic file (type jpg)
  <use j_img/wp34.jpg>
-Package pdftex.def Info: j_img/wp34.jpg used on input line 807.
+Package pdftex.def Info: j_img/wp34.jpg used on input line 660.
 (pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
 
 <j_img/exp02.png, id=68, 586.3506pt x 394.5942pt>
 File: j_img/exp02.png Graphic file (type png)
  <use j_img/exp02.png>
-Package pdftex.def Info: j_img/exp02.png used on input line 824.
+Package pdftex.def Info: j_img/exp02.png used on input line 677.
 (pdftex.def)             Requested size: 216.81pt x 145.90121pt.
 
 <j_img/exp01.png, id=69, 586.3506pt x 394.5942pt>
 File: j_img/exp01.png Graphic file (type png)
  <use j_img/exp01.png>
-Package pdftex.def Info: j_img/exp01.png used on input line 828.
+Package pdftex.def Info: j_img/exp01.png used on input line 681.
 (pdftex.def)             Requested size: 216.81pt x 145.90121pt.
 
 [6] <j_img/exp04.png, id=75, 616.2222pt x 423.5022pt>
 File: j_img/exp04.png Graphic file (type png)
  <use j_img/exp04.png>
-Package pdftex.def Info: j_img/exp04.png used on input line 838.
+Package pdftex.def Info: j_img/exp04.png used on input line 691.
 (pdftex.def)             Requested size: 216.81pt x 149.00343pt.
 
 <j_img/exp03.png, id=76, 615.2586pt x 423.984pt>
 File: j_img/exp03.png Graphic file (type png)
  <use j_img/exp03.png>
-Package pdftex.def Info: j_img/exp03.png used on input line 842.
+Package pdftex.def Info: j_img/exp03.png used on input line 695.
 (pdftex.def)             Requested size: 216.81pt x 149.40585pt.
 
 Underfull \vbox (badness 4144) has occurred while \output is active []
@@ -696,7 +697,7 @@ wp24.jpg> <C:/Users/JesseChuang/Documents/GitHub/joournalpaper_1/j_img/wp34.jpg
 sers/JesseChuang/Documents/GitHub/joournalpaper_1/j_img/exp01.png> <C:/Users/Je
 sseChuang/Documents/GitHub/joournalpaper_1/j_img/exp04.png> <C:/Users/JesseChua
 ng/Documents/GitHub/joournalpaper_1/j_img/exp03.png>]
-Underfull \hbox (badness 1755) in paragraph at lines 850--851
+Underfull \hbox (badness 1755) in paragraph at lines 703--704
 \OT1/ptm/m/n/10 Edge-SIFT[26] are mod-i-fied ver-sions of SIFT ap-proach
  []
 
@@ -744,8 +745,8 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 5952 strings out of 493921
- 86901 string characters out of 3144858
+ 5954 strings out of 493921
+ 87033 string characters out of 3144858
  161061 words of memory out of 3000000
  9130 multiletter control sequences out of 15000+200000
  52177 words of font info for 114 fonts, out of 3000000 for 9000
