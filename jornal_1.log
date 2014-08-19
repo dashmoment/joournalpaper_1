@@ -1,0 +1,777 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.8.14)  19 AUG 2014 14:12
+entering extended mode
+**jornal_1.tex
+(C:\Users\JesseChuang\Documents\GitHub\joournalpaper_1\jornal_1.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
+(C:\Users\JesseChuang\Documents\GitHub\joournalpaper_1\IEEEtran.cls
+Document Class: IEEEtran 2012/12/27 V1.8 by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+\@IEEEtrantmpdimenA=\dimen102
+\@IEEEtrantmpdimenB=\dimen103
+\@IEEEtrantmpcountA=\count79
+\@IEEEtrantmpcountB=\count80
+\@IEEEtrantmptoksA=\toks14
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 368.
+
+("f:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+-- Using 8.5in x 11in (letter) paper.
+-- Using PDF output.
+\@IEEEnormalsizeunitybaselineskip=\dimen104
+-- This is a 10 point document.
+\CLASSINFOnormalsizebaselineskip=\dimen105
+\CLASSINFOnormalsizeunitybaselineskip=\dimen106
+\IEEEnormaljot=\dimen107
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+\IEEEilabelindentA=\dimen108
+\IEEEilabelindentB=\dimen109
+\IEEEilabelindent=\dimen110
+\IEEEelabelindent=\dimen111
+\IEEEdlabelindent=\dimen112
+\IEEElabelindent=\dimen113
+\IEEEiednormlabelsep=\dimen114
+\IEEEiedmathlabelsep=\dimen115
+\IEEEiedtopsep=\skip41
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@IEEEsubequation=\count85
+\abovecaptionskip=\skip42
+\belowcaptionskip=\skip43
+\c@figure=\count86
+\c@table=\count87
+\@IEEEeqnnumcols=\count88
+\@IEEEeqncolcnt=\count89
+\@IEEEsubeqnnumrollback=\count90
+\@IEEEtmpitemindent=\dimen116
+\c@IEEEbiography=\count91
+\@IEEEtranrubishbin=\box26
+) ("f:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("f:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+("f:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("f:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("f:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("f:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("f:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("f:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count92
+))
+\Gin@req@height=\dimen117
+\Gin@req@width=\dimen118
+)
+("f:\Program Files (x86)\MiKTeX 2.9\tex\latex\subfloat\subfloat.sty"
+Package: subfloat 2003/08/21 version 2.14
+
+Package `subfloat', Version 2.14 of 2003/08/21.
+
+Package subfloat Warning: Numbers of floats not counted:
+(subfloat)                If you use one of the counters subfloatfiguremax or
+(subfloat)                subfloattablemax you will get strange error messages
+(subfloat)                containing \c@subfloatfiguremax or
+(subfloat)                \c@subfloattablemax:
+(subfloat)                Please switch on countmax or remove the code using
+(subfloat)                the counter then..
+
+) ("f:\Program Files (x86)\MiKTeX 2.9\tex\latex\subfigure\subfigure.sty"
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
+\subfigtopskip=\skip44
+\subfigcapskip=\skip45
+\subfigcaptopadj=\dimen119
+\subfigbottomskip=\skip46
+\subfigcapmargin=\dimen120
+\subfiglabelskip=\skip47
+\c@subfigure=\count93
+\c@lofdepth=\count94
+\c@subtable=\count95
+\c@lotdepth=\count96
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+("f:\Program Files (x86)\MiKTeX 2.9\tex\latex\subfigure\subfigure.cfg")
+\subfig@top=\skip48
+\subfig@bottom=\skip49
+)
+("f:\Program Files (x86)\MiKTeX 2.9\tex\latex\subfig\subfig.sty"
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+("f:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption.sty"
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+("f:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption3.sty"
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen121
+\captionmargin@=\dimen122
+\captionwidth=\dimen123
+\caption@tempdima=\dimen124
+\caption@indent=\dimen125
+\caption@parindent=\dimen126
+\caption@hangindent=\dimen127
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+)
+
+Package caption Warning: Unsupported document class (or package) detected,
+(caption)                usage of the caption package is not recommended.
+See the caption package documentation for explanation.
+
+Package caption Info: \@makecaption = \long macro:#1#2->\ifx \@captype \@IEEEta
+blestring \footnotesize \bgroup \par \centering \@IEEEtabletopskipstrut {\norma
+lfont \footnotesize #1}\\{\normalfont \footnotesize \scshape #2}\par \addvspace
+ {0.5\baselineskip }\egroup \@IEEEtablecaptionsepspace \else \@IEEEfigurecaptio
+nsepspace \setbox \@tempboxa \hbox {\normalfont \footnotesize {#1.}\nobreakspac
+e \nobreakspace #2}\ifdim \wd \@tempboxa >\hsize \setbox \@tempboxa \hbox {\nor
+malfont \footnotesize {#1.}\nobreakspace \nobreakspace }\parbox [t]{\hsize }{\n
+ormalfont \footnotesize \noindent \unhbox \@tempboxa #2}\else \ifCLASSOPTIONcon
+ference \hbox to\hsize {\normalfont \footnotesize \hfil \box \@tempboxa \hfil }
+\else \hbox to\hsize {\normalfont \footnotesize \box \@tempboxa \hfil }\fi \fi 
+\fi .
+\c@ContinuedFloat=\count97
+Package caption Info: subfigure package is loaded.
+)
+\c@KVtest=\count98
+\sf@farskip=\skip50
+\sf@captopadj=\dimen128
+\sf@capskip=\skip51
+\sf@nearskip=\skip52
+\sf@top=\skip53
+\sf@bottom=\skip54
+) ("f:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\color.sty"
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+("f:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+)
+("f:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip55
+
+For additional information on amsmath, use the `?' option.
+("f:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01
+
+("f:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks16
+\ex@=\dimen129
+))
+("f:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen130
+)
+("f:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count99
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count100
+\leftroot@=\count101
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count102
+\DOTSCASE@=\count103
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box27
+\strutbox@=\box28
+\big@size=\dimen131
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count104
+\c@MaxMatrixCols=\count105
+\dotsspace@=\muskip10
+\c@parentequation=\count106
+\dspbrk@lvl=\count107
+\tag@help=\toks17
+\row@=\count108
+\column@=\count109
+\maxfields@=\count110
+\andhelp@=\toks18
+\eqnshift@=\dimen132
+\alignsep@=\dimen133
+\tagshift@=\dimen134
+\tagwidth@=\dimen135
+\totwidth@=\dimen136
+\lineht@=\dimen137
+\@envbody=\toks19
+\multlinegap=\skip56
+\multlinetaggap=\skip57
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+("f:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+("f:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+("f:\Program Files (x86)\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
+\bigstrutjot=\dimen138
+)
+("f:\Program Files (x86)\MiKTeX 2.9\tex\latex\algorithms\algorithm.sty"
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+("f:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count111
+\float@exts=\toks21
+\float@box=\box29
+\@float@everytoks=\toks22
+\@floatcapt=\box30
+)
+("f:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\@float@every@algorithm=\toks23
+\c@algorithm=\count112
+)
+("f:\Program Files (x86)\MiKTeX 2.9\tex\latex\algorithmicx\algorithmicx.sty"
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count113
+\c@ALG@rem=\count114
+\c@ALG@nested=\count115
+\ALG@tlm=\skip58
+\ALG@thistlm=\skip59
+\c@ALG@Lnr=\count116
+\c@ALG@blocknr=\count117
+\c@ALG@storecount=\count118
+\c@ALG@tmpcounter=\count119
+\ALG@tmplength=\skip60
+) ("f:\Program Files (x86)\MiKTeX 2.9\tex\latex\algorithmicx\algpseudocode.sty"
+Package: algpseudocode 
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) ("f:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\epsfig.sty"
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+\epsfxsize=\dimen139
+\epsfysize=\dimen140
+)
+("f:\Program Files (x86)\MiKTeX 2.9\tex\latex\cjk\CJK.sty"
+Package: CJK 2012/05/07 4.8.3
+
+("f:\Program Files (x86)\MiKTeX 2.9\tex\latex\cjk\mule\MULEenc.sty"
+Package: MULEenc 2012/05/07 4.8.3
+)
+("f:\Program Files (x86)\MiKTeX 2.9\tex\latex\cjk\CJK.enc"
+File: CJK.enc 2012/05/07 4.8.3
+)
+LaTeX Info: Redefining \selectfont on input line 755.
+\CJK@indent=\box31
+)
+Package caption Info: We need package `newfloat' on input line 387.
+
+("f:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\newfloat.sty"
+Package: newfloat 2013/05/11 v1.1-91 Defining new floating environments (AR)
+)
+No file jornal_1.aux.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+("f:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count120
+\scratchdimen=\dimen141
+\scratchbox=\box32
+\nofMPsegments=\count121
+\nofMParguments=\count122
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count123
+\MPscratchDim=\dimen142
+\MPnumerator=\count124
+\makeMPintoPDFobject=\count125
+\everyMPtoPDFconversion=\toks25
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: float package is loaded.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 460.
+LaTeX Font Info:    Try loading font information for U+msa on input line 460.
+ ("f:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 460.
+
+("f:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+ [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
+
+
+]
+<j_img/fig1.jpg, id=9, 843.15pt x 585.18625pt>
+File: j_img/fig1.jpg Graphic file (type jpg)
+ <use j_img/fig1.jpg>
+Package pdftex.def Info: j_img/fig1.jpg used on input line 528.
+(pdftex.def)             Requested size: 258.0pt x 179.0664pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 528--529
+ [] 
+ []
+
+<j_img/fig2a.jpg, id=10, 747.7536pt x 200.9106pt>
+File: j_img/fig2a.jpg Graphic file (type jpg)
+ <use j_img/fig2a.jpg>
+Package pdftex.def Info: j_img/fig2a.jpg used on input line 542.
+(pdftex.def)             Requested size: 252.94499pt x 67.96227pt.
+
+<j_img/fig2b.jpg, id=11, 317.988pt x 263.5446pt>
+File: j_img/fig2b.jpg Graphic file (type jpg)
+ <use j_img/fig2b.jpg>
+Package pdftex.def Info: j_img/fig2b.jpg used on input line 543.
+(pdftex.def)             Requested size: 180.67499pt x 149.73941pt.
+
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 542--544
+ [] 
+ []
+
+<j_img/fig3.jpg, id=12, 1185.42876pt x 569.12625pt>
+File: j_img/fig3.jpg Graphic file (type jpg)
+ <use j_img/fig3.jpg>
+Package pdftex.def Info: j_img/fig3.jpg used on input line 552.
+(pdftex.def)             Requested size: 361.34999pt x 173.48338pt.
+
+[2 <C:/Users/JesseChuang/Documents/GitHub/joournalpaper_1/j_img/fig1.jpg> <C:/U
+sers/JesseChuang/Documents/GitHub/joournalpaper_1/j_img/fig2a.jpg> <C:/Users/Je
+sseChuang/Documents/GitHub/joournalpaper_1/j_img/fig2b.jpg>] [3 <C:/Users/Jesse
+Chuang/Documents/GitHub/joournalpaper_1/j_img/fig3.jpg>]
+Underfull \hbox (badness 1466) in paragraph at lines 575--576
+[]\OT1/ptm/m/n/10 Markov logic net-work L is a set of pairs $\OT1/cmr/m/n/10 (\
+OML/cmm/m/it/10 F[]; W[]\OT1/cmr/m/n/10 )$\OT1/ptm/m/n/10 ,
+ []
+
+
+Overfull \hbox (7.645pt too wide) in paragraph at lines 592--632
+ [][] 
+ []
+
+[4]
+Overfull \hbox (6.15709pt too wide) detected at line 696
+[]
+ []
+
+<j_img/fig4.png, id=35, 828.2142pt x 290.5254pt>
+File: j_img/fig4.png Graphic file (type png)
+ <use j_img/fig4.png>
+Package pdftex.def Info: j_img/fig4.png used on input line 708.
+(pdftex.def)             Requested size: 216.81pt x 76.05348pt.
+
+<j_img/fig5.png, id=38, 858.5676pt x 640.794pt>
+File: j_img/fig5.png Graphic file (type png)
+ <use j_img/fig5.png>
+Package pdftex.def Info: j_img/fig5.png used on input line 733.
+(pdftex.def)             Requested size: 216.81pt x 161.81143pt.
+ [5 <C:/Users/JesseChuang/Documents/GitHub/joournalpaper_1/j_img/fig4.png> <C:/
+Users/JesseChuang/Documents/GitHub/joournalpaper_1/j_img/fig5.png>]
+Overfull \hbox (6.777pt too wide) detected at line 749
+[]
+ []
+
+
+Underfull \vbox (badness 2617) has occurred while \output is active []
+
+
+<j_img/wp11.jpg, id=48, 132.0132pt x 88.1694pt>
+File: j_img/wp11.jpg Graphic file (type jpg)
+ <use j_img/wp11.jpg>
+Package pdftex.def Info: j_img/wp11.jpg used on input line 774.
+(pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
+
+<j_img/wp15.jpg, id=49, 132.0132pt x 88.1694pt>
+File: j_img/wp15.jpg Graphic file (type jpg)
+ <use j_img/wp15.jpg>
+Package pdftex.def Info: j_img/wp15.jpg used on input line 775.
+(pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
+
+<j_img/wp21.jpg, id=50, 132.495pt x 88.1694pt>
+File: j_img/wp21.jpg Graphic file (type jpg)
+ <use j_img/wp21.jpg>
+Package pdftex.def Info: j_img/wp21.jpg used on input line 776.
+(pdftex.def)             Requested size: 72.26999pt x 43.36212pt.
+
+<j_img/wp25.jpg, id=51, 132.0132pt x 88.1694pt>
+File: j_img/wp25.jpg Graphic file (type jpg)
+ <use j_img/wp25.jpg>
+Package pdftex.def Info: j_img/wp25.jpg used on input line 777.
+(pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
+
+<j_img/wp31.jpg, id=52, 132.0132pt x 88.1694pt>
+File: j_img/wp31.jpg Graphic file (type jpg)
+ <use j_img/wp31.jpg>
+Package pdftex.def Info: j_img/wp31.jpg used on input line 778.
+(pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
+
+<j_img/wp35.jpg, id=53, 132.0132pt x 88.1694pt>
+File: j_img/wp35.jpg Graphic file (type jpg)
+ <use j_img/wp35.jpg>
+Package pdftex.def Info: j_img/wp35.jpg used on input line 779.
+(pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
+
+<j_img/wp12.jpg, id=54, 132.0132pt x 88.1694pt>
+File: j_img/wp12.jpg Graphic file (type jpg)
+ <use j_img/wp12.jpg>
+Package pdftex.def Info: j_img/wp12.jpg used on input line 783.
+(pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
+
+<j_img/wp16.jpg, id=55, 132.0132pt x 88.1694pt>
+File: j_img/wp16.jpg Graphic file (type jpg)
+ <use j_img/wp16.jpg>
+Package pdftex.def Info: j_img/wp16.jpg used on input line 784.
+(pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
+
+<j_img/wp22.jpg, id=56, 132.495pt x 88.1694pt>
+File: j_img/wp22.jpg Graphic file (type jpg)
+ <use j_img/wp22.jpg>
+Package pdftex.def Info: j_img/wp22.jpg used on input line 785.
+(pdftex.def)             Requested size: 72.26999pt x 43.36212pt.
+
+<j_img/wp26.jpg, id=57, 132.495pt x 88.1694pt>
+File: j_img/wp26.jpg Graphic file (type jpg)
+ <use j_img/wp26.jpg>
+Package pdftex.def Info: j_img/wp26.jpg used on input line 786.
+(pdftex.def)             Requested size: 72.26999pt x 43.36212pt.
+
+<j_img/wp32.jpg, id=58, 132.0132pt x 88.1694pt>
+File: j_img/wp32.jpg Graphic file (type jpg)
+ <use j_img/wp32.jpg>
+Package pdftex.def Info: j_img/wp32.jpg used on input line 787.
+(pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
+
+<j_img/wp36.jpg, id=59, 132.0132pt x 88.1694pt>
+File: j_img/wp36.jpg Graphic file (type jpg)
+ <use j_img/wp36.jpg>
+Package pdftex.def Info: j_img/wp36.jpg used on input line 788.
+(pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
+
+<j_img/wp13.jpg, id=60, 132.0132pt x 88.1694pt>
+File: j_img/wp13.jpg Graphic file (type jpg)
+ <use j_img/wp13.jpg>
+Package pdftex.def Info: j_img/wp13.jpg used on input line 793.
+(pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
+
+<j_img/wp17.jpg, id=61, 132.0132pt x 88.1694pt>
+File: j_img/wp17.jpg Graphic file (type jpg)
+ <use j_img/wp17.jpg>
+Package pdftex.def Info: j_img/wp17.jpg used on input line 794.
+(pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
+
+<j_img/wp23.jpg, id=62, 132.0132pt x 88.1694pt>
+File: j_img/wp23.jpg Graphic file (type jpg)
+ <use j_img/wp23.jpg>
+Package pdftex.def Info: j_img/wp23.jpg used on input line 795.
+(pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
+
+<j_img/wp33.jpg, id=63, 132.495pt x 88.1694pt>
+File: j_img/wp33.jpg Graphic file (type jpg)
+ <use j_img/wp33.jpg>
+Package pdftex.def Info: j_img/wp33.jpg used on input line 797.
+(pdftex.def)             Requested size: 72.26999pt x 43.36212pt.
+
+<j_img/wp37.jpg, id=64, 132.0132pt x 88.1694pt>
+File: j_img/wp37.jpg Graphic file (type jpg)
+ <use j_img/wp37.jpg>
+Package pdftex.def Info: j_img/wp37.jpg used on input line 798.
+(pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
+
+<j_img/wp14.jpg, id=65, 132.0132pt x 88.1694pt>
+File: j_img/wp14.jpg Graphic file (type jpg)
+ <use j_img/wp14.jpg>
+Package pdftex.def Info: j_img/wp14.jpg used on input line 803.
+(pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
+
+<j_img/wp24.jpg, id=66, 132.495pt x 88.1694pt>
+File: j_img/wp24.jpg Graphic file (type jpg)
+ <use j_img/wp24.jpg>
+Package pdftex.def Info: j_img/wp24.jpg used on input line 805.
+(pdftex.def)             Requested size: 72.26999pt x 43.36212pt.
+
+<j_img/wp34.jpg, id=67, 132.0132pt x 88.1694pt>
+File: j_img/wp34.jpg Graphic file (type jpg)
+ <use j_img/wp34.jpg>
+Package pdftex.def Info: j_img/wp34.jpg used on input line 807.
+(pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
+
+<j_img/exp02.png, id=68, 586.3506pt x 394.5942pt>
+File: j_img/exp02.png Graphic file (type png)
+ <use j_img/exp02.png>
+Package pdftex.def Info: j_img/exp02.png used on input line 824.
+(pdftex.def)             Requested size: 216.81pt x 145.90121pt.
+
+<j_img/exp01.png, id=69, 586.3506pt x 394.5942pt>
+File: j_img/exp01.png Graphic file (type png)
+ <use j_img/exp01.png>
+Package pdftex.def Info: j_img/exp01.png used on input line 828.
+(pdftex.def)             Requested size: 216.81pt x 145.90121pt.
+
+[6] <j_img/exp04.png, id=75, 616.2222pt x 423.5022pt>
+File: j_img/exp04.png Graphic file (type png)
+ <use j_img/exp04.png>
+Package pdftex.def Info: j_img/exp04.png used on input line 838.
+(pdftex.def)             Requested size: 216.81pt x 149.00343pt.
+
+<j_img/exp03.png, id=76, 615.2586pt x 423.984pt>
+File: j_img/exp03.png Graphic file (type png)
+ <use j_img/exp03.png>
+Package pdftex.def Info: j_img/exp03.png used on input line 842.
+(pdftex.def)             Requested size: 216.81pt x 149.40585pt.
+
+Underfull \vbox (badness 4144) has occurred while \output is active []
+
+ [7 <C:/Users/JesseChuang/Documents/GitHub/joournalpaper_1/j_img/wp11.jpg> <C:/
+Users/JesseChuang/Documents/GitHub/joournalpaper_1/j_img/wp15.jpg> <C:/Users/Je
+sseChuang/Documents/GitHub/joournalpaper_1/j_img/wp21.jpg> <C:/Users/JesseChuan
+g/Documents/GitHub/joournalpaper_1/j_img/wp25.jpg> <C:/Users/JesseChuang/Docume
+nts/GitHub/joournalpaper_1/j_img/wp31.jpg> <C:/Users/JesseChuang/Documents/GitH
+ub/joournalpaper_1/j_img/wp35.jpg> <C:/Users/JesseChuang/Documents/GitHub/joour
+nalpaper_1/j_img/wp12.jpg> <C:/Users/JesseChuang/Documents/GitHub/joournalpaper
+_1/j_img/wp16.jpg> <C:/Users/JesseChuang/Documents/GitHub/joournalpaper_1/j_img
+/wp22.jpg> <C:/Users/JesseChuang/Documents/GitHub/joournalpaper_1/j_img/wp26.jp
+g> <C:/Users/JesseChuang/Documents/GitHub/joournalpaper_1/j_img/wp32.jpg> <C:/U
+sers/JesseChuang/Documents/GitHub/joournalpaper_1/j_img/wp36.jpg> <C:/Users/Jes
+seChuang/Documents/GitHub/joournalpaper_1/j_img/wp13.jpg> <C:/Users/JesseChuang
+/Documents/GitHub/joournalpaper_1/j_img/wp17.jpg> <C:/Users/JesseChuang/Documen
+ts/GitHub/joournalpaper_1/j_img/wp23.jpg> <C:/Users/JesseChuang/Documents/GitHu
+b/joournalpaper_1/j_img/wp33.jpg> <C:/Users/JesseChuang/Documents/GitHub/joourn
+alpaper_1/j_img/wp37.jpg> <C:/Users/JesseChuang/Documents/GitHub/joournalpaper_
+1/j_img/wp14.jpg> <C:/Users/JesseChuang/Documents/GitHub/joournalpaper_1/j_img/
+wp24.jpg> <C:/Users/JesseChuang/Documents/GitHub/joournalpaper_1/j_img/wp34.jpg
+> <C:/Users/JesseChuang/Documents/GitHub/joournalpaper_1/j_img/exp02.png> <C:/U
+sers/JesseChuang/Documents/GitHub/joournalpaper_1/j_img/exp01.png> <C:/Users/Je
+sseChuang/Documents/GitHub/joournalpaper_1/j_img/exp04.png> <C:/Users/JesseChua
+ng/Documents/GitHub/joournalpaper_1/j_img/exp03.png>]
+Underfull \hbox (badness 1755) in paragraph at lines 850--851
+\OT1/ptm/m/n/10 Edge-SIFT[26] are mod-i-fied ver-sions of SIFT ap-proach
+ []
+
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no • in font ptmr7t!
+Missing character: There is no ‚ in font ptmri7t!
+Missing character: There is no Ä in font ptmri7t!
+Missing character: There is no î in font ptmri7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmri7t!
+Missing character: There is no Ä in font ptmri7t!
+Missing character: There is no ù in font ptmri7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+[8]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmri7t!
+Missing character: There is no Ä in font ptmri7t!
+Missing character: There is no ú in font ptmri7t!
+Missing character: There is no ‚ in font ptmri7t!
+Missing character: There is no Ä in font ptmri7t!
+Missing character: There is no ù in font ptmri7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+ [9
+
+] (C:\Users\JesseChuang\Documents\GitHub\joournalpaper_1\jornal_1.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 5952 strings out of 493921
+ 86901 string characters out of 3144858
+ 161061 words of memory out of 3000000
+ 9130 multiletter control sequences out of 15000+200000
+ 52177 words of font info for 114 fonts, out of 3000000 for 9000
+ 844 hyphenation exceptions out of 8191
+ 44i,16n,42p,1579b,388s stack positions out of 5000i,500n,10000p,200000b,50000s
+{f:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<f:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><f:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx5.pfb><f:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx7.pfb><f:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><f:/Program Files (x
+86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><f:/Program Files (x86
+)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><f:/Program Files (x86)/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><f:/Program Files (x86)/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><f:/Program Files (x86)/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb><f:/Program Files (x86)/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><f:/Program Files (x86)/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><f:/Program Files (x86)/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><f:/Program Files (x86)/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmsy7.pfb><f:/Program Files (x86)/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmsy8.pfb><f:/Program Files (x86)/MiKTeX 2.9/fonts/
+type1/urw/times/utmb8a.pfb><f:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/t
+imes/utmbi8a.pfb><f:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8
+a.pfb><f:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on jornal_1.pdf (9 pages, 2192249 bytes).
+PDF statistics:
+ 148 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 169 words of extra memory for PDF output out of 10000 (max. 10000000)
+
