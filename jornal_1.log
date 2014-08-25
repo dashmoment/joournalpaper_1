@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.3)  25 AUG 2014 11:10
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.3)  25 AUG 2014 11:13
 entering extended mode
 **jornal_1.tex
 (E:\joournalpaper_1\jornal_1.tex
@@ -344,95 +344,7 @@ Package caption Info: We need package `newfloat' on input line 278.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\newfloat.sty"
 Package: newfloat 2013/05/11 v1.1-91 Defining new floating environments (AR)
 )
-(E:\joournalpaper_1\jornal_1.aux
-
-LaTeX Warning: Label `test' multiply defined.
-
-
-LaTeX Warning: Label `test' multiply defined.
-
-
-LaTeX Warning: Label `test' multiply defined.
-
-
-LaTeX Warning: Label `test' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-)
+(E:\joournalpaper_1\jornal_1.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 280.
 LaTeX Font Info:    ... okay on input line 280.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 280.
@@ -509,7 +421,8 @@ LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 280.
 LaTeX Font Info:    ... okay on input line 280.
 LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 280.
 LaTeX Font Info:    ... okay on input line 280.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count120
 \scratchdimen=\dimen141
@@ -812,13 +725,13 @@ Missing character: There is no “ in font ptmr7t!
 
 ] (E:\joournalpaper_1\jornal_1.aux)
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
  5954 strings out of 493921
  86718 string characters out of 3144862
- 162108 words of memory out of 3000000
+ 162061 words of memory out of 3000000
  9130 multiletter control sequences out of 15000+200000
  52177 words of font info for 114 fonts, out of 3000000 for 9000
  844 hyphenation exceptions out of 8191
