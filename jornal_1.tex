@@ -423,6 +423,8 @@ The relation between each variable is illustrated in fig. 3.
 
  $\bf{D^{in}}$ is input descirptor constructed by $\bf{\Gamma}$ based on MLN model which is captured from camera 1. $\Gamma$ is a set of image features 1 to K. Descriptor $d^{in}_w$ would be classified to classified object($\bf{O^C}$) or unclassified object ($\bf{O^U}$) based on pseudo-log-likelihood. In fig.3, If $d^{in}_1$ is delivered to identified object set $\bf{O^C}$, 
  
+ %%% revised to here%%%%%%%%%%%%%%%%%
+ 
  
   the system would further assign $d^{in}_1$ to the most possible belonging object $\bf{O^C_m}$. Since a 3-D is composed by multiple 2-D images, one object in our system is defined by multiple 2-D descriptors. $\bf{O^C_m}$ is a set of 2-D descriptors of object m. $d^{in}_1$ is considered as new input data of most possible descriptor couple $d^C_{mb}$ in fig.3. Each descriptor couple includes the rotation angle information between input pose (based on 2-D descriptor) and target pose. $\theta^C_{mb}$ is the rotation angle which can make robot arm rotate object m from input to target pose. The result would be checked by camera 2. If it is true, the result is considered as positive evidence, and merged to the learning process. Otherwise, the result is negative evidence.  
 
