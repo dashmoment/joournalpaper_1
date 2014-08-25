@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.3)  25 AUG 2014 11:13
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.3)  26 AUG 2014 02:22
 entering extended mode
 **jornal_1.tex
 (E:\joournalpaper_1\jornal_1.tex
@@ -466,206 +466,208 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 380--381
 <j_img/fig2a.jpg, id=10, 747.7536pt x 200.9106pt>
 File: j_img/fig2a.jpg Graphic file (type jpg)
  <use j_img/fig2a.jpg>
-Package pdftex.def Info: j_img/fig2a.jpg used on input line 394.
+Package pdftex.def Info: j_img/fig2a.jpg used on input line 400.
 (pdftex.def)             Requested size: 252.94499pt x 67.96227pt.
 
 <j_img/fig2b.jpg, id=11, 317.988pt x 263.5446pt>
 File: j_img/fig2b.jpg Graphic file (type jpg)
  <use j_img/fig2b.jpg>
-Package pdftex.def Info: j_img/fig2b.jpg used on input line 395.
+Package pdftex.def Info: j_img/fig2b.jpg used on input line 401.
 (pdftex.def)             Requested size: 180.67499pt x 149.73941pt.
 
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 394--396
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 400--402
  [] 
  []
 
-<j_img/fig3.jpg, id=12, 1185.42876pt x 569.12625pt>
+<j_img/fig3.jpg, id=12, 1490.02309pt x 533.05188pt>
 File: j_img/fig3.jpg Graphic file (type jpg)
  <use j_img/fig3.jpg>
-Package pdftex.def Info: j_img/fig3.jpg used on input line 404.
-(pdftex.def)             Requested size: 361.34999pt x 173.48338pt.
+Package pdftex.def Info: j_img/fig3.jpg used on input line 410.
+(pdftex.def)             Requested size: 505.89pt x 180.9831pt.
 
-[2 <E:/joournalpaper_1/j_img/fig1.jpg> <E:/joournalpaper_1/j_img/fig2a.jpg> <E:
-/joournalpaper_1/j_img/fig2b.jpg>]
-Underfull \vbox (badness 6575) has occurred while \output is active []
+Underfull \vbox (badness 1515) has occurred while \output is active []
+
+ [2 <E:/joournalpaper_1/j_img/fig1.jpg> <E:/joournalpaper_1/j_img/fig2a.jpg> <E
+:/joournalpaper_1/j_img/fig2b.jpg>]
+Underfull \vbox (badness 3492) has occurred while \output is active []
 
  [3 <E:/joournalpaper_1/j_img/fig3.jpg>]
-Underfull \hbox (badness 1466) in paragraph at lines 427--428
+Underfull \hbox (badness 1466) in paragraph at lines 431--432
 []\OT1/ptm/m/n/10 Markov logic net-work L is a set of pairs $\OT1/cmr/m/n/10 (\
 OML/cmm/m/it/10 F[]; W[]\OT1/cmr/m/n/10 )$\OT1/ptm/m/n/10 ,
  []
 
 
-Overfull \hbox (7.645pt too wide) in paragraph at lines 444--484
+Overfull \hbox (7.645pt too wide) in paragraph at lines 448--488
  [][] 
  []
 
 [4]
-Overfull \hbox (6.15709pt too wide) detected at line 548
+Overfull \hbox (6.15709pt too wide) detected at line 552
 []
  []
 
 <j_img/fig4.png, id=35, 828.2142pt x 290.5254pt>
 File: j_img/fig4.png Graphic file (type png)
  <use j_img/fig4.png>
-Package pdftex.def Info: j_img/fig4.png used on input line 560.
+Package pdftex.def Info: j_img/fig4.png used on input line 564.
 (pdftex.def)             Requested size: 216.81pt x 76.05348pt.
 
 <j_img/fig5.png, id=38, 858.5676pt x 640.794pt>
 File: j_img/fig5.png Graphic file (type png)
  <use j_img/fig5.png>
-Package pdftex.def Info: j_img/fig5.png used on input line 585.
+Package pdftex.def Info: j_img/fig5.png used on input line 589.
 (pdftex.def)             Requested size: 216.81pt x 161.81143pt.
  [5 <E:/joournalpaper_1/j_img/fig4.png> <E:/joournalpaper_1/j_img/fig5.png>]
-Overfull \hbox (6.777pt too wide) detected at line 601
+Overfull \hbox (6.777pt too wide) detected at line 605
 []
  []
 
 <j_img/wp11.jpg, id=48, 132.0132pt x 88.1694pt>
 File: j_img/wp11.jpg Graphic file (type jpg)
  <use j_img/wp11.jpg>
-Package pdftex.def Info: j_img/wp11.jpg used on input line 626.
+Package pdftex.def Info: j_img/wp11.jpg used on input line 630.
 (pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
 
 <j_img/wp15.jpg, id=49, 132.0132pt x 88.1694pt>
 File: j_img/wp15.jpg Graphic file (type jpg)
  <use j_img/wp15.jpg>
-Package pdftex.def Info: j_img/wp15.jpg used on input line 627.
+Package pdftex.def Info: j_img/wp15.jpg used on input line 631.
 (pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
 
 <j_img/wp21.jpg, id=50, 132.495pt x 88.1694pt>
 File: j_img/wp21.jpg Graphic file (type jpg)
  <use j_img/wp21.jpg>
-Package pdftex.def Info: j_img/wp21.jpg used on input line 628.
+Package pdftex.def Info: j_img/wp21.jpg used on input line 632.
 (pdftex.def)             Requested size: 72.26999pt x 43.36212pt.
 
 <j_img/wp25.jpg, id=51, 132.0132pt x 88.1694pt>
 File: j_img/wp25.jpg Graphic file (type jpg)
  <use j_img/wp25.jpg>
-Package pdftex.def Info: j_img/wp25.jpg used on input line 629.
+Package pdftex.def Info: j_img/wp25.jpg used on input line 633.
 (pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
 
 <j_img/wp31.jpg, id=52, 132.0132pt x 88.1694pt>
 File: j_img/wp31.jpg Graphic file (type jpg)
  <use j_img/wp31.jpg>
-Package pdftex.def Info: j_img/wp31.jpg used on input line 630.
+Package pdftex.def Info: j_img/wp31.jpg used on input line 634.
 (pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
 
 <j_img/wp35.jpg, id=53, 132.0132pt x 88.1694pt>
 File: j_img/wp35.jpg Graphic file (type jpg)
  <use j_img/wp35.jpg>
-Package pdftex.def Info: j_img/wp35.jpg used on input line 631.
+Package pdftex.def Info: j_img/wp35.jpg used on input line 635.
 (pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
 
 <j_img/wp12.jpg, id=54, 132.0132pt x 88.1694pt>
 File: j_img/wp12.jpg Graphic file (type jpg)
  <use j_img/wp12.jpg>
-Package pdftex.def Info: j_img/wp12.jpg used on input line 635.
+Package pdftex.def Info: j_img/wp12.jpg used on input line 639.
 (pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
 
 <j_img/wp16.jpg, id=55, 132.0132pt x 88.1694pt>
 File: j_img/wp16.jpg Graphic file (type jpg)
  <use j_img/wp16.jpg>
-Package pdftex.def Info: j_img/wp16.jpg used on input line 636.
+Package pdftex.def Info: j_img/wp16.jpg used on input line 640.
 (pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
 
 <j_img/wp22.jpg, id=56, 132.495pt x 88.1694pt>
 File: j_img/wp22.jpg Graphic file (type jpg)
  <use j_img/wp22.jpg>
-Package pdftex.def Info: j_img/wp22.jpg used on input line 637.
+Package pdftex.def Info: j_img/wp22.jpg used on input line 641.
 (pdftex.def)             Requested size: 72.26999pt x 43.36212pt.
 
 <j_img/wp26.jpg, id=57, 132.495pt x 88.1694pt>
 File: j_img/wp26.jpg Graphic file (type jpg)
  <use j_img/wp26.jpg>
-Package pdftex.def Info: j_img/wp26.jpg used on input line 638.
+Package pdftex.def Info: j_img/wp26.jpg used on input line 642.
 (pdftex.def)             Requested size: 72.26999pt x 43.36212pt.
 
 <j_img/wp32.jpg, id=58, 132.0132pt x 88.1694pt>
 File: j_img/wp32.jpg Graphic file (type jpg)
  <use j_img/wp32.jpg>
-Package pdftex.def Info: j_img/wp32.jpg used on input line 639.
+Package pdftex.def Info: j_img/wp32.jpg used on input line 643.
 (pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
 
 <j_img/wp36.jpg, id=59, 132.0132pt x 88.1694pt>
 File: j_img/wp36.jpg Graphic file (type jpg)
  <use j_img/wp36.jpg>
-Package pdftex.def Info: j_img/wp36.jpg used on input line 640.
+Package pdftex.def Info: j_img/wp36.jpg used on input line 644.
 (pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
 
 <j_img/wp13.jpg, id=60, 132.0132pt x 88.1694pt>
 File: j_img/wp13.jpg Graphic file (type jpg)
  <use j_img/wp13.jpg>
-Package pdftex.def Info: j_img/wp13.jpg used on input line 645.
+Package pdftex.def Info: j_img/wp13.jpg used on input line 649.
 (pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
 
 <j_img/wp17.jpg, id=61, 132.0132pt x 88.1694pt>
 File: j_img/wp17.jpg Graphic file (type jpg)
  <use j_img/wp17.jpg>
-Package pdftex.def Info: j_img/wp17.jpg used on input line 646.
+Package pdftex.def Info: j_img/wp17.jpg used on input line 650.
 (pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
 
 <j_img/wp23.jpg, id=62, 132.0132pt x 88.1694pt>
 File: j_img/wp23.jpg Graphic file (type jpg)
  <use j_img/wp23.jpg>
-Package pdftex.def Info: j_img/wp23.jpg used on input line 647.
+Package pdftex.def Info: j_img/wp23.jpg used on input line 651.
 (pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
 
 <j_img/wp33.jpg, id=63, 132.495pt x 88.1694pt>
 File: j_img/wp33.jpg Graphic file (type jpg)
  <use j_img/wp33.jpg>
-Package pdftex.def Info: j_img/wp33.jpg used on input line 649.
+Package pdftex.def Info: j_img/wp33.jpg used on input line 653.
 (pdftex.def)             Requested size: 72.26999pt x 43.36212pt.
 
 <j_img/wp37.jpg, id=64, 132.0132pt x 88.1694pt>
 File: j_img/wp37.jpg Graphic file (type jpg)
  <use j_img/wp37.jpg>
-Package pdftex.def Info: j_img/wp37.jpg used on input line 650.
+Package pdftex.def Info: j_img/wp37.jpg used on input line 654.
 (pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
 
 <j_img/wp14.jpg, id=65, 132.0132pt x 88.1694pt>
 File: j_img/wp14.jpg Graphic file (type jpg)
  <use j_img/wp14.jpg>
-Package pdftex.def Info: j_img/wp14.jpg used on input line 655.
+Package pdftex.def Info: j_img/wp14.jpg used on input line 659.
 (pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
 
 <j_img/wp24.jpg, id=66, 132.495pt x 88.1694pt>
 File: j_img/wp24.jpg Graphic file (type jpg)
  <use j_img/wp24.jpg>
-Package pdftex.def Info: j_img/wp24.jpg used on input line 657.
+Package pdftex.def Info: j_img/wp24.jpg used on input line 661.
 (pdftex.def)             Requested size: 72.26999pt x 43.36212pt.
 
 <j_img/wp34.jpg, id=67, 132.0132pt x 88.1694pt>
 File: j_img/wp34.jpg Graphic file (type jpg)
  <use j_img/wp34.jpg>
-Package pdftex.def Info: j_img/wp34.jpg used on input line 659.
+Package pdftex.def Info: j_img/wp34.jpg used on input line 663.
 (pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
 
 <j_img/exp02.png, id=68, 586.3506pt x 394.5942pt>
 File: j_img/exp02.png Graphic file (type png)
  <use j_img/exp02.png>
-Package pdftex.def Info: j_img/exp02.png used on input line 676.
+Package pdftex.def Info: j_img/exp02.png used on input line 680.
 (pdftex.def)             Requested size: 216.81pt x 145.90121pt.
 
 <j_img/exp01.png, id=69, 586.3506pt x 394.5942pt>
 File: j_img/exp01.png Graphic file (type png)
  <use j_img/exp01.png>
-Package pdftex.def Info: j_img/exp01.png used on input line 680.
+Package pdftex.def Info: j_img/exp01.png used on input line 684.
 (pdftex.def)             Requested size: 216.81pt x 145.90121pt.
 
 <j_img/exp04.png, id=70, 616.2222pt x 423.5022pt>
 File: j_img/exp04.png Graphic file (type png)
  <use j_img/exp04.png>
-Package pdftex.def Info: j_img/exp04.png used on input line 690.
+Package pdftex.def Info: j_img/exp04.png used on input line 694.
 (pdftex.def)             Requested size: 216.81pt x 149.00343pt.
 
 <j_img/exp03.png, id=71, 615.2586pt x 423.984pt>
 File: j_img/exp03.png Graphic file (type png)
  <use j_img/exp03.png>
-Package pdftex.def Info: j_img/exp03.png used on input line 694.
+Package pdftex.def Info: j_img/exp03.png used on input line 698.
 (pdftex.def)             Requested size: 216.81pt x 149.40585pt.
  [6]
-Underfull \hbox (badness 1755) in paragraph at lines 702--703
+Underfull \hbox (badness 1755) in paragraph at lines 706--707
 \OT1/ptm/m/n/10 Edge-SIFT[26] are mod-i-fied ver-sions of SIFT ap-proach
  []
 
@@ -754,7 +756,7 @@ ts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
 type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/t
 imes/utmbi8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8
 a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on jornal_1.pdf (9 pages, 2192467 bytes).
+Output written on jornal_1.pdf (9 pages, 2289796 bytes).
 PDF statistics:
  148 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

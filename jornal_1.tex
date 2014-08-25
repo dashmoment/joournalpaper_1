@@ -372,7 +372,7 @@ The most challenge part of state problem is that the appearance of different fac
 
 Secondly, transfer information module is proposed for constructing latent edge. Transfer information module is realized by Self-taught Clustering algorithm [refer.]. Self-taught Clustering algorithm is a transfer learning method [6-9....need more] which is built for enhancing model through large amount of auxiliary unlabeled data. The input face can be considered auxiliary unlabeled data, and find co-cluster between priors face in the dataset. Hereafter, we further utilize the distribution of co-cluster to infer the possible rotation angle for robot arm, and robot arm would rotate the object from input face to output face by rotating inferred angle. Finally, the validation module is an eye-to-hand camera which used to validate the error between the output face and desired target face. Hereafter, the validation module feedback the error to the model to refined the model. Through these three module, proposed system can automatically learn the relation between input image and output rotation angle with only labeled the target face of each object.
 
-In this paper,we start with briefly overview of system design and structure in section 2. The MLN-based descriptor for recognized object is described in section 3. Section 4 introduces how to model the proposed multilayer networks, build up and refine the structure of database for matching. Then, we compare the performance of proposed system with several different features and descriptors in section 5. Finally, the performance review and conclusion are presented in final section.
+In this paper, we start with briefly overview of system design and structure in section 2. The MLN-based descriptor for recognized object is described in section 3. Section 4 introduces how to model the proposed multilayer networks, build up and refine the structure of database for matching. Then, we compare the performance of proposed system with several different features and descriptors in section 5. Finally, the performance review and conclusion are presented in final section.
 
 \begin{figure}[!t]
 \begin{center}
@@ -388,7 +388,12 @@ In this paper,we start with briefly overview of system design and structure in s
 %\hfill mds
 \section{System architecture} 
 
-The main purpose of this system is that desire to automatically derive the relationship between input face and target face of 3D object. The only prior knowledge are the target face of assigned 3D objects. Input is arbitrary assigned objects with random face on top, so it is very likely a unknown face of one of assigned objects rather than prior target face. Therefore, system has to infer the correlation between input and existed prior target face in the pool.  This system is consisted by three modules: Firstly, camera 1 in fig. 1 capture all input work pieces with random faces on top, and classify the features of each single work piece through clustering or segmentation method [19-23]. For each input face, camera 1 captures serial images while work pieces move into FOV as shown in fig. 2(a). Descriptors of each input face are then constructed by these serial images. Hereafter, system search matched descriptors from database, and guide robot arm to pick the object and rotate to target pose. Otherwise, the system would infer the most possible result through proposed method, and guide robot arm to pick object based on inferred results. 
+The main purpose of this system is that desire to automatically derive the relationship between input face and target face of 3D assigned objects. The only prior knowledge are the target face. Input is arbitrary assigned object with random face on top, so it is very likely a unknown face of assigned object rather than prior target face. Therefore, system has to infer the correlation between input and existed prior target face in the pool.  This system is realized by three modules: Firstly, \textbf{Constructing MLN-based descriptor:} camera 1 in Fig. 1 capture all input objects with random faces on top, and extract the features in each input face through clustering or segmentation method [19-23]. For each input face, camera 1 captures serial images while input moves into FOV as shown in Fig. 2(a). MLN-based descriptors of each input face are then constructed by these serial images. 
+
+Hereafter, the constructed descriptor becomes the input of \textbf{Transfer information module}. System search  for matched descriptors in database ($\bf{D^C}$) by pseudo-log-likelihood. If the input doesn't match any descriptor in the data set, we apply Kullback-Leibler divergence(KL divergence)[Cover  Thomas, 1991] to find min divergence and co-clusters between input $d^in$ and $\bf{D^C}$. While $d^C$ have min divergence with $d^in$, we assume $d^in$ and $d^C$ belong to the same object $O^C$. System will infer rotation angle ($\theta_{inference}$) based on the relation between co-cluster in Cartesian space, and guide robot arm to rotate input object by inferred angle.
+
+\textbf{Validation module} is utilized to valid inferred result, and estimate error between desired result and observed result. If the observed result is just matched desired one, the latent edge between $d^in$, $\theta_{inference}$ and $O^C$ will be established. Consequently, $d^in$ is one of face belonging object $O^C$ and target face $d^C_t$ can be find by rotate $d^in$ with angle  $\theta_{inference}$. This method will be explain particularly in section XX. 
+
 
 \begin{figure}[!t]
 \begin{center}
@@ -402,20 +407,24 @@ The main purpose of this system is that desire to automatically derive the relat
 \begin{figure*}[!t]
 \begin{center}
 %\subfigure[System architecture]{}
-\includegraphics*[width=5 in]{j_img/fig3.jpg}
+\includegraphics*[width=7 in]{j_img/fig3.jpg}
 \caption{Example flow of variables in multi-layers networks}\label{test}
 \end{center}
 \end{figure*}
 
-For the second part of system, camera 2 plays a role as supervisor of learning. The results would be labelled as true or false. The constructed descriptors with labels become the input of multilayer networks. The third part is learning approach of multilayer networks. The labelled data would be added to the networks after each cycle of system. The labels are used to refine the training result of multilayer networks. Based on these three parts, this system can automatically learn the relative model for robot arm to complete tasks without any manual operation. 
-
-The variables of our model can be classified into six types:
+The data transferring of data in three modules can be represented by hierarchical model shown in Fig. 3. variables of the model are represented by six types:
 
 \begin{displaymath}
-\{\bf{\Gamma},\bf{D^{in}},\bf{O^{{C}}},\bf{O^{{U}}},\bf{D^{C}_{m}},\bf{D^{U}_{n},\bf{\Theta}}\}
+\{d^{in},\bf{\Gamma},\bf{D^{{C}}},\bf{D^{{U}}},\bf{O^{C}},\bf{\Theta^{C}}\,\bf{\Theta^{inference}}\}
 \end{displaymath}
 
-The relation between each variable is illustrated in fig. 3. $\Gamma$ is a set of object 1 to W from camera 1 in feature domain. $\bf{\Gamma_w}$  is a set of serial captured frames of an object w, which is composited by genuine and reference images in fig. 2. $\Gamma_{wg}$ is the genuine image, and $\Gamma_{wn}$ is number $n$ reference frames. $\bf{D^{in}}$ is constructed by $\bf{\Gamma}$ based on proposed 2-D descriptor-constructing method in section 3. Descriptor $d^{in}_w$ would be classified to identified object($\bf{O^C}$) or unidentified object ($\bf{O^U}$) based on Most Probable Explanation (MPE). In fig.3, $d^{in}_1$ is delivered to identified object set $\bf{O^C}$. the system would further assign $d^{in}_1$ to the most possible belonging object $\bf{O^C_m}$. Since a 3-D is composed by multiple 2-D images, one object in our system is defined by multiple 2-D descriptors. $\bf{O^C_m}$ is a set of 2-D descriptors of object m. $d^{in}_1$ is considered as new input data of most possible descriptor couple $d^C_{mb}$ in fig.3. Each descriptor couple includes the rotation angle information between input pose (based on 2-D descriptor) and target pose. $\theta^C_{mb}$ is the rotation angle which can make robot arm rotate object m from input to target pose. The result would be checked by camera 2. If it is true, the result is considered as positive evidence, and merged to the learning process. Otherwise, the result is negative evidence.  
+The relation between each variable is illustrated in fig. 3. 
+
+
+ $\bf{D^{in}}$ is input descirptor constructed by $\bf{\Gamma}$ based on MLN model which is captured from camera 1. $\Gamma$ is a set of image features 1 to K. Descriptor $d^{in}_w$ would be classified to classified object($\bf{O^C}$) or unclassified object ($\bf{O^U}$) based on pseudo-log-likelihood. In fig.3, If $d^{in}_1$ is delivered to identified object set $\bf{O^C}$, 
+ 
+ 
+  the system would further assign $d^{in}_1$ to the most possible belonging object $\bf{O^C_m}$. Since a 3-D is composed by multiple 2-D images, one object in our system is defined by multiple 2-D descriptors. $\bf{O^C_m}$ is a set of 2-D descriptors of object m. $d^{in}_1$ is considered as new input data of most possible descriptor couple $d^C_{mb}$ in fig.3. Each descriptor couple includes the rotation angle information between input pose (based on 2-D descriptor) and target pose. $\theta^C_{mb}$ is the rotation angle which can make robot arm rotate object m from input to target pose. The result would be checked by camera 2. If it is true, the result is considered as positive evidence, and merged to the learning process. Otherwise, the result is negative evidence.  
 
 Similarly, $d^{in}_2$ is assigned to the unidentified set $\bf{O^U}$. Unidentified set $\bf{O^U}$ is a set of descriptors which hadn't identified the rotation angle of target prior pose. For unidentified $\bf{O^U}$, the system would infer the possible rotation angle $\theta_{inference}$ for input descriptor. The result would be supervised by camera 2. If result is true, the descriptor would be delivered to the identified object set $\bf{O^C}$ as a new discovered face of corresponding object. Otherwise, the descriptor would feedback to unidentified object set $\bf{O^U}$, and record the inference result to avoid the same fail predication. By doing so, the system is ensured to be converged, and all objects could be identified if the input is sufficient enough.
 
