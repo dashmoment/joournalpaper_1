@@ -553,13 +553,13 @@ Where $n_i(d^{in}=0)$ is the number of true grounding of $j^{th}$ formula while 
 
 
 \subsection{Matching of MLN-based descriptors}
-For each constructed input descriptor $d^{in}_k$, system would search for the matching descriptor in the database, and further arrange it to the proper layer of $\bf{O^C}$ or $\bf{O^U}$ as shown in fig.2. Since input is possible to be assigned to two distinct layer, matching step is separated into two parts. One is utilized pseudo-log-likelihood to decide that observation should assign to which layer. The pseudo-log-likelihood of descriptors matching could be formulated as:
+For each constructed input descriptor $d^{in}_k$, system would search for the matched descriptor in the database, and further arrange it to the proper layer of $\bf{O^C}$ or $\bf{O^U}$ as shown in fig.2. Since input is possible to be assigned to two distinct layers, matching step is separated into two parts. One is utilized pseudo-log-likelihood to decide that observation should be assigned to which layer. The pseudo-log-likelihood of descriptors matching could be formulated as:
 
 
 \begin{equation}
 \begin{array}{ll}
 
-\log P^*_w(\mathbf{D^{in}} = d^{in}) =P( d^{in}|\mathbf{ D^c , \Gamma_{k \in {d^{in}} \cap D^C}}) &\\\\
+P( \mathbf{D^{in}} = d^{in}| \mathbf{ D^c} = d^C_w , \mathbf{\Gamma}_{k \in {d^{in}}}) &\\\\
 = P(d^{in} | \mathbf{MB}(d^{in})) \prod_{w\in{\mathbf W}}{P(d^{in}_w | \mathbf{MB}(d^{in}))}
 \end{array}
 \end{equation}
