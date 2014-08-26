@@ -388,9 +388,36 @@ In this paper, we start with briefly overview of system design and structure in 
 %\hfill mds
 \section{System architecture} 
 
-The main purpose of this system is that desire to automatically derive the relationship between input face and target face of 3D assigned objects. The only prior knowledge are the target face. Input is arbitrary assigned object with random face on top, so it is very likely a unknown face of assigned object rather than prior target face. Therefore, system has to infer the correlation between input and existed prior target face in the pool.  This system is realized by three modules: Firstly, \textbf{Constructing MLN-based descriptor:} camera 1 in Fig. 1 capture all input objects with random faces on top, and extract the features in each input face through clustering or segmentation method [19-23]. For each input face, camera 1 captures serial images while input moves into FOV as shown in Fig. 2(a). MLN-based descriptors of each input face are then constructed by these serial images. 
+The main purpose of this system is that desire to automatically derive the relationship between input face and target face of 3D assigned objects. The only prior knowledge are the target face. Input is arbitrary assigned object with random face on top, so it is very likely a unknown face of assigned object rather than prior target face. Therefore, system has to infer the correlation between input and existed prior target face in the pool.  Proposed system is shown in Fig. 1. camera 1 captures images of all input objects with random faces on top, and 
+construct MLN-based descriptor for each input. Then, system match the input with data in Database and output rotation angle for robot arm. After robot arm placing a input object, camera 2 would validate result, and feedback error for refining existed model. The system architecture in Fig. 1 is realized by a hierarchical-deep model in Fig. 3. The variables in the same layer are independent, and vertical adjacent two layers are full connected. The difference between classic \textbf{Deep Belief Networks}(\textbf{DBN})[Ref.] is that proposed model exist two parallel parts as shown in Fig. 3. \textbf{Classified Descriptor($\bf{D^C}$)-Rotation angle($\bf{\Theta^{C}}$)} and \textbf{Unclassified Descriptor($\bf{D^U}$)-Inferred Rotation angle($\bf{\Theta^U}$)} have no connection between each other, but both have full connection with deepest layer \textbf{Object($\bf{O^C}$)} and first layer \textbf{Feature($\bf{\Gamma^{C}}$)}. To handle tons of unknown data, the structure of connection will dynamically change with observed evidences. Sparse coding method is used to constructs edge in the model, most of connection is zero which is called latent edge in this paper. Latent edge might become non-zero while some new evidence has been discovered. For variable $d^C_w$ in layer $\bf{D^C}$, the sparse coding result should be formulated as:
 
-Hereafter, the constructed descriptor becomes the input of \textbf{Transfer information module}. System search  for matched descriptors in database ($\bf{D^C}$) by pseudo-log-likelihood. If the input doesn't match any descriptor in the data set, we apply Kullback-Leibler divergence(KL divergence)[Cover  Thomas, 1991] to find min divergence and co-clusters between input $d^in$ and $\bf{D^C}$. While $d^C$ have min divergence with $d^in$, we assume $d^in$ and $d^C$ belong to the same object $O^C$. System will infer rotation angle ($\theta_{inference}$) based on the relation between co-cluster in Cartesian space, and guide robot arm to rotate input object by inferred angle.
+\begin{equation}
+d^C_w=\sum_{i\in{d^C_w}}a_{i}\Gamma_{i}+\sum_{j\notin{d^C_w}}b_{j}\Gamma_{j}
+\end{equation}
+
+Although Eq.(1) can handle the problem of latent edge, it's impractical to sample all possible conditions whenever new evidence showing up. Therefore, proposed model separate descriptor layer into two parallel parts as: 
+
+\begin{equation}
+d^C_w=\sum_{i\in{d^C_w}}a_{i}\Gamma_{i}
+\end{equation}
+\begin{equation}
+d^U_r=\sum_{j\in{d^U_r}}b_{j}\Gamma_{j}
+\end{equation}
+
+$d^C_w$ is considered a prior descriptor which the edge between $\bf{\Theta^{C}}$ and $\bf{O^C}$ had been established. Therefore, the left part of parallel layers can be considered as static model until there is a query classified to the $\bf{D^U}$. $\bf{D^U}$ layer is the set of descriptors which we haven't known that these descriptors are corespondent to which object. Therefore, we propose a inference method to infer the possible rotation angle, and camera 2 will checks the results. If inference success, variable $d^U_r$ and $\theta^{inference}$ become new variables of \textbf{Classified Descriptor($\bf{D^C}$)-Rotation angle($\bf{\Theta^{C}}$)}. Meanwhile, new edges of left part of parallel layers are established which can be considered latent edges become visible. By transfer variable between two parallel parts, variables in $\bf{D^C}$ will dynamically grow with number of inputs. 
+
+
+In Fig. 3, the extracted MLN-based descriptor of input $d^in$ is derived by \textbf{MLN-based descriptor module}. Camera 1 captures serial images while input moves into FOV as shown in Fig. 2(a). First-logic formulas for MLN are derived from these images and constructed a MLN as image descriptor of the input. Variables of feature layer is a  set of first-logic formulas which might be extending following the new feature showing up
+
+
+
+from serial images which are captured by camera 1 while input moves into FOV as shown in Fig. 2(a).
+
+
+
+This system is realized by three modules: Firstly, \textbf{Constructing MLN-based descriptor:} 
+
+Hereafter, the constructed descriptor becomes the input of \textbf{Transfer information module}. System search  for matched descriptors in database ($\bf{D^C}$) by pseudo-log-likelihood. If the input doesn't match any descriptor in the data set, we apply Kullback-Leibler divergence(KL divergence)[Cover  Thomas, 1991] to find min divergence and co-clusters between input $d^in$ and $\bf{D^C}$. While $d^C$ have min divergence with $d^in$, we assume $d^in$ and $d^C$ belong to the same object $O^C$. System will infer rotation angle ($\theta^{inference}$) based on the relation between co-cluster in Cartesian space, and guide robot arm to rotate input object by inferred angle.
 
 \textbf{Validation module} is utilized to valid inferred result, and estimate error between desired result and observed result. If the observed result is just matched desired one, the latent edge between $d^in$, $\theta_{inference}$ and $O^C$ will be established. Consequently, $d^in$ is one of face belonging object $O^C$ and target face $d^C_t$ can be find by rotate $d^in$ with angle  $\theta_{inference}$. This method will be explain particularly in section XX. 
 
@@ -406,9 +433,8 @@ Hereafter, the constructed descriptor becomes the input of \textbf{Transfer info
 
 \begin{figure*}[!t]
 \begin{center}
-%\subfigure[System architecture]{}
 \includegraphics*[width=7 in]{j_img/fig3.jpg}
-\caption{Example flow of variables in multi-layers networks}\label{test}
+\caption{Hierarchical-deep model for self-taught system}\label{test}
 \end{center}
 \end{figure*}
 
