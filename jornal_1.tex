@@ -564,7 +564,7 @@ P( \mathbf{D^{in}} = d^{in}| \mathbf{ D^c} = d^C_w , \mathbf{\Gamma}_{k \in {d^{
 \end{array}
 \end{equation}
 
-%%%% revised to here%%%%%%%%%%%%%%%%%%%%
+
 $\bf{d_m}$ represents the set of descriptor which are belonging object m, and acquire common predicates with $d^{in}_k$. The system would only consider one input object at a time.If descriptors in the sampled object have common predicates with the query descriptor, the descriptors would be considered as Markov blanket of $d^{in}_k$, and calculate likelihood function for all possible objects. The query descriptor would be matched the descriptors in the database depend on the result of maximum likelihood. $\bf{d_m^*}$ is the Markov blanket which has maximum likelihood of $d_k^in$.If likelihood of a input descriptor is lower than a threshold for every candidates, the descriptor would become a new unidentified object and save in the repository. Reminding that the descriptors in unidentified object class are not abandoned, but need more information to merge into identified object class. 
 
 
