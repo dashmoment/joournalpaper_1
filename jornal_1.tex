@@ -553,20 +553,30 @@ Where $n_i(d^{in}=0)$ is the number of true grounding of $j^{th}$ formula while 
 
 
 \subsection{Matching of MLN-based descriptors}
-For each constructed input descriptor $d^{in}_k$, system would search for the matched descriptor in the database, and further arrange it to the proper layer of $\bf{O^C}$ or $\bf{O^U}$ as shown in fig.2. Since input is possible to be assigned to two distinct layers, matching step is separated into two parts. One is utilized pseudo-log-likelihood to decide that observation should be assigned to which layer. The pseudo-log-likelihood of descriptors matching could be formulated as:
+For each constructed input descriptor $d^{in}_k$, system would search for the matched descriptor in the database, and further arrange it to the proper layer of $\bf{D^C}$ or $\bf{D^U}$ as shown in fig.2. Since input is possible to be assigned to one of parallel layers, matching step is separated into two parts. One is utilized pseudo-log-likelihood to decide that observation should be assigned to which layer. The pseudo-log-likelihood of descriptors matching could be formulated as:
 
 
 \begin{equation}
 \begin{array}{ll}
 
-P( \mathbf{D^{in}} = d^{in}| \mathbf{ D^c} = d^C_w , \mathbf{\Gamma}_{k \in {d^{in}}}) &\\\\
-= P(d^{in} | \mathbf{MB}(d^{in})) \prod_{w\in{\mathbf W}}{P(d^{in}_w | \mathbf{MB}(d^{in}))}
+P(\mathbf{D^C} = d^C_w  | \mathbf{D^{in}} = d^{in} , \mathbf{\Gamma}_{k \in {d^{in}}}) &\\\\
+= P(d^{in} | \mathbf{MB}(d^{in}){P(d^{C}_w | \mathbf{MB}(d^{in}))}
 \end{array}
 \end{equation}
 
 
-$\bf{d_m}$ represents the set of descriptor which are belonging object m, and acquire common predicates with $d^{in}_k$. The system would only consider one input object at a time.If descriptors in the sampled object have common predicates with the query descriptor, the descriptors would be considered as Markov blanket of $d^{in}_k$, and calculate likelihood function for all possible objects. The query descriptor would be matched the descriptors in the database depend on the result of maximum likelihood. $\bf{d_m^*}$ is the Markov blanket which has maximum likelihood of $d_k^in$.If likelihood of a input descriptor is lower than a threshold for every candidates, the descriptor would become a new unidentified object and save in the repository. Reminding that the descriptors in unidentified object class are not abandoned, but need more information to merge into identified object class. 
+If input descriptor doesn't match any descriptor in $\bf{D^C}$ layer, the descriptor become a variable of  $\bf{D^U}$ layer. For a variable in $\bf{D^U}$, we would like to infer rotation angle to make input object can be placed on corresponding target face. Since the rotation angles for descriptors in $\bf{D^U}$ had been identified, the second part for matching is try to find a descriptor in $\bf{D^C}$ which have max co-cluster with input descriptor. Finding max co-cluster can be alternately considered as minimizing loss of information as:
+\begin{equation}
+\mathbf{argMin}(I(d^in , \mathbf{\Gamma}_{k \in d^{in} \cap d^C_w}) - I(d^C_w , \mathbf{\Gamma}_{k \in d^{in} \cap d^C_w}))
+\end{equation}
 
+The common feature $\mathbf{\Gamma}_{k \in d^{in} \cap d^C_w}$ is further represented by co-Markov Blanket of $d^{in}$ and $d^C_w$, and the loss of mutual information can be further formulated by KL divergence [Ref.] as:
+
+\begin{equation}
+\begin{array}{ll}
+\mathbf{argMin}D(P(\mathbf{MB}(d^{in},d^c_w)|d^in)||P(\mathbf{MB}(d^{in},d^c_w)|d^c_w))
+\end{array}
+\end{equation}
 
 
 \section{Inference and Learning of Mapping between MLN-based Descriptor and Rotation Angle}
