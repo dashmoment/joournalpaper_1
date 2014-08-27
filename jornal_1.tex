@@ -550,8 +550,6 @@ Where $\bf{MB}(d^{in})$ is Markov blanket while $d^{in}$ is observed. The MLN we
 
 Where $n_i(d^{in}=0)$ is the number of true grounding of $j^{th}$ formula while force $\mathbf{d^{in}}=0$, and similar for $n_i(d^{in}=1)$. The learning of pseudo-log-likelihood in our approach are further boosted by the L-BFGS optimizer [24], to make entire process become more efficiency.
 
-
-
 \subsection{Matching of MLN-based descriptors}
 For each constructed input descriptor $d^{in}_k$, system would search for the matched descriptor in the database, and further arrange it to the proper layer of $\bf{D^C}$ or $\bf{D^U}$ as shown in fig.2. Since input is possible to be assigned to one of parallel layers, matching step is separated into two parts. One is utilized pseudo-log-likelihood to decide that observation should be assigned to which layer. The pseudo-log-likelihood of descriptors matching could be formulated as:
 
@@ -579,30 +577,39 @@ Consequently, the common feature $\mathbf{\Gamma}_{k \in d^{in} \cap d^C_w}$ is 
 \end{array}
 \end{equation}
 
-By Eq.(10), $d^C_w$ with min DL-divergence is considered acquired max co-cluster with $d^{in}$. The relation between the co-cluster become the evidence for inferring rotation angle of $d^in$. Through Eq.(8) and Eq.(10), the input descriptors had been classified to corresponding layer, and become inputs of $\bf{\Theta^{C}}$ or $\bf{\Theta^{U}}$ layer.
+By Eq.(10), classified descriptor $d^C_w$ with min DL-divergence is considered acquired max co-cluster with $d^{in}$. The relation between the co-cluster become the evidence for inferring rotation angle of $d^in$. Through Eq.(8) and Eq.(10), the input descriptors had been classified to corresponding layer, and become inputs of $\bf{\Theta^{C}}$ or $\bf{\Theta^{U}}$ layer.
 
 
-\section{Inference and Learning of Mapping between MLN-based Descriptor and Rotation Angle}
-Since MLN-based descriptors are matched according to the neighborhoods of clusters, the descriptor is scale and pose invariant. To make robot arm place input objects to corresponding target pose, the relation between descriptor and rotation angle have to be constructed, and make knowledge could be transferred between different domains in proposed multilayer network. We assume different faces of same object include at least one common predicates, and the common predicates can be used to infer the relation between input and target pose. Set of rotation angle $\Theta$ is composited by $\theta_R$, $\theta_P$, and $\theta_Y$ which represent roll, pitch and yaw angle of 3-DOF end effector of robot arm. $\Theta$ is unknown at first, because there is  no prior knowledge of rotation angle for proposed system as mention before. $\Theta$ can be only predict by the common predicates between descriptors. For two matched descriptor, the common predicates has significant possibility to be the same parts of object, so the relation between common predicates in Cartesian space can be used to predicate possible rotation angle, and make inferred results reliable and accurate in several iteration. The mass center of each cluster is considered the position of each cluster in Cartesian space, and the center of images is origin of coordinate. Firstly, we sample the center atoms of common predicates between input and target descriptor, and compare the difference of position between each center atom. The differences are represent by vector which is formulated as:
-\begin{equation}
-\vec{V_c}=\vec{V^T_c}-\vec{V^{in}_c}
-\end{equation}
-Where $\vec{V_c}$ is the vector of key atom c. $\vec{V^T_c}$ and $\vec{V^{in}_c}$ are the position vector of key atom c of target and input descriptor. According to the MLN-based descriptors, the formula with higher weighting means more reliable. Reminding the example in table 1, every predicates of a formula belong to the same key atom, so the weight of each formulas could be further considered as the reliability of each center atom. Hence, we choice key atom which is included in the formula with the highest weight firstly, and transfer to rotation angle for robot arm. The result would be checked by camera 2. While the number of inputs grows, the results would become the set of vector $\boldsymbol{\vec{V}_{mb}}$ which means the set of vector of descriptor b in object m. The set of vector $\boldsymbol{\vec{V}_{mb}}$ is used to build up a Markov network model which could refine the predicating result based on the historical results which are identified by camera 2. Since the uncertainty of probabilistic descriptor that the matched input descriptor for same target descriptor might not be totally same one, we would like to build up a transfer function which can predict ideal rotation angle depend on different input descriptors. There are two factors have to be concerned: (1) the distribution of historical vector $\boldsymbol{\vec{V}_{mb}}$. (2) likelihood of input and target descriptor. Hence, the transfer function could be formulated by joint distribution:
-\begin{equation}
-\begin{array}{l}
-P(L(d^{in}_{kT}|d^T_m),\vec{\mathbf{V}}_{\bf{mb}})=\\\\
-\frac{1}{Z_V}exp(\sum_k\sum_b\lambda_t\mathbf{F}\{L(d^{in}_k|d^T_m)=l(d^{in}_kt|d^T_{mt}),\vec{\mathbf{V}}_{\bf{mb}}=\vec{v}_b\mathbf\})\\
-\end{array}
-\end{equation}
-
-Where $L(d^{in}_{kT}|d^T_m)$ is a set of likelihood of input descriptor k and target descriptor during a period of time T. $l(d^{in}_kt|d^T_{mt})$ is the likelihood at time t. $\mathbf{F}\{*\}$ is feature function which is 1 while $*$ is true, and 0 otherwise. $\lambda_t$ is weight if feature function. This transfer function represents the mapping between set of input descriptors and the same target descriptor $d^T_m$.  While derive a new input descriptor, the predicated result can be derived by:
+\section{Hierarchical-deep model}
+\subsection{Inference of rotation angle in $\bf{\Theta^{U}}$ layer}
+Inference rotation angle $\bf{\theta^{U}_i}$ is based on max co-cluster between $d^in$ and $d^C_w$. A set of co-cluster $\{$$C_{w1}$, $C_{w2}$, ..., $C_{wL}$$\}$ can be derived by minimizing KL divergence. The center of co-cluster with respect to center of camera in Cartesian space can derived two set $\bf{V^{in}}$=$\{$$v^{in}_1$, $v^{in}_2$, ..., $v^{in}_L$ $\}$ and $\bf{V^{C}_w}$=$\{$$v^{C}_{w1}$, $v^{C}_{w2}$, ..., $v^{C}_{wL}$ $\}$. The roll angle $\alpha$ of robot arm is calculated by:
 
 \begin{equation}
-\begin{array}{l}
-\mathbf{argMax}P(\vec{V^*}_{\vec{V}-\vec{V}_{fail}})=\\
-\qquad\qquad\qquad\qquad P(\vec{V}^*|l(d^{in}_t|d^T_m),L(d^{in}_{t-1}|d^T_m),\mathbf{\vec{V}_{mb}})\\
-\end{array}
+\alpha =\cos^{-1}\frac{1}{L}\sum_{l=1}^K\frac{v^C_{wl}-v^{in}_l}{|v^C_{wl}-v^{in}_l|}
 \end{equation}
+
+Where roll angle $\alpha$ is the mean angle of co-cluster in two descriptor. For  pitch angle $\beta$ and yaw angle $\gamma$, since we don't have depth information, the pitch and yaw angle are impossible to be estimated by 2D descriptor. Hence, we random sample these two angle in value $\pi/2$ , and $-\pi/2$ initially, and approximate to actual angles by algorithm 1 though several iteration.
+
+\subsection{Inference and learning of hierarchical-deep model}
+
+\begin{figure}[!t]
+\begin{center}
+\includegraphics*[width=2.5 in]{j_img/fig4.jpg}
+\caption{Structure configuration of proposed model}\label{test}
+\end{center}
+\end{figure}
+
+Proposed hierarchical-deep model is a generative model of Deep Belief Network (DBN)[REF.]. Structure between each layer is shown in Fig. 4. each layer is considered as an Restricted Boltzmann Machine ($\bf{RBM}$)[REF.] except $\bf{\Gamma_K}$, $\bf{D^C}$, and $\bf{D^U}$. The MLN is trained by pseudo-log=likelihood as mention before, and RBM is trained by greedy layer-wise fashion [Ref.].
+
+Initially, left part of model ($\bf{\Gamma_K}$-$\bf{D^C}$-$\bf{\Theta^C}$-$\bf{O^C}$) are trained with prior target face of objects, and number of variables $\bf{N}$ in $\bf{O^C}$ equal to the number of prior target face. The right part of model is activated only while a new observed is classified into $\bf{D^U}$. The activation probability of $\theta^U_i$ is a sigmoid activation function:
+
+\begin{equation}
+P(\theta^U_i|\bf{D^U})=\frac{1}{1+exp \left[\mu\left( -b_l-\sum_r d^U_r w_{lr}\right)\right]}
+\end{equation}
+
+where $\mu$ is penalty factor which decrease the probability while the inference is failed. 
+
+
 
 \section{Experiments}
 The inputs of proposed system are serial images of each object, so most of open source databases can not be applied for proposed system, and also not suit for purposes in this paper. Therefore, the experiments are implemented through our own dataset. The testing dataset is constructed by twenty different kinds of chosen work pieces as shown in table 2.
