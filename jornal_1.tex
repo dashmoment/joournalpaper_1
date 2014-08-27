@@ -559,8 +559,8 @@ For each constructed input descriptor $d^{in}_k$, system would search for the ma
 \begin{equation}
 \begin{array}{ll}
 
-P(\mathbf{D^C} = d^C_w  | \mathbf{D^{in}} = d^{in} , \mathbf{\Gamma}_{k \in {d^{in}}}) &\\\\
-= P(d^{in} | \mathbf{MB}(d^{in}){P(d^{C}_w | \mathbf{MB}(d^{in}))}
+\mathbf{argMax}P(\mathbf{D^C} = d^C_w  | \mathbf{D^{in}} = d^{in} , \mathbf{\Gamma}_{k \in {d^{in}}}) &\\\\
+= \mathbf{argMax}P(d^{in} | \mathbf{MB}(d^{in}){P(d^{C}_w | \mathbf{MB}(d^{in}))}
 \end{array}
 \end{equation}
 
@@ -570,13 +570,16 @@ If input descriptor doesn't match any descriptor in $\bf{D^C}$ layer, the descri
 \mathbf{argMin}(I(d^in , \mathbf{\Gamma}_{k \in d^{in} \cap d^C_w}) - I(d^C_w , \mathbf{\Gamma}_{k \in d^{in} \cap d^C_w}))
 \end{equation}
 
-The common feature $\mathbf{\Gamma}_{k \in d^{in} \cap d^C_w}$ is further represented by co-Markov Blanket of $d^{in}$ and $d^C_w$, and the loss of mutual information can be further formulated by KL divergence [Ref.] as:
+Consequently, the common feature $\mathbf{\Gamma}_{k \in d^{in} \cap d^C_w}$ is further represented by co-Markov Blanket of $d^{in}$ and $d^C_w$, and the loss of mutual information can be further formulated by KL divergence [Ref.] as:
 
 \begin{equation}
 \begin{array}{ll}
-\mathbf{argMin}D(P(\mathbf{MB}(d^{in},d^c_w)|d^in)||P(\mathbf{MB}(d^{in},d^c_w)|d^c_w))
+\mathbf{argMin}D(P(d^{in} , \mathbf{MB}(d^{in},d^c_w))||P(d^c_w , \mathbf{MB}(d^{in},d^c_w)))\\\\
+= \mathbf{argMin}\sum_{\Gamma_k\in\mathbf{MB}(d^{in},d^c_w)}P(\Gamma_k)D(P(d^{in}|\Gamma_k)||P(d^C_w|\Gamma_k))\\\\
 \end{array}
 \end{equation}
+
+By Eq.(10), $d^C_w$ with min DL-divergence is considered acquired max co-cluster with $d^{in}$. The relation between the co-cluster become the evidence for inferring rotation angle of $d^in$. Through Eq.(8) and Eq.(10), the input descriptors had been classified to corresponding layer, and become inputs of $\bf{\Theta^{C}}$ or $\bf{\Theta^{U}}$ layer.
 
 
 \section{Inference and Learning of Mapping between MLN-based Descriptor and Rotation Angle}
