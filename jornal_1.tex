@@ -282,7 +282,7 @@
 % paper title
 % can use linebreaks \\ within to get better formatting as desired
 % Do not put math or special symbols in the title.
-\title{Task-Oriented Visual Servo System of Robot Arm for 3D Object based on Automatic Multilayer Networks Learning Approach }
+\title{ Self-Taught Visual Servo System for 3D Object Recognition by Hierarchical Model}
 
 
 
@@ -299,7 +299,8 @@ Taiwan University, Taipei, Taiwan 106}
 
 \IEEEtitleabstractindextext{%
 \begin{abstract}
-Visual servo systems are widely applied on industrial robot arm recent years. A visual servo system could provide additional perception of robot arm, and make it more robust in different applications. In this paper, we propose an intelligent visual servo system which could automatically learn the model of unknown 3D objects, and self-supervised the results. Unlike traditional vision-based learning approaches, proposed learning system is task-oriented which means learning approaches only concern the relation between input and target rather then each individual part. To construct connections between input and target,the learning approach is established based on multi-layers networks. Multi-layers networks is used to model necessary knowledge in different domains.  The experiment results show the feasibility of proposed structure for self-taught, and multi-layers networks could effectively transfer knowledge between different domains.
+Visual servo systems for 3D object recogntion are widely applied on industrial robot arm recent years. In most of tasks, we only cares about the relation between input image and result rather than a delicate model of 3D object. we propose an intelligent visual servo system which can automatically constructed relational model for input and output by proposed self-taught learning method with only 2D image input. The relational model is established based on hierarchical Model. 2D images are used to inferred the rotation angle for robot in Cartesian space, so we proposed a MLN-based descriptor which is born for inferring relational model by finding co-cluster. The experiment results show the feasibility of proposed structure that can transfer knowledges in different domains, and complete assigned task by only modelling the relation between input and output.
+
 \end{abstract}
 
 % Note that keywords are not normally used for peerreview papers.
@@ -623,10 +624,55 @@ In the other hand, for both $\bf{\Theta^U}$ and $\bf{\Theta^C}$ layer, if result
 
 
 \section{Experiments}
-The experiments for proposed model are separated into two parts. Firstly, we would like to evaluate the performance of MLN-based descriptor by standard object recognition datasets: $\bf{Caltech-101}$ and $\bf{Caltech-256}$ [Ref]. Results shown in table 2 are comparisons with recently published state of art. For $\bf{Caltech-101}$, we following general procedure randomly selecting 15 and 30 images for each class, and, for $\bf{Caltech-256}$, selecting 15,30,45 and 60 images each class.
+The experiments for proposed model are separated into two parts. Firstly, we would like to evaluate the performance of MLN-based descriptor by standard object recognition datasets: $\bf{Caltech-101}$ and $\bf{Caltech-256}$ [Ref]. Results shown in table 2 are comparisons with recently published state of art. The images in the datasets will be rescaled into five different scales for training proposed MLN-based descriptor. For $\bf{Caltech-101}$, we following general procedure randomly selecting 30 images for each class, and, for $\bf{Caltech-256}$, selecting 45 and 60 images each class, and trained by pseudo-log likelihood. Although, the result doesn't outstanding in $\bf{Caltech-101}$, but the accuracy in $\bf{Caltech-256}$ is only behind r ImageNet-pretrained model[Ref.]. In the other scope, the result shows that MLN-based descriptor keep well performance even increasing categories. Most of state of art get dramatically decreasing  of accuracy while categories increase from 101 to 256. Therefore, it;s proved that MLN-based descriptor is compatible to be a descriptor in large amounts of unlabelled data.
 
-The inputs of proposed system are serial images of each object, so most of open source databases can not be applied for proposed system, and also not suit for purposes in this paper. Therefore, the experiments are implemented through our own dataset. The testing dataset is constructed by twenty different kinds of chosen work pieces as shown in table 2.
-The experiment is implemented based on several assumptions: The input objects are not occluded, and not adjacent with each other. The input objects are placed on conveyor with random poses, and we assume the probability of every faces showing on top is uniform distribution. 
+
+\begin{table}[!t]
+\caption{Comparison of MLN-based descriptor to state of art on $\bf{Caltech-101}$}
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+Methods & Accuracy \\
+\hline
+$\bf{MLN-based}$ & $\bf{74.6}$ \\
+\hline
+LLC & 73.1 \\
+\hline
+P-LLC & 78.75\\
+\hline
+P-FV & 80.1\\
+\hline
+M-HMP & 82.5 \\
+\hline
+ImageNet-pretrained convnet & 86.5 \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[!t]
+\caption{Comparison of MLN-based descriptor to state of art on $\bf{Caltech-256}$}
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+Methods & 45 & 60 \\
+\hline
+$\bf{MLN-based}$ & $\bf{66.7}$ & $\bf{69.6}$ \\
+\hline
+LLC &  45.3 & 47.7\\
+\hline
+P-LLC & 44.9 & 48.0\\
+\hline
+P-FV & 44.9 & 52.6\\
+\hline
+M-HMP & 54.8 & 58 \\
+\hline
+ImageNet-pretrained convnet & 72.7 & 74.2 \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
 
 
 \begin{table*}[!t]
@@ -678,9 +724,13 @@ WP1.4 & & WP 2.4 & & WP3.4 &\\
 \end{center}
 \end{table*}
 
-The testing work pieces are classified into three classes in table 2. For class $\bf{WP1}$, the work pieces are featureless and small, so it's hard to construct robustness descriptor even building relational model for entire model. For class $\bf{WP2}$, all work pieces acquire similar shapes or size, so, for general method, this kind of object is easily mismatch in the matching process. The work pieces in $\bf{WP3}$ are matched group of this experiment. The work pieces acquire sufficient feature for descriptor, and have plenty of information for identifying and constructing relational model. In the first stage of experiment, we would like to compare the performance of proposed system between different classes in different environments.  The results of different classes are shown in fig.6. In fig.6(b), the environment lighting is controlled by on-axis lighting source, so the information of object are more complete and distinct than images with lighting control in fig.6(a). The accuracy of recognized result is average of 100 times repeatedly testing.
+For the second part of experiment, we would like to implement proposed system in real industrial case. The prior knowledges are target face of assigned object, and there are twenty kinds of assigned object in our experiment. Table 4 shows twenty target face for each assigned object. The experiment is implemented based on several assumptions: The input objects are not occluded, and not adjacent with each other. Hereafter, the inputs of self-taught system are that random choose assigned objects with random face on top. 
 
- The system is considered convergence while accuracy is over 95$\%$, and stop learning approach. If the accuracy is under 95$\%$ again, the learning approach would be re-excuted. Comparing the results, in both cases, class $\bf{WP3}$ could be convergent with least input sample, and convergent time of class $\bf{WP2}$ is slowest. The results shows the efficiency of learning could be slightly improved by environment constrain, but the accuracy is not effected, and always over 95$\%$ after learning approach stopped. Similarly, twenty kinds of work pieces are included in learning stage in the same time, and the results are shown in fig. 7. The accuracy of each test is also the average of 100 times repeatedly testing. The results show that system need more inputs to convergent while more kinds of objects are included in learning stage. The performance is also slightly improved while environment is lighting controlled. In brief, these two experiments verify proposed system is competent to learn the relational model automatically. Although the learning rate would be dragged by the kinds of input objects, the learning rate still can be convergent by reasonable number of inputs. The result shows the system can be convergent by less than 1000 sample pieces with random poses. Furthermore, the accuracy of recognition is stable once learning approach completing, and would not be under threshold(95$\%$) again unless adding new kind input.
+The testing objected are classified into three classes in table 4. For class $\bf{WP1}$, the work pieces are featureless and small, so it's hard to construct robustness descriptor even building relational model for entire model. For class $\bf{WP2}$, all work pieces acquire similar shapes and size, so this kind of object is easily mismatch in the matching process. The work pieces in $\bf{WP3}$ are matched group of this experiment. The work pieces acquire sufficient feature for descriptor, and have plenty of information for identifying and constructing relational model. In the first stage of experiment, we would like to compare the performance of proposed system between different classes in different environments.  The results of different classes are shown in Fig.5. In Fig.5(b), the environment lighting is controlled by on-axis lighting source, so the information of object are more complete and distinct than images without lighting control in Fig.5(a). The accuracy is average of 100 times repeatedly testing.
+
+The system is considered convergence while accuracy is over 95$\%$, and stop learning approach. If the accuracy is under 95$\%$ again, the learning approach would be re-excuted. Comparing the results, in both cases, class $\bf{WP3}$ could be convergent with least input sample, and convergent time of class $\bf{WP2}$ is slowest. The results shows the efficiency of learning could be slightly improved by environment constrain, but the accuracy is not effected, and always over 95$\%$ after learning approach stopped. Similarly, 
+ 
+Fig. 6 shows the result while all twenty kinds of assigned object are involved in the same time. The result shows that system need more inputs to convergent while more kinds of objects are involved, but the system still slightly converge, and accuracies are all over 95$\%$ for both conditions. In brief, these two experiments verify proposed system is competent to learn the relational model automatically. Although the learning rate would be dragged by the number of assigned objects, the learning rate still can be convergent by reasonable number of inputs. 
 
 
  
@@ -712,11 +762,11 @@ The testing work pieces are classified into three classes in table 2. For class 
 
 \end{figure}
 
-The experiment in fig. 6 and 7 testified the performance of proposed system could automatically learn the relational model of variant kinds of objects. Then, we would like to compare the performance of proposed system with other advanced approaches. Since none of similar systems could handle this issue in our survey, so the comparisons would be done by dividing our system into two parts. One is 2-D descriptors for each face of objects, and the other is machine learning approach for learning relational model.
+The experiment in Fig. 5 and 6 testified the performance of proposed system can meet our requirements. Then, we would like to compare the performance of proposed system with other advanced approaches. Since none of similar systems could handle this issue in our survey, so the comparisons would be done by dividing our system into two parts. One is 2-D descriptors for each face of objects, and the other is machine learning approach for learning relational model.
 
-For the descriptor part, four kinds of other descriptors are chosen to compare with proposed system. B-SIFT[25]and Edge-SIFT[26] are modified versions of SIFT approach which enhanced the accuracy of feature point registration. BRISK[13] descriptor is constructed based on binary robust invariant scalable key points, and Zernike Moment (ZM)[11] phase-based descriptor is a moment-based descriptor which use the phase information of signal. All of these descriptors are representative methods in relative field recent years, and had been testified by plenty of researchers. To compare the robustness and accuracy, the performance is testified by two conditions. One is relationship of each faces is prior of system, and the descriptors only provide information for object matching. The experiments are implemented by the same learning approach which proposed in previous section.The other is no prior for learning approach that information of descriptor need to use for inferring the relational model. The ZM descriptor have the best performance in the condition without prior, but accuracies of descriptors are close. In condition without prior, the MLN-based descriptor acquire best performance which testified MLN-based descriptor is suited for self-taught system. 
+For the descriptor part, four kinds of other descriptors are chosen to compare with proposed system. B-SIFT[25]and Edge-SIFT[26] are modified versions of SIFT approach which enhanced the accuracy of feature point registration. BRISK[13] descriptor is constructed based on binary robust invariant scalable key points, and Zernike Moment (ZM)[11] phase-based descriptor is a moment-based descriptor which use the phase information of signal. All of these descriptors are representative methods in relative field recent years, and had been testified by plenty of researchers. To compare the robustness and accuracy, the performance is testified by two conditions as shown in Table 5. One is relationship of each faces is prior of system, and the descriptors only provide information for object matching. The experiments are implemented by the same learning approach which proposed in previous section.The other is no prior for learning approach that information of descriptor need to use for inferring the relational model. The ZM descriptor have the best performance in the condition without prior, but accuracies of descriptors are close. In condition without prior, the MLN-based descriptor acquire best performance which testified MLN-based descriptor is suited for self-taught system. 
 
-Hereafter, the performance of different learning methods should be further discussed. The learning approach in proposed system need to learn the distribution of different domains, so regular learning approaches is hard to applied on proposed structure directly. The transfer learning methods are famous for handling cross domains problem, so the other three kinds of transfer learning approaches: Locally Weighted Ensemble approach(LWE)[7], Transductive SVM(TSVM)[8], and Weighted Neural Network(WNN)[9] are chosen to compare with proposed method. Similarly, the experiments are divided into two parts as shown in table 4. The result shows LEW had the best accuracy in the condition with prior, and proposed learning approaches acquire greatest performance in condition without prior, but, in both two conditions, the performance between different methods are pretty close. It's seem the results are mainly effected by the performance of the descriptor. The performance of descriptor not only influence the result of 2-D image, but also the relational model of each faces, so the experiments are reasonable. Furthermore, the results showed proposed system acquire best performance in automatic learning part.  
+Hereafter, the performance of different learning methods should be further discussed. The other three kinds of transfer learning approaches: Locally Weighted Ensemble approach(LWE)[7], Transductive SVM(TSVM)[8], and Weighted Neural Network(WNN)[9] are chosen to compare with proposed method. Similarly, the experiments are divided into two parts as shown in table 6. The result shows LEW acquires the best accuracy in the condition with priors, and proposed learning approach acquire greatest performance in condition without prior, but, in both two conditions, the performance between different methods are pretty close. It's seem that the results are mainly effected by the performance of the descriptor. The performance of descriptor not only influence the result of 2-D image, but also the relational model of each faces, so the results are reasonable. 
 
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
 
@@ -903,10 +953,11 @@ All &
 
 
 \section{Conclusion}
-The automatic learning approaches for visual-servo system is an important part in industrial application. In this work, we reverse the concept of traditional visual-servo system. The robustness of feature points and descriptor is not the thing which should be most concerned. Instead, the relational model between input and output is the most important. 
+The self-taught approaches for visual-servo system is an important part in industrial application. In this work, we reverse the concept of traditional visual-servo system. The robustness of feature points and descriptor is not a thing which should be most concerned. Instead, the relational model between input and output is the most important. 
 
-To learn the relationship between input and output, we proposed a system architecture which can automatic learning and self-supervised the performance of learning or inference results. Since the relationship between input and output is consisted by multiple different domains, the relational model is further segmented into three domain:2-D descriptor, 3-D object and Cartesian space of robot arm. Instead of modelling by three independent networks, these three domains are integrated into one multi-layers networks. Comparing with traditional multi-layers percetron, proposed multi-layer networks is not used to model a complex non-linear distribution, but model the transfer function between different layers. 
-The knowledge in different domains could be transfer between different layers through transfer functions which are called relational models in this paper.  Furthermore, a MLN-based descriptor is further proposed to assist inference relationship of each 2-D descriptor while the relational model is unknown. The experiments result shows the system could automatic learning the relational model, and performance could compete with other excellent methods.  
+To learn the relationship between input and output, we proposed a hierarchical-deep model which combines the concept of deep learning and transfer learning. The model acquires self-taught ability which can infer relational model and self-supervised the performance of learning results. Being a self-taught system, tackling large amount of unlabelled data and inferring relation with labelled data is our top tasks. The MLN-based descriptor is born for inferring the relational model. Since MLN-based model is a probability distribution of features, the relation between features can be represented as a discriminative distribution. Through these discriminative distribution, KL divergence is further involved to fined the max co-cluster, and the relational model is constructed based on max co-cluster between labelled and unlabelled data. The experiment result shows the MLN-based descriptor is compatible to face numerous unlabelled data.
+
+Moreover, hierarchical-deep model can separate different level knowledge by multilayer structure, so the features in different domains can be easily transferred and learned. proposed system include image feature, descriptor and rotation angle for robot arm. Distribution of this features is impossible to approximate by traditional single layer model. Hence, the transferring knowledge in different domains owe to hierarchical-deep model, and experiments results prove proposed system can recognized 3D object by only learned relational model. We believe this system is piratical in real industrial production line, and become a real automatic visual-servo system which can save tons of labor cost.
 
 
 
@@ -1009,18 +1060,7 @@ Yanning Zhang,Zhi-Hua Zhou, Changshui Zhang and Li, Ying,\emph{"B-SIFT: A Highly
 
 \bibitem{IEEEhowto:kopka} 
 S. Zhang, Q. Tian, K. Lu, Q. Huang and W. Gao,\emph{"Edge-SIFT: Discriminative binary descriptor for scalable partial-duplicate mobile search"},\hskip 1em plus 0.5em minus 0.4em\relax ” IEEE Trans. Image Process., vol. 22, no. 7, pp. 2889–2902, Jul. 2013.
-
-
-
-
-
-
-
-
-
-
-
-
+\
 \end{thebibliography}
 
 
