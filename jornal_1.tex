@@ -305,7 +305,7 @@ Visual servo systems for 3D object recogntion are widely applied on industrial r
 
 % Note that keywords are not normally used for peerreview papers.
 \begin{IEEEkeywords}
-Visual servo system, Multi-layers network, Machine learning
+Visual servo system, Hierarchical Model, Machine learning
 \end{IEEEkeywords}}
 
 
@@ -363,15 +363,15 @@ Visual servo system, Multi-layers network, Machine learning
 % and "HIS" in caps to complete the first word.
 \IEEEPARstart{R}{obot} arm with visual servo system had been widely applied in automatic industrial production line recent years[1-4]. Visual servo system provides additional perception of environment, and make robot arm become more adaptive to complete various tasks. For vision system, model-based recognition methods are commonly used in industrial application. The performance is mainly related to the labeled data which is captured manually. Hence, the system is hard to adapt with adding new kinds of work pieces. For 2D object recognition, users need to capture numerous raw data of target objects in specific poses. These cumbersome works lift to much more complex level while the methods are expanded to 3D object recognition. These manual works not only increase the labor cost, but also point out the dilemma of present vision-based robot which is unable to automatically adapt to various assignments. 
 
-In general industrial purposes, we do not really concern about all details of entire 3D object. Instead, the relation between input and target is the key point for completing the tasks like pick and place,etc. To solve these issues, we propose an intelligent tasked-oriented visual servo based system which acquires ability of learning relational model of input and target automatically. In task-oriented view, system tends to learn the relation between input and target rather than delicate models for target 3D objects. Therefore, the state problem is that We only provide labeled data which face of 3D objects are desired to be placed on top by robot arm, but the other faces of 3D objects are unknown. The labeled data is considered as target face, and the input faces are arbitrary objects with random faces on top. The input of system is 2-D image data, and output is rotation angle of robot arm in Cartesian space which are different feature domains. Therefore, the traditional single layer model[HMM,SVM, GMM] which end in a linear or kernel classifier is not enough. We introduced a multilayer model to tackle our problems. 
+In general industrial purposes, we do not really concern about all details of entire 3D object. Instead, the relation between input and target is the key point for completing the tasks like pick and place,etc. To solve these issues, we propose an intelligent tasked-oriented visual servo based system which acquires ability of learning relational model of input and target automatically. In task-oriented view, system tends to learn the relation between input and target rather than delicate models for target 3D objects. Therefore, the state problem is that We only provide target face of 3D objects which are desired to be placed on top by robot arm, but the other faces of 3D objects are unknown. The labeled data is considered as target face, and the input faces are arbitrary objects with random faces on top. The input of system is 2-D image data, and output is rotation angle of robot arm in Cartesian space which are different feature domains. Therefore, the traditional single layer model[5,6] which end in a linear or kernel classifier is not enough. We introduced a multilayer model to tackle our problems. 
 
-The learning of multilayer model achieve dramatically success recent years while deep learning architectures showed up. Hinton et al. [deep learning algorithm] proposed a hierarchical structure which hidden layers are formed by lower level feature to higher level, and had been successfully applied on different research fields[Deep learning application]. Comparing with traditional \textbf{ANN} model[Ref. of neural network], the deep learning method is aim to learn the representation of data in different level rather than produces classifiers through features in the same level. Enlightening by deep learning methods, hierarchical structure is applied to our model which is constructed by four layers: \textbf{Feature} (image based), \textbf{Descriptor}, \textbf{Object} and \textbf{RotationAngle} (for robot arm).
+The learning of multilayer model achieve dramatically success recent years while deep learning architectures showed up. Hinton et al. [7] proposed a hierarchical structure which hidden layers are formed by lower level feature to higher level, and had been successfully applied on different research fields[8-11]. Comparing with traditional \textbf{ANN} model, the deep learning method is aim to learn the representation of data in different level rather than produces classifiers through features in the same level. Enlightening by deep learning methods, hierarchical structure is applied to our model which is constructed by four layers: \textbf{Feature} (image based), \textbf{Descriptor}, \textbf{Object} and \textbf{RotationAngle} (for robot arm).
 
 Through this model, the feature in different domains could be correlated through hierarchical structure, but the system still can not automatically learn the relation between input images and output rotation angle. Being a self-taught system, the ability which could "infer" latent edges between labeled and unlabeled data in is needed. Latent edge means two variables in different layers exist an edge in graph model if prior data is sufficient, but, in our case, system only have small amount of prior data. Hence, there are many latent edges which are waiting to be revealed through learning process. 
 
-The most challenge part of state problem is that the appearance of different faces of a single object might be huge different, so we design three modules to tackle self-taught problem. Firstly, we design a probabilistic based image descriptor. Extracting scale- and rotation-invariant sparse feature is a pervasive topic in areas of computer vision. Although many brilliant methods[10-14] provide high quality performance by extracting sparse features, the sparse feature is not compact on inferring the relational model. The sparse feature only model strong features of observed face shows on top, but most of faces is unknown in our cases. we need a descriptor which can provide sufficient information for inferring latent edges, but still retain scale- and rotation-invariant. Proposed probabilistic based descriptor is established based on the Markov Logic Network (MLN) [15]. MLN is an approach combines first-order logic and probabilistic graphical model. First-order logic enable compactly representing the neighborhood of feature points. Probabilistic graphical model can reveal latent edges by proper inference method, and also handle the uncertainty. 
+The most challenge part of state problem is that the appearance of different faces of a single object might be huge different, so we design three modules to tackle self-taught problem. Firstly, we design a probabilistic based image descriptor. Extracting scale- and rotation-invariant sparse feature is a pervasive topic in areas of computer vision. Although many brilliant methods[12-16] provide high quality performance by extracting sparse features, the sparse feature is not compact on inferring the relational model. The sparse feature only model strong features of observed face shows on top, but most of faces is unknown in our cases. we need a descriptor which can provide sufficient information for inferring latent edges, but still retain scale- and rotation-invariant. Proposed probabilistic based descriptor is established based on the Markov Logic Network (MLN) [17-20]. MLN is an approach combines first-order logic and probabilistic graphical model. First-order logic enable compactly representing the neighborhood of feature points. Probabilistic graphical model can reveal latent edges by proper inference method, and also handle the uncertainty. 
 
-Secondly, transfer information module is proposed for constructing latent edge. Transfer information module is realized by Self-taught Clustering algorithm [refer.]. Self-taught Clustering algorithm is a transfer learning method [6-9....need more] which is built for enhancing model through large amount of auxiliary unlabeled data. The input face can be considered auxiliary unlabeled data, and find co-cluster between priors face in the dataset. Hereafter, we further utilize the distribution of co-cluster to infer the possible rotation angle for robot arm, and robot arm would rotate the object from input face to output face by rotating inferred angle. Finally, the validation module is an eye-to-hand camera which used to validate the error between the output face and desired target face. Hereafter, the validation module feedback the error to the model to refined the model. Through these three module, proposed system can automatically learn the relation between input image and output rotation angle with only labeled the target face of each object.
+Secondly, transfer information module is proposed for constructing latent edge. Transfer information module is realized by Self-taught Clustering algorithm [21]. Self-taught Clustering algorithm is a transfer learning method [22-25] which is built for enhancing model through large amount of auxiliary unlabeled data. The input face can be considered auxiliary unlabeled data, and find co-cluster between priors face in the dataset. Hereafter, we further utilize the distribution of co-cluster to infer the possible rotation angle for robot arm, and robot arm would rotate the object from input face to output face by rotating inferred angle. Finally, the validation module is an eye-to-hand camera which used to validate the error between the output face and desired target face. Hereafter, the validation module feedback the error to the model to refined the model. Through these three module, proposed system can automatically learn the relation between input image and output rotation angle with only labeled the target face of each object.
 
 In this paper, we start with briefly overview of system design and structure in section 2. The MLN-based descriptor for recognized object is described in section 3. Section 4 introduces how to model the proposed multilayer networks, build up and refine the structure of database for matching. Then, we compare the performance of proposed system with several different features and descriptors in section 5. Finally, the performance review and conclusion are presented in final section.
 
@@ -394,13 +394,12 @@ In this paper, we start with briefly overview of system design and structure in 
 %\hfill mds
 \section{System architecture} 
 
-The main purpose of this system is that desire to automatically derive the relationship between input face and target face of 3D assigned objects. The only prior knowledge are the target face. Input is arbitrary assigned object with random face on top, so it is very likely a unknown face of assigned object rather than prior target face. Therefore, system has to infer the correlation between input and existed prior target face in the pool.  Proposed system is shown in Fig. 1. camera 1 captures images of all input objects with random faces on top, and 
-construct MLN-based descriptor for each input. Then, system match the input with data in Database and output rotation angle for robot arm. After robot arm placing a input object, camera 2 would validate result, and feedback error for refining existed model. The system architecture in Fig. 1 is realized by a hierarchical-deep model in Fig. 2. 
+The main purpose of this system is that desire to automatically derive the relationship between input face and target face of 3D assigned objects. The only prior knowledge are the target face. Input is arbitrary assigned object with random face on top, so it is very likely a unknown face of assigned object rather than prior target face. Therefore, system has to infer the correlation between input and existed prior target face in the pool.  Proposed system is shown in Fig. 1. camera 1 captures images of all input objects with random faces on top, and construct MLN-based descriptor for each input. Then, system match the input with data in Database and output rotation angle for robot arm. After robot arm placing a input object, camera 2 would validate result, and feedback error for refining existed model. The system architecture in Fig. 1 is realized by a hierarchical-deep model in Fig. 2. 
 
 The variables in the same layer are independent, and vertical adjacent two layers are full connected. Variables in \textbf{Feature($\bf{\Gamma^{C}}$)} layer are extracted image features, and variables in both \textbf{Classified Descriptor($\bf{D^C}$} and \textbf{Unclassified Descriptor($\bf{D^U}$)} are MLN-based descriptor. Variables in \textbf{Rotation angle($\bf{\Theta^{C}}$)} and \textbf{Inferred Rotation angle($\bf{\Theta^U}$)} is rotation angle (Row ($\alpha$), Pitch($\beta$) , Yaw($\gamma$)) respect to target faces. Finally, variables in \textbf{Object($\bf{O^C}$)} is combination of rotation angle.
 
 
-The difference between classic \textbf{Deep Belief Networks}(\textbf{DBN})[Ref.] is that proposed model exist two parallel parts as shown in Fig. 3. \textbf{$\bf{D^C}$-$\bf{\Theta^{C}}$} and \textbf{$\bf{D^U}$-$\bf{\Theta^U}$} have no connection between each other, but both have full connection with deepest layer $\bf{O^C}$ and first layer \textbf{$\bf{\Gamma^{C}}$}. To handle tons of unknown data, the structure of connection will dynamically change with observed evidences. Sparse coding method is used to constructs edge in the model, most of connection is zero which is called latent edge in this paper. Latent edge might become non-zero while some new evidence has been discovered. For variable $d^C_w$ in layer $\bf{D^C}$, the sparse coding result should be formulated as:
+The difference between classic \textbf{Deep Belief Networks}(\textbf{DBN} is that proposed model exist two parallel parts as shown in Fig. 3. \textbf{$\bf{D^C}$-$\bf{\Theta^{C}}$} and \textbf{$\bf{D^U}$-$\bf{\Theta^U}$} have no connection between each other, but both have full connection with deepest layer $\bf{O^C}$ and first layer \textbf{$\bf{\Gamma^{C}}$}. To handle tons of unknown data, the structure of connection will dynamically change with observed evidences. Sparse coding method is used to constructs edge in the model, most of connection is zero which is called latent edge in this paper. Latent edge might become non-zero while some new evidence has been discovered. For variable $d^C_w$ in layer $\bf{D^C}$, the sparse coding result should be formulated as:
 
 \begin{equation}
 d^C_w=\sum_{i\in{d^C_w}}a_{i}\Gamma_{i}+\sum_{j\notin{d^C_w}}b_{j}\Gamma_{j}
@@ -428,7 +427,7 @@ $d^C_w$ is considered a prior descriptor which the edge between $\bf{\Theta^{C}}
 
 \section{MLN-based Descriptor}
 \subsection{The concept of constructing MLN-based descriptor}
-Being an self-taught system, deriving more valuable information from raw data helps system deriving more reliable results with poor prior knowledge. Most of present image descriptors [10-14] are constructed based on strong sparse feature point, because these points are consistent even in different environment. These kinds of descriptor can efficiently and precisely match given image. Nevertheless, most of observed face is not in prior data, so we need a descriptor which can infer the relation between observations and priors. To avoid lose of information, we choose normal distributed feature instead of sparse feature. Since different faces of an object may exist different strong features, normal distributed feature is more suit for our case. 
+Being an self-taught system, deriving more valuable information from raw data helps system deriving more reliable results with poor prior knowledge. Most of present image descriptors [12-16] are constructed based on strong sparse feature point, because these points are consistent even in different environment. These kinds of descriptor can efficiently and precisely match given image. Nevertheless, most of observed face is not in prior data, so we need a descriptor which can infer the relation between observations and priors. To avoid lose of information, we choose normal distributed feature instead of sparse feature. Since different faces of an object may exist different strong features, normal distributed feature is more suit for our case. 
 
 For prepossessing of input images, each channel of RGB domain is classified into 5 parts, and get 125 classes in RGB domain. An input image will be segmented by these classes. In Fig. 3(a), an observed face of input object is segmented into 4 classes, and class 0 is background. Hereafter, predicates for MLN networks are constructed by segmented results. We have only two kinds of predicate \textit{ne(a,v)} and  \textit{des(x)} for MLN model. Variable \textit{a} is an atom cluster, and variable \textit{v} is a neighbor of atom cluster. Variable \textit{x} is a MLN-based descriptor. The variables of feature layer in Fig. 2 are predicates \textit{ne(a,v)}. Since every classes can be the atom cluster, we have $\binom{125}{2}$ binary variables in feature layer.
 
@@ -569,7 +568,7 @@ If input descriptor doesn't match any descriptor in $\bf{D^C}$ layer, the descri
 \mathbf{argMin}(I(d^in , \mathbf{\Gamma}_{k \in d^{in} \cap d^C_w}) - I(d^C_w , \mathbf{\Gamma}_{k \in d^{in} \cap d^C_w}))
 \end{equation}
 
-Consequently, the common feature $\mathbf{\Gamma}_{k \in d^{in} \cap d^C_w}$ is further represented by co-Markov Blanket of $d^{in}$ and $d^C_w$, and the loss of mutual information can be further formulated by KL divergence [Ref.] as:
+Consequently, the common feature $\mathbf{\Gamma}_{k \in d^{in} \cap d^C_w}$ is further represented by co-Markov Blanket of $d^{in}$ and $d^C_w$, and the loss of mutual information can be further formulated by KL divergence [28] as:
 
 \begin{equation}
 \begin{array}{ll}
@@ -600,7 +599,7 @@ Where roll angle $\alpha$ is the mean angle of co-cluster in two descriptor. For
 \end{center}
 \end{figure}
 
-Proposed hierarchical-deep model is a generative model of Deep Belief Network (DBN)[REF.]. Structure between each layer is shown in Fig. 4. each layer is considered as an Restricted Boltzmann Machine ($\bf{RBM}$)[REF.] except $\bf{\Gamma_K}$, $\bf{D^C}$, and $\bf{D^U}$. The MLN is trained by pseudo-log=likelihood as mention before, and RBM is trained by greedy layer-wise training [Ref.].
+Proposed hierarchical-deep model is a generative model of Deep Belief Network (DBN). Structure between each layer is shown in Fig. 4. each layer is considered as an Restricted Boltzmann Machine ($\bf{RBM}$)[8] except $\bf{\Gamma_K}$, $\bf{D^C}$, and $\bf{D^U}$. The MLN is trained by pseudo-log=likelihood as mention before, and RBM is trained by greedy layer-wise training [30].
 
 Initially, left part of model ($\bf{\Gamma_K}$-$\bf{D^C}$-$\bf{\Theta^C}$-$\bf{O^C}$) are trained with prior target face of objects, and number of variables $\bf{N}$ in $\bf{O^C}$ equal to the number of prior target face. The right part of model is activated only while a new observed is classified into $\bf{D^U}$. The activation probability of $\theta^U_i$ is a sigmoid activation function:
 
@@ -624,7 +623,7 @@ In the other hand, for both $\bf{\Theta^U}$ and $\bf{\Theta^C}$ layer, if result
 
 
 \section{Experiments}
-The experiments for proposed model are separated into two parts. Firstly, we would like to evaluate the performance of MLN-based descriptor by standard object recognition datasets: $\bf{Caltech-101}$ and $\bf{Caltech-256}$ [Ref]. Results shown in table 2 are comparisons with recently published state of art. The images in the datasets will be rescaled into five different scales for training proposed MLN-based descriptor. For $\bf{Caltech-101}$, we following general procedure randomly selecting 30 images for each class, and, for $\bf{Caltech-256}$, selecting 45 and 60 images each class, and trained by pseudo-log likelihood. Although, the result doesn't outstanding in $\bf{Caltech-101}$, but the accuracy in $\bf{Caltech-256}$ is only behind r ImageNet-pretrained model[Ref.]. In the other scope, the result shows that MLN-based descriptor keep well performance even increasing categories. Most of state of art get dramatically decreasing  of accuracy while categories increase from 101 to 256. Therefore, it;s proved that MLN-based descriptor is compatible to be a descriptor in large amounts of unlabelled data.
+The experiments for proposed model are separated into two parts. Firstly, we would like to evaluate the performance of MLN-based descriptor by standard object recognition datasets: $\bf{Caltech-101}$ [31] and $\bf{Caltech-256}$ [32]. Results shown in table 2 are comparisons with recently published state of art. The images in the datasets will be rescaled into five different scales for training proposed MLN-based descriptor. For $\bf{Caltech-101}$, we following general procedure randomly selecting 30 images for each class, and, for $\bf{Caltech-256}$, selecting 45 and 60 images each class, and trained by pseudo-log likelihood. Although, the result doesn't outstanding in $\bf{Caltech-101}$, but the accuracy in $\bf{Caltech-256}$ is only behind r ImageNet-pretrained model[Ref.]. In the other scope, the result shows that MLN-based descriptor keep well performance even increasing categories. Most of state of art get dramatically decreasing  of accuracy while categories increase from 101 to 256. Therefore, it;s proved that MLN-based descriptor is compatible to be a descriptor in large amounts of unlabelled data.
 
 
 \begin{table}[!t]
@@ -764,9 +763,9 @@ Fig. 6 shows the result while all twenty kinds of assigned object are involved i
 
 The experiment in Fig. 5 and 6 testified the performance of proposed system can meet our requirements. Then, we would like to compare the performance of proposed system with other advanced approaches. Since none of similar systems could handle this issue in our survey, so the comparisons would be done by dividing our system into two parts. One is 2-D descriptors for each face of objects, and the other is machine learning approach for learning relational model.
 
-For the descriptor part, four kinds of other descriptors are chosen to compare with proposed system. B-SIFT[25]and Edge-SIFT[26] are modified versions of SIFT approach which enhanced the accuracy of feature point registration. BRISK[13] descriptor is constructed based on binary robust invariant scalable key points, and Zernike Moment (ZM)[11] phase-based descriptor is a moment-based descriptor which use the phase information of signal. All of these descriptors are representative methods in relative field recent years, and had been testified by plenty of researchers. To compare the robustness and accuracy, the performance is testified by two conditions as shown in Table 5. One is relationship of each faces is prior of system, and the descriptors only provide information for object matching. The experiments are implemented by the same learning approach which proposed in previous section.The other is no prior for learning approach that information of descriptor need to use for inferring the relational model. The ZM descriptor have the best performance in the condition without prior, but accuracies of descriptors are close. In condition without prior, the MLN-based descriptor acquire best performance which testified MLN-based descriptor is suited for self-taught system. 
+For the descriptor part, four kinds of other descriptors are chosen to compare with proposed system. B-SIFT[35]and Edge-SIFT[36] are modified versions of SIFT approach which enhanced the accuracy of feature point registration. BRISK[13] descriptor is constructed based on binary robust invariant scalable key points, and Zernike Moment (ZM)[13] phase-based descriptor is a moment-based descriptor which use the phase information of signal. All of these descriptors are representative methods in relative field recent years, and had been testified by plenty of researchers. To compare the robustness and accuracy, the performance is testified by two conditions as shown in Table 5. One is relationship of each faces is prior of system, and the descriptors only provide information for object matching. The experiments are implemented by the same learning approach which proposed in previous section.The other is no prior for learning approach that information of descriptor need to use for inferring the relational model. The ZM descriptor have the best performance in the condition without prior, but accuracies of descriptors are close. In condition without prior, the MLN-based descriptor acquire best performance which testified MLN-based descriptor is suited for self-taught system. 
 
-Hereafter, the performance of different learning methods should be further discussed. The other three kinds of transfer learning approaches: Locally Weighted Ensemble approach(LWE)[7], Transductive SVM(TSVM)[8], and Weighted Neural Network(WNN)[9] are chosen to compare with proposed method. Similarly, the experiments are divided into two parts as shown in table 6. The result shows LEW acquires the best accuracy in the condition with priors, and proposed learning approach acquire greatest performance in condition without prior, but, in both two conditions, the performance between different methods are pretty close. It's seem that the results are mainly effected by the performance of the descriptor. The performance of descriptor not only influence the result of 2-D image, but also the relational model of each faces, so the results are reasonable. 
+Hereafter, the performance of different learning methods should be further discussed. The other three kinds of transfer learning approaches: Locally Weighted Ensemble approach(LWE)[25], Transductive SVM(TSVM)[26], and Weighted Neural Network(WNN)[27] are chosen to compare with proposed method. Similarly, the experiments are divided into two parts as shown in table 6. The result shows LEW acquires the best accuracy in the condition with priors, and proposed learning approach acquire greatest performance in condition without prior, but, in both two conditions, the performance between different methods are pretty close. It's seem that the results are mainly effected by the performance of the descriptor. The performance of descriptor not only influence the result of 2-D image, but also the relational model of each faces, so the results are reasonable. 
 
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
 
@@ -972,7 +971,7 @@ Moreover, hierarchical-deep model can separate different level knowledge by mult
 
 
 \begin{thebibliography}{1}
-
+%%%visual servo sta%%%
 \bibitem{IEEEhowto:kopka}
 Torgny Brogårdh, \emph{"Present and future robot control development—An industrial perspective"},\hskip 1em plus
   0.5em minus 0.4em\relax Annual Reviews in Control, Volume 31, Issue 1, pp. 69–79, 2007.
@@ -986,26 +985,40 @@ So-Youn Park ,Yeoun-Jae Kim ,Ju-Jang Lee ,Byung Soo Kim, and Khalid A.Alsaif,\em
 
 \bibitem{IEEEhowto:kopka} 
 K. Deguchi, H. Sakurai, and S. Ushida,\emph{"A Goal Oriented just-in-time visual servoing for ball catching robot arm”},\hskip 1em plus 0.5em minus 0.4em\relax in Int. Conf. on Intelligent Robots and Systems, Sept. 2008, pp. 3034–3039.
-Sa\v{s}o D\v{z}eroski\emph{"Multi-relational Data Mining: An Introduction"},\hskip 1em plus 0.5em minus 0.4em\relax SIGKDD Explore Newsletter, Volume 5, Issue 1, July 2003, pp.1-16.
+%%%visual servo end%%%
+
+%%%single model sta%%%
+\bibitem{IEEEhowto:kopka} 
+J. Baker, L. Deng, J. Glass, S. Khudanpur, Chin hui Lee, N. Morgan, and D. O’Shaughnessy,\emph{" Developments and directions in speech
+recognition and understanding, part 1"},\hskip 1em plus 0.5em minus 0.4em\relax Signal Processing Magazine, IEEE, vol. 26, no. 3, pp. 75–80, may 2009.
 
 \bibitem{IEEEhowto:kopka} 
-Sinno Jialin Pan, and  Qiang Yang,\emph{"A Survey on Transfer Learning"},\hskip 1em plus 0.5em minus 0.4em\relax Knowledge and Data Engineering, IEEE Transactions on , vol.22, no.10, pp.1345,1359, Oct. 2010
-
-
-\bibitem{IEEEhowto:kopka} 
-T. Dietterich, L. Getoor, and K. Murphy,\emph{"Statistical Relational Learning and its Connections to Other Fields"},\hskip 1em plus 0.5em minus 0.4em\relax ICML-2004 Workshop on Statistical Relational Learning (SRL), Banff, Canada, July 2004.
+S. Furui,\emph{" Digital Speech Processing, Synthesis" },\hskip 1em plus 0.5em minus 0.4em\relax  Marcel Dekker, 2000.
 
 \bibitem{IEEEhowto:kopka} 
-Jing Gao and Wei Fan and Jing Jiang and Jiawei Han, \emph{"Knowledge Transfer via Multiple Model Local Structure Mapping"},\hskip 1em plus 0.5em minus 0.4em\relax in the 14th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining,pp. 283-291,New York, USA,2008
+Tong Simon, and Daphne Koller,\emph{"Support vector machine active learning with applications to text classification"},\hskip 1em plus 0.5em minus 0.4em\relax  The Journal of Machine Learning Research 2 pp 45-66, 2002.
+
+%%%single model end%%%
+
+%%%deep learning%%%
 
 \bibitem{IEEEhowto:kopka} 
-T. Joachims, \emph{"Making large-scale svm learning practical."},\hskip 1em plus 0.5em minus 0.4em\relax advances in kernel methods - support vector learning, MIT-Press, 1999.
-D. Lowe, \emph{"Distinctive Image Features from Scale-Invariant Keypoints"},\hskip 1em plus 0.5em minus 0.4em\relax International Journal of Computer Vision 60(2), pp. 91–110, 2004.
+Hinton, G. E., Osindero, S. and Teh, Y,\emph{" A fast learning algorithm for deep belief nets" },\hskip 1em plus 0.5em minus 0.4em\relax Neural Computation, 18, pp 1527-1554,2006.
+%%%deep learning%%%
+
+%%%application of DL sta%%%
 
 \bibitem{IEEEhowto:kopka} 
-A. J. Carlson, C. M. Cumby, J. L. R. Nicholas D. Rizzolo,
-and D. Roth,\emph{"Snow learning architecture"},\hskip 1em plus 0.5em minus 0.4em\relax Technical report UIUCDCS, 1999.
+Srivastava, N., Salakhutdinov, R. R. and Hinton, G. E.,\emph{" Modeling Documents with a Deep Boltzmann Machine" },\hskip 1em plus 0.5em minus 0.4em\relax In IEEE International Conference on Acoustic Speech and Signal Processing (ICASSP 2013) Vancouver, 2013.
 
+\bibitem{IEEEhowto:kopka} 
+Graves, A., Mohamed, A. and Hinton, G. E,\emph{" Speech Recognition with Deep Recurrent Neural Networks" },\hskip 1em plus 0.5em minus 0.4em\relax In Uncertainty in Artificial Intelligence(UAI 2013).
+
+\bibitem{IEEEhowto:kopka} 
+Ranzato, M., Mnih, V., Susskind, J. and Hinton, G. E.,\emph{" Modeling Natural Images Using Gated MRFs" },\hskip 1em plus 0.5em minus 0.4em\relax IEEE Trans. Pattern Analysis and Machine Intelligence, 2013.
+%%%application of DL end%%%
+
+%%%2D image recognition sta%%%
 \bibitem{IEEEhowto:kopka} 
 H. Bay, A. Ess, T. Tuytelaars, and L. Gool,\emph{"SURF: Speeded up robust features"},\hskip 1em plus 0.5em minus 0.4em\relax Comput. Vis. Image Understand., vol. 110, no. 3, pp. 346–359, Mar. 2008.
 
@@ -1023,6 +1036,9 @@ S. Leutenegger, M. Chli, and R. Siegwart,\emph{"Brisk: Binary Robust Invariant S
 \bibitem{IEEEhowto:kopka} 
  Vijay Chandrasekhar, Gabriel Takacs, David Chen, Sam S. Tsai, Jatinder Singh, and Bernd Girod,\emph{"Transform coding of image feature descriptors,"},\hskip 1em plus 0.5em minus 0.4em\relax SPIE 7257, Visual Communications and Image Processing, 2009.
 
+%%%2D image recognition sta%%%
+
+%%%MLN sta%%%
 \bibitem{IEEEhowto:kopka} 
 Matthew Richardson and Pedro Domingos,\emph{"Markov logic networks,"},\hskip 1em plus 0.5em minus 0.4em\relax International Journal of Machine Learning, Volume 62, Issue 1-2,pp 107-136, Feb. 2006.
 
@@ -1035,9 +1051,64 @@ Kok, Stanley and Domingos, Pedro,\emph{"Learning the Structure of Markov Logic N
 
 \bibitem{IEEEhowto:kopka} 
 Parag Singla and Pedro Domingos,\emph{"Discriminative training of Markov logic networks"},\hskip 1em plus 0.5em minus 0.4em\relax Proceedings of the international Conf. on Artificial Intelligence, 2005.
+%%%MLN end%%%
+
+%%%self-taught clustering sta%%%
+\bibitem{IEEEhowto:kopka} 
+Wenyuan Dai, Qiang Yang, Gui-Rong Xue and Yong Yu,\emph{"Self-taught Clustering"},\hskip 1em plus 0.5em minus 0.4em\relax Proceedings of the 25th International Conference on Machine Learning(ICML),2008.
+%%%self-taught clustering end%%%
+
+%%%transfer learning sta%%%
 
 \bibitem{IEEEhowto:kopka} 
-J. Shi and J. Malik,\emph{"Normalized cuts and image segmentation"},\hskip 1em plus 0.5em minus 0.4em\relax Pattern Analysis and Machine Intelligence, IEEE Transactions on , vol.22, no.8, pp.888,905, Aug 2000.
+Sa\v{s}o D\v{z}eroski\emph{"Multi-relational Data Mining: An Introduction"},\hskip 1em plus 0.5em minus 0.4em\relax SIGKDD Explore Newsletter, Volume 5, Issue 1, July 2003, pp.1-16.
+
+
+\bibitem{IEEEhowto:kopka} 
+Sinno Jialin Pan, and  Qiang Yang,\emph{"A Survey on Transfer Learning"},\hskip 1em plus 0.5em minus 0.4em\relax Knowledge and Data Engineering, IEEE Transactions on , vol.22, no.10, pp.1345,1359, Oct. 2010
+
+
+\bibitem{IEEEhowto:kopka} 
+T. Dietterich, L. Getoor, and K. Murphy,\emph{"Statistical Relational Learning and its Connections to Other Fields"},\hskip 1em plus 0.5em minus 0.4em\relax ICML-2004 Workshop on Statistical Relational Learning (SRL), Banff, Canada, July 2004.
+
+\bibitem{IEEEhowto:kopka} 
+Jing Gao and Wei Fan and Jing Jiang and Jiawei Han, \emph{"Knowledge Transfer via Multiple Model Local Structure Mapping"},\hskip 1em plus 0.5em minus 0.4em\relax in the 14th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining,pp. 283-291,New York, USA,2008
+
+\bibitem{IEEEhowto:kopka} 
+T. Joachims, \emph{"Making large-scale svm learning practical."},\hskip 1em plus 0.5em minus 0.4em\relax advances in kernel methods - support vector learning, MIT-Press, 1999.
+D. Lowe, \emph{"Distinctive Image Features from Scale-Invariant Keypoints"},\hskip 1em plus 0.5em minus 0.4em\relax International Journal of Computer Vision 60(2), pp. 91–110, 2004.
+
+
+
+\bibitem{IEEEhowto:kopka} 
+A. J. Carlson, C. M. Cumby, J. L. R. Nicholas D. Rizzolo,
+and D. Roth,\emph{"Snow learning architecture"},\hskip 1em plus 0.5em minus 0.4em\relax Technical report UIUCDCS, 1999.
+
+%%%transfer learning end%%%
+
+%%%DL divergence%%%%
+
+\bibitem{IEEEhowto:kopka} 
+Cover, T. M. and Thomas, J. A.,\emph{"Elements of
+information theory"},\hskip 1em plus 0.5em minus 0.4em\relax Wiley-Interscience.
+%%%DL divergence%%%%
+
+%%%Greedy Layer-Wise Training%%%
+\bibitem{IEEEhowto:kopka} 
+Yoshua Bengio, Pascal Lamblin, Popovici Dan, and Larochelle Hugo,\emph{"Greedy Layer-Wise Training of Deep Networks"},\hskip 1em plus 0.5em minus 0.4em\relax Advances in Neural Information Processing Systems, 2007.
+%%%Greedy Layer-Wise Training%%%
+
+%%%Caltech 101 and 256%%%%
+
+\bibitem{IEEEhowto:kopka} 
+Fei-Fei L., R. Fergus , and P. Perona ,\emph{" Learning generative visual models
+from few training examples: an incremental Bayesian approach tested on
+101 object categories"},\hskip 1em plus 0.5em minus 0.4em\relax IEEE. CVPR 2004, Workshop on Generative-Model Based Vision, 2004.
+
+\bibitem{IEEEhowto:kopka} 
+Griffin, G. Holub, and P. Perona ,\emph{" The Caltech 256"},\hskip 1em plus 0.5em minus 0.4em\relax Caltech Technical Report.
+
+%%%Caltech 101 and 256%%%%
 
 \bibitem{IEEEhowto:kopka} 
 Karthikeyan Vaiapury, Anil  Aksay and Ebroul Izquierdo,\emph{"GrabcutD: Improved Grabcut Using Depth Information"},\hskip 1em plus 0.5em minus 0.4em\relax Proceedings of the 2010 ACM Workshop on Surreal Media and Virtual Cloning, pp 57-62, New York, USA, 2010.
@@ -1045,21 +1116,22 @@ Karthikeyan Vaiapury, Anil  Aksay and Ebroul Izquierdo,\emph{"GrabcutD: Improved
 \bibitem{IEEEhowto:kopka} 
 Z. Zivkovic,\emph{"Improved adaptive Gaussian mixture model for background subtraction"},\hskip 1em plus 0.5em minus 0.4em\relax Pattern Recognition, 2004. ICPR 2004. Proceedings of the 17th International Conference on , vol.2, no., pp.28,31 Vol.2, 23-26 Aug. 2004.
 
-\bibitem{IEEEhowto:kopka} 
-G. Frahling and C. Sohler,\emph{"A fast k-means implementation using coresets"},\hskip 1em plus 0.5em minus 0.4em\relax  Proceedings of the twenty-second annual symposium on Computational geometry (SoCG),2006.
-
-\bibitem{IEEEhowto:kopka} 
-Tong Simon, and Daphne Koller,\emph{"Support vector machine active learning with applications to text classification"},\hskip 1em plus 0.5em minus 0.4em\relax  The Journal of Machine Learning Research 2 pp 45-66, 2002.
 
 \bibitem{IEEEhowto:kopka} 
 Fei Sha and Fernando Pereira,\emph{"Shallow parsing with conditional
 random fields"},\hskip 1em plus 0.5em minus 0.4em\relax Proceedings of the 2003 Conference of the North American Chapter of the Association for Computational Linguistics on Human Language Technology, Volume 1, 2003.
+
+%%%Experiment sta%%%
+
+
 
 \bibitem{IEEEhowto:kopka} 
 Yanning Zhang,Zhi-Hua Zhou, Changshui Zhang and Li, Ying,\emph{"B-SIFT: A Highly Efficient Binary SIFT Descriptor for Invariant Feature Correspondence"},\hskip 1em plus 0.5em minus 0.4em\relax Intelligent Science and Intelligent Data Engineering, pp 426-433, 2012
 
 \bibitem{IEEEhowto:kopka} 
 S. Zhang, Q. Tian, K. Lu, Q. Huang and W. Gao,\emph{"Edge-SIFT: Discriminative binary descriptor for scalable partial-duplicate mobile search"},\hskip 1em plus 0.5em minus 0.4em\relax ” IEEE Trans. Image Process., vol. 22, no. 7, pp. 2889–2902, Jul. 2013.
+
+%%%Experiment end%%%
 \
 \end{thebibliography}
 
