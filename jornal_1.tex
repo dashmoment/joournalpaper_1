@@ -599,19 +599,32 @@ Where roll angle $\alpha$ is the mean angle of co-cluster in two descriptor. For
 \end{center}
 \end{figure}
 
-Proposed hierarchical-deep model is a generative model of Deep Belief Network (DBN)[REF.]. Structure between each layer is shown in Fig. 4. each layer is considered as an Restricted Boltzmann Machine ($\bf{RBM}$)[REF.] except $\bf{\Gamma_K}$, $\bf{D^C}$, and $\bf{D^U}$. The MLN is trained by pseudo-log=likelihood as mention before, and RBM is trained by greedy layer-wise fashion [Ref.].
+Proposed hierarchical-deep model is a generative model of Deep Belief Network (DBN)[REF.]. Structure between each layer is shown in Fig. 4. each layer is considered as an Restricted Boltzmann Machine ($\bf{RBM}$)[REF.] except $\bf{\Gamma_K}$, $\bf{D^C}$, and $\bf{D^U}$. The MLN is trained by pseudo-log=likelihood as mention before, and RBM is trained by greedy layer-wise training [Ref.].
 
 Initially, left part of model ($\bf{\Gamma_K}$-$\bf{D^C}$-$\bf{\Theta^C}$-$\bf{O^C}$) are trained with prior target face of objects, and number of variables $\bf{N}$ in $\bf{O^C}$ equal to the number of prior target face. The right part of model is activated only while a new observed is classified into $\bf{D^U}$. The activation probability of $\theta^U_i$ is a sigmoid activation function:
 
 \begin{equation}
-P(\theta^U_i|\bf{D^U})=\frac{1}{1+exp \left[\mu\left( -b_l-\sum_r d^U_r w_{lr}\right)\right]}
+\begin{array}{ll}
+P(\theta^U_i|\bf{D^U})=\frac{1}{1+exp \left( \mu*b_l-\sum_r d^U_r w_{lr}\right)} \\\\
+\mu = \left\{
+        \begin{array}{ll}
+         0  & ,\mbox{if inference succeed} \\
+         1+logP(\theta^U_i|\bf{\Theta^U}) & ,\mbox{if inference fail} \\ 
+		\end{array}
+	   \right.
+\end{array}
 \end{equation}
 
-where $\mu$ is penalty factor which decrease the probability while the inference is failed. 
+
+
+where $\mu$ is penalty factor which decrease the probability while the inference is failed. $\mu$ is depended on log-likelihood of $\theta^U_i$ which can lead to lower activation probability if inference result had failed several times, and avoid system derives wrong results over again. 
+In the other hand, for both $\bf{\Theta^U}$ and $\bf{\Theta^C}$ layer, if results are correct, the model will retrained by greedy layer-wise training. If validated result is derived from left part of Fig.(4), the generative model is defined by the joint distribution of top layers $P(\bf{O^C} , \bf{D^C})$, and if the result is derived from right part, the generative model is defined by  $P(\bf{O^C} , \bf{D^U})$. By doing so, the relation between prior and observations can be self-taught from numerous random unlabelled inputs, and self-inferred possible relational model while new assigned objects involve to proposed model.
 
 
 
 \section{Experiments}
+The experiments for proposed model are separated into two parts. Firstly, we would like to evaluate the performance of MLN-based descriptor by standard object recognition datasets: $\bf{Caltech-101}$ and $\bf{Caltech-256}$ [Ref]. Results shown in table 2 are comparisons with recently published state of art. For $\bf{Caltech-101}$, we following general procedure randomly selecting 15 and 30 images for each class, and, for $\bf{Caltech-256}$, selecting 15,30,45 and 60 images each class.
+
 The inputs of proposed system are serial images of each object, so most of open source databases can not be applied for proposed system, and also not suit for purposes in this paper. Therefore, the experiments are implemented through our own dataset. The testing dataset is constructed by twenty different kinds of chosen work pieces as shown in table 2.
 The experiment is implemented based on several assumptions: The input objects are not occluded, and not adjacent with each other. The input objects are placed on conveyor with random poses, and we assume the probability of every faces showing on top is uniform distribution. 
 
