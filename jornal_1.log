@@ -1,19 +1,19 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.11.17)  29 AUG 2014 12:43
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.3)  2 SEP 2014 04:36
 entering extended mode
 **jornal_1.tex
-(C:\Users\wupangzi\Documents\GitHub\joournalpaper_1\jornal_1.tex
+(E:\joournalpaper_1\jornal_1.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
 croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2012-05-30, greek, gujarati, hindi, hungarian, iceland
+lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
 ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
  lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
-german-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
 ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
 an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
 ishmax, welsh, loaded.
-(C:\Users\wupangzi\Documents\GitHub\joournalpaper_1\IEEEtran.cls
+(E:\joournalpaper_1\IEEEtran.cls
 Document Class: IEEEtran 2012/12/27 V1.8 by Michael Shell
 -- See the "IEEEtran_HOWTO" manual for usage information.
 -- http://www.michaelshell.org/tex/ieeetran/
@@ -24,7 +24,7 @@ Document Class: IEEEtran 2012/12/27 V1.8 by Michael Shell
 \@IEEEtrantmptoksA=\toks14
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 368.
 
-("D:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 -- Using 8.5in x 11in (letter) paper.
@@ -98,31 +98,31 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 \@IEEEtmpitemindent=\dimen116
 \c@IEEEbiography=\count91
 \@IEEEtranrubishbin=\box26
-) ("D:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-("D:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks15
 )
-("D:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-("D:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-("D:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-("D:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-("D:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-("D:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count92
@@ -130,7 +130,7 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen117
 \Gin@req@width=\dimen118
 )
-("D:\Program Files\MiKTeX 2.9\tex\latex\subfloat\subfloat.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\subfloat\subfloat.sty"
 Package: subfloat 2003/08/21 version 2.14
 
 Package `subfloat', Version 2.14 of 2003/08/21.
@@ -143,7 +143,7 @@ Package subfloat Warning: Numbers of floats not counted:
 (subfloat)                Please switch on countmax or remove the code using
 (subfloat)                the counter then..
 
-) ("D:\Program Files\MiKTeX 2.9\tex\latex\subfigure\subfigure.sty"
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\subfigure\subfigure.sty"
 Package: subfigure 2002/07/30 v2.1.4 subfigure package
 \subfigtopskip=\skip44
 \subfigcapskip=\skip45
@@ -159,17 +159,17 @@ Package: subfigure 2002/07/30 v2.1.4 subfigure package
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
-("D:\Program Files\MiKTeX 2.9\tex\latex\subfigure\subfigure.cfg")
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\subfigure\subfigure.cfg")
 \subfig@top=\skip48
 \subfig@bottom=\skip49
 )
-("D:\Program Files\MiKTeX 2.9\tex\latex\subfig\subfig.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\subfig\subfig.sty"
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 
-("D:\Program Files\MiKTeX 2.9\tex\latex\caption\caption.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption.sty"
 Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 
-("D:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption3.sty"
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
 \captionmargin=\dimen121
@@ -208,32 +208,32 @@ Package caption Info: subfigure package is loaded.
 \sf@nearskip=\skip52
 \sf@top=\skip53
 \sf@bottom=\skip54
-) ("D:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\color.sty"
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
-("D:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
 )
-("D:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip55
 
 For additional information on amsmath, use the `?' option.
-("D:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
 Package: amstext 2000/06/29 v2.01
 
-("D:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks16
 \ex@=\dimen129
 ))
-("D:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen130
 )
-("D:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count99
@@ -274,24 +274,24 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
-("D:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-("D:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
-("D:\Program Files\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
 \bigstrutjot=\dimen138
 )
-("D:\Program Files\MiKTeX 2.9\tex\latex\algorithms\algorithm.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\algorithms\algorithm.sty"
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
 
-("D:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count111
 \float@exts=\toks21
@@ -299,13 +299,13 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks22
 \@floatcapt=\box30
 )
-("D:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \@float@every@algorithm=\toks23
 \c@algorithm=\count112
 )
-("D:\Program Files\MiKTeX 2.9\tex\latex\algorithmicx\algorithmicx.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\algorithmicx\algorithmicx.sty"
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
@@ -319,22 +319,21 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 \c@ALG@storecount=\count118
 \c@ALG@tmpcounter=\count119
 \ALG@tmplength=\skip60
-) ("D:\Program Files\MiKTeX 2.9\tex\latex\algorithmicx\algpseudocode.sty"
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\algorithmicx\algpseudocode.sty"
 Package: algpseudocode 
-
 Document Style - pseudocode environments for use with the `algorithmicx' style
-) ("D:\Program Files\MiKTeX 2.9\tex\latex\graphics\epsfig.sty"
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\epsfig.sty"
 Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
 \epsfxsize=\dimen139
 \epsfysize=\dimen140
 )
-("D:\Program Files\MiKTeX 2.9\tex\latex\cjk\CJK.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\cjk\CJK.sty"
 Package: CJK 2012/05/07 4.8.3
 
-("D:\Program Files\MiKTeX 2.9\tex\latex\cjk\mule\MULEenc.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\cjk\mule\MULEenc.sty"
 Package: MULEenc 2012/05/07 4.8.3
 )
-("D:\Program Files\MiKTeX 2.9\tex\latex\cjk\CJK.enc"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\cjk\CJK.enc"
 File: CJK.enc 2012/05/07 4.8.3
 )
 LaTeX Info: Redefining \selectfont on input line 755.
@@ -342,10 +341,137 @@ LaTeX Info: Redefining \selectfont on input line 755.
 )
 Package caption Info: We need package `newfloat' on input line 278.
 
-("D:\Program Files\MiKTeX 2.9\tex\latex\caption\newfloat.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\newfloat.sty"
 Package: newfloat 2013/05/11 v1.1-91 Defining new floating environments (AR)
 )
-(C:\Users\wupangzi\Documents\GitHub\joournalpaper_1\jornal_1.aux)
+(E:\joournalpaper_1\jornal_1.aux
+
+LaTeX Warning: Label `test' multiply defined.
+
+
+LaTeX Warning: Label `test' multiply defined.
+
+
+LaTeX Warning: Label `test' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 280.
 LaTeX Font Info:    ... okay on input line 280.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 280.
@@ -422,8 +548,7 @@ LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 280.
 LaTeX Font Info:    ... okay on input line 280.
 LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 280.
 LaTeX Font Info:    ... okay on input line 280.
-
-("D:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count120
 \scratchdimen=\dimen141
@@ -443,22 +568,22 @@ Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Calculating math sizes for size <11> on input line 314.
 LaTeX Font Info:    Try loading font information for U+msa on input line 314.
- ("D:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 314.
 
-("D:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 ]
-<j_img/fig1.jpg, id=9, 843.15pt x 585.18625pt>
+<j_img/fig1.jpg, id=9, 819.5418pt x 505.4082pt>
 File: j_img/fig1.jpg Graphic file (type jpg)
  <use j_img/fig1.jpg>
 Package pdftex.def Info: j_img/fig1.jpg used on input line 381.
-(pdftex.def)             Requested size: 258.0pt x 179.0664pt.
+(pdftex.def)             Requested size: 258.0pt x 159.10416pt.
 
 Overfull \hbox (6.0pt too wide) in paragraph at lines 381--382
  [] 
@@ -491,10 +616,8 @@ Overfull \hbox (0.94499pt too wide) in paragraph at lines 421--423
  [] 
  []
 
-[2 <C:/Users/wupangzi/Documents/GitHub/joournalpaper_1/j_img/fig1.jpg>]
-[3 <C:/Users/wupangzi/Documents/GitHub/joournalpaper_1/j_img/fig3.jpg> <C:/User
-s/wupangzi/Documents/GitHub/joournalpaper_1/j_img/fig2b.jpg> <C:/Users/wupangzi
-/Documents/GitHub/joournalpaper_1/j_img/fig2a.jpg>]
+[2 <E:/joournalpaper_1/j_img/fig1.jpg>] [3 <E:/joournalpaper_1/j_img/fig3.jpg> 
+<E:/joournalpaper_1/j_img/fig2b.jpg> <E:/joournalpaper_1/j_img/fig2a.jpg>]
 Overfull \hbox (12.45697pt too wide) detected at line 537
 []
  []
@@ -515,124 +638,125 @@ File: j_img/fig4.jpg Graphic file (type jpg)
  <use j_img/fig4.jpg>
 Package pdftex.def Info: j_img/fig4.jpg used on input line 597.
 (pdftex.def)             Requested size: 180.67499pt x 167.61578pt.
- [4 <C:/Users/wupangzi/Documents/GitHub/joournalpaper_1/j_img/fig4.jpg>]
-<j_img/wp11.jpg, id=39, 132.0132pt x 88.1694pt>
+ [4 <E:/joournalpaper_1/j_img/fig4.jpg>] <j_img/wp11.jpg, id=39, 132.0132pt x 8
+8.1694pt>
 File: j_img/wp11.jpg Graphic file (type jpg)
- <use j_img/wp11.jpg>
+
+<use j_img/wp11.jpg>
 Package pdftex.def Info: j_img/wp11.jpg used on input line 686.
 (pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
-
-<j_img/wp15.jpg, id=40, 132.0132pt x 88.1694pt>
+ <j_img/wp15.jpg, id=40, 132.0132pt x 88.1694pt>
 File: j_img/wp15.jpg Graphic file (type jpg)
- <use j_img/wp15.jpg>
+
+<use j_img/wp15.jpg>
 Package pdftex.def Info: j_img/wp15.jpg used on input line 687.
 (pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
-
-<j_img/wp21.jpg, id=41, 132.495pt x 88.1694pt>
+ <j_img/wp21.jpg, id=41, 132.495pt x 88.1694pt>
 File: j_img/wp21.jpg Graphic file (type jpg)
- <use j_img/wp21.jpg>
+
+<use j_img/wp21.jpg>
 Package pdftex.def Info: j_img/wp21.jpg used on input line 688.
 (pdftex.def)             Requested size: 72.26999pt x 43.36212pt.
-
-<j_img/wp25.jpg, id=42, 132.0132pt x 88.1694pt>
+ <j_img/wp25.jpg, id=42, 132.0132pt x 88.1694pt>
 File: j_img/wp25.jpg Graphic file (type jpg)
- <use j_img/wp25.jpg>
+
+<use j_img/wp25.jpg>
 Package pdftex.def Info: j_img/wp25.jpg used on input line 689.
 (pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
-
-<j_img/wp31.jpg, id=43, 132.0132pt x 88.1694pt>
+ <j_img/wp31.jpg, id=43, 132.0132pt x 88.1694pt>
 File: j_img/wp31.jpg Graphic file (type jpg)
- <use j_img/wp31.jpg>
+
+<use j_img/wp31.jpg>
 Package pdftex.def Info: j_img/wp31.jpg used on input line 690.
 (pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
-
-<j_img/wp35.jpg, id=44, 132.0132pt x 88.1694pt>
+ <j_img/wp35.jpg, id=44, 132.0132pt x 88.1694pt>
 File: j_img/wp35.jpg Graphic file (type jpg)
- <use j_img/wp35.jpg>
+
+<use j_img/wp35.jpg>
 Package pdftex.def Info: j_img/wp35.jpg used on input line 691.
 (pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
-
-<j_img/wp12.jpg, id=45, 132.0132pt x 88.1694pt>
+ <j_img/wp12.jpg, id=45, 132.0132pt x 88.1694pt>
 File: j_img/wp12.jpg Graphic file (type jpg)
- <use j_img/wp12.jpg>
+
+<use j_img/wp12.jpg>
 Package pdftex.def Info: j_img/wp12.jpg used on input line 695.
 (pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
-
-<j_img/wp16.jpg, id=46, 132.0132pt x 88.1694pt>
+ <j_img/wp16.jpg, id=46, 132.0132pt x 88.1694pt>
 File: j_img/wp16.jpg Graphic file (type jpg)
- <use j_img/wp16.jpg>
+
+<use j_img/wp16.jpg>
 Package pdftex.def Info: j_img/wp16.jpg used on input line 696.
 (pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
-
-<j_img/wp22.jpg, id=47, 132.495pt x 88.1694pt>
+ <j_img/wp22.jpg, id=47, 132.495pt x 88.1694pt>
 File: j_img/wp22.jpg Graphic file (type jpg)
- <use j_img/wp22.jpg>
+
+<use j_img/wp22.jpg>
 Package pdftex.def Info: j_img/wp22.jpg used on input line 697.
 (pdftex.def)             Requested size: 72.26999pt x 43.36212pt.
-
-<j_img/wp26.jpg, id=48, 132.495pt x 88.1694pt>
+ <j_img/wp26.jpg, id=48, 132.495pt x 88.1694pt>
 File: j_img/wp26.jpg Graphic file (type jpg)
- <use j_img/wp26.jpg>
+
+<use j_img/wp26.jpg>
 Package pdftex.def Info: j_img/wp26.jpg used on input line 698.
 (pdftex.def)             Requested size: 72.26999pt x 43.36212pt.
-
-<j_img/wp32.jpg, id=49, 132.0132pt x 88.1694pt>
+ <j_img/wp32.jpg, id=49, 132.0132pt x 88.1694pt>
 File: j_img/wp32.jpg Graphic file (type jpg)
- <use j_img/wp32.jpg>
+
+<use j_img/wp32.jpg>
 Package pdftex.def Info: j_img/wp32.jpg used on input line 699.
 (pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
-
-<j_img/wp36.jpg, id=50, 132.0132pt x 88.1694pt>
+ <j_img/wp36.jpg, id=50, 132.0132pt x 88.1694pt>
 File: j_img/wp36.jpg Graphic file (type jpg)
- <use j_img/wp36.jpg>
+
+<use j_img/wp36.jpg>
 Package pdftex.def Info: j_img/wp36.jpg used on input line 700.
 (pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
-
-<j_img/wp13.jpg, id=51, 132.0132pt x 88.1694pt>
+ <j_img/wp13.jpg, id=51, 132.0132pt x 88.1694pt>
 File: j_img/wp13.jpg Graphic file (type jpg)
- <use j_img/wp13.jpg>
+
+<use j_img/wp13.jpg>
 Package pdftex.def Info: j_img/wp13.jpg used on input line 705.
 (pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
-
-<j_img/wp17.jpg, id=52, 132.0132pt x 88.1694pt>
+ <j_img/wp17.jpg, id=52, 132.0132pt x 88.1694pt>
 File: j_img/wp17.jpg Graphic file (type jpg)
- <use j_img/wp17.jpg>
+
+<use j_img/wp17.jpg>
 Package pdftex.def Info: j_img/wp17.jpg used on input line 706.
 (pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
-
-<j_img/wp23.jpg, id=53, 132.0132pt x 88.1694pt>
+ <j_img/wp23.jpg, id=53, 132.0132pt x 88.1694pt>
 File: j_img/wp23.jpg Graphic file (type jpg)
- <use j_img/wp23.jpg>
+
+<use j_img/wp23.jpg>
 Package pdftex.def Info: j_img/wp23.jpg used on input line 707.
 (pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
-
-<j_img/wp33.jpg, id=54, 132.495pt x 88.1694pt>
+ <j_img/wp33.jpg, id=54, 132.495pt x 88.1694pt>
 File: j_img/wp33.jpg Graphic file (type jpg)
- <use j_img/wp33.jpg>
+
+<use j_img/wp33.jpg>
 Package pdftex.def Info: j_img/wp33.jpg used on input line 709.
 (pdftex.def)             Requested size: 72.26999pt x 43.36212pt.
-
-<j_img/wp37.jpg, id=55, 132.0132pt x 88.1694pt>
+ <j_img/wp37.jpg, id=55, 132.0132pt x 88.1694pt>
 File: j_img/wp37.jpg Graphic file (type jpg)
- <use j_img/wp37.jpg>
+
+<use j_img/wp37.jpg>
 Package pdftex.def Info: j_img/wp37.jpg used on input line 710.
 (pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
-
-<j_img/wp14.jpg, id=56, 132.0132pt x 88.1694pt>
+ <j_img/wp14.jpg, id=56, 132.0132pt x 88.1694pt>
 File: j_img/wp14.jpg Graphic file (type jpg)
- <use j_img/wp14.jpg>
+
+<use j_img/wp14.jpg>
 Package pdftex.def Info: j_img/wp14.jpg used on input line 715.
 (pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
-
-<j_img/wp24.jpg, id=57, 132.495pt x 88.1694pt>
+ <j_img/wp24.jpg, id=57, 132.495pt x 88.1694pt>
 File: j_img/wp24.jpg Graphic file (type jpg)
- <use j_img/wp24.jpg>
+
+<use j_img/wp24.jpg>
 Package pdftex.def Info: j_img/wp24.jpg used on input line 717.
 (pdftex.def)             Requested size: 72.26999pt x 43.36212pt.
-
-<j_img/wp34.jpg, id=58, 132.0132pt x 88.1694pt>
+ <j_img/wp34.jpg, id=58, 132.0132pt x 88.1694pt>
 File: j_img/wp34.jpg Graphic file (type jpg)
- <use j_img/wp34.jpg>
+
+<use j_img/wp34.jpg>
 Package pdftex.def Info: j_img/wp34.jpg used on input line 719.
 (pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
  [5]
@@ -665,26 +789,17 @@ Package pdftex.def Info: j_img/exp03.png used on input line 758.
 
 Underfull \vbox (badness 4144) has occurred while \output is active []
 
- [6 <C:/Users/wupangzi/Documents/GitHub/joournalpaper_1/j_img/wp11.jpg> <C:/Use
-rs/wupangzi/Documents/GitHub/joournalpaper_1/j_img/wp15.jpg> <C:/Users/wupangzi
-/Documents/GitHub/joournalpaper_1/j_img/wp21.jpg> <C:/Users/wupangzi/Documents/
-GitHub/joournalpaper_1/j_img/wp25.jpg> <C:/Users/wupangzi/Documents/GitHub/joou
-rnalpaper_1/j_img/wp31.jpg> <C:/Users/wupangzi/Documents/GitHub/joournalpaper_1
-/j_img/wp35.jpg> <C:/Users/wupangzi/Documents/GitHub/joournalpaper_1/j_img/wp12
-.jpg> <C:/Users/wupangzi/Documents/GitHub/joournalpaper_1/j_img/wp16.jpg> <C:/U
-sers/wupangzi/Documents/GitHub/joournalpaper_1/j_img/wp22.jpg> <C:/Users/wupang
-zi/Documents/GitHub/joournalpaper_1/j_img/wp26.jpg> <C:/Users/wupangzi/Document
-s/GitHub/joournalpaper_1/j_img/wp32.jpg> <C:/Users/wupangzi/Documents/GitHub/jo
-ournalpaper_1/j_img/wp36.jpg> <C:/Users/wupangzi/Documents/GitHub/joournalpaper
-_1/j_img/wp13.jpg> <C:/Users/wupangzi/Documents/GitHub/joournalpaper_1/j_img/wp
-17.jpg> <C:/Users/wupangzi/Documents/GitHub/joournalpaper_1/j_img/wp23.jpg> <C:
-/Users/wupangzi/Documents/GitHub/joournalpaper_1/j_img/wp33.jpg> <C:/Users/wupa
-ngzi/Documents/GitHub/joournalpaper_1/j_img/wp37.jpg> <C:/Users/wupangzi/Docume
-nts/GitHub/joournalpaper_1/j_img/wp14.jpg> <C:/Users/wupangzi/Documents/GitHub/
-joournalpaper_1/j_img/wp24.jpg> <C:/Users/wupangzi/Documents/GitHub/joournalpap
-er_1/j_img/wp34.jpg> <C:/Users/wupangzi/Documents/GitHub/joournalpaper_1/j_img/
-exp02.png> <C:/Users/wupangzi/Documents/GitHub/joournalpaper_1/j_img/exp01.png>
-]
+ [6 <E:/joournalpaper_1/j_img/wp11.jpg> <E:/joournalpaper_1/j_img/wp15.jpg> <E:
+/joournalpaper_1/j_img/wp21.jpg> <E:/joournalpaper_1/j_img/wp25.jpg> <E:/joourn
+alpaper_1/j_img/wp31.jpg> <E:/joournalpaper_1/j_img/wp35.jpg> <E:/joournalpaper
+_1/j_img/wp12.jpg> <E:/joournalpaper_1/j_img/wp16.jpg> <E:/joournalpaper_1/j_im
+g/wp22.jpg> <E:/joournalpaper_1/j_img/wp26.jpg> <E:/joournalpaper_1/j_img/wp32.
+jpg> <E:/joournalpaper_1/j_img/wp36.jpg> <E:/joournalpaper_1/j_img/wp13.jpg> <E
+:/joournalpaper_1/j_img/wp17.jpg> <E:/joournalpaper_1/j_img/wp23.jpg> <E:/joour
+nalpaper_1/j_img/wp33.jpg> <E:/joournalpaper_1/j_img/wp37.jpg> <E:/joournalpape
+r_1/j_img/wp14.jpg> <E:/joournalpaper_1/j_img/wp24.jpg> <E:/joournalpaper_1/j_i
+mg/wp34.jpg> <E:/joournalpaper_1/j_img/exp02.png> <E:/joournalpaper_1/j_img/exp
+01.png>]
 Underfull \hbox (badness 1755) in paragraph at lines 766--767
 \OT1/ptm/m/n/10 Edge-SIFT[36] are mod-i-fied ver-sions of SIFT ap-proach
  []
@@ -692,8 +807,7 @@ Underfull \hbox (badness 1755) in paragraph at lines 766--767
 
 Underfull \vbox (badness 1194) has occurred while \output is active []
 
- [7 <C:/Users/wupangzi/Documents/GitHub/joournalpaper_1/j_img/exp04.png> <C:/Us
-ers/wupangzi/Documents/GitHub/joournalpaper_1/j_img/exp03.png>]
+ [7 <E:/joournalpaper_1/j_img/exp04.png> <E:/joournalpaper_1/j_img/exp03.png>]
 Missing character: There is no √ in font ptmr7t!
 Missing character: There is no • in font ptmr7t!
 Missing character: There is no ‚ in font ptmri7t!
@@ -765,40 +879,41 @@ Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
  [9
 
-] (C:\Users\wupangzi\Documents\GitHub\joournalpaper_1\jornal_1.aux)
+] (E:\joournalpaper_1\jornal_1.aux)
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
  5949 strings out of 493921
- 86356 string characters out of 3147272
- 165061 words of memory out of 3000000
+ 86626 string characters out of 3144862
+ 165108 words of memory out of 3000000
  9127 multiletter control sequences out of 15000+200000
  52200 words of font info for 115 fonts, out of 3000000 for 9000
  844 hyphenation exceptions out of 8191
  44i,16n,42p,1303b,386s stack positions out of 5000i,500n,10000p,200000b,50000s
-{D:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<D:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmbx5.pfb><D:/Program Files/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmbx7.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmbx8.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmbx9.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmex10.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cme
-x7.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><D:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><D:/Program Files/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/Program Files/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmr7.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmsy10.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmsy7.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
-8.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><D:
-/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><D:/Program Files/Mi
-KTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><D:/Program Files/MiKTeX 2.9/fonts/t
-ype1/urw/times/utmr8a.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/ut
-mri8a.pfb>
-Output written on jornal_1.pdf (9 pages, 1569689 bytes).
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx5.pfb><C:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files (x86)/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><C:/Program Files (x86)/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files (x86)/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files (x86)/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmsy9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/ti
+mes/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a
+.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Pr
+ogram Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on jornal_1.pdf (9 pages, 1616027 bytes).
 PDF statistics:
  155 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
