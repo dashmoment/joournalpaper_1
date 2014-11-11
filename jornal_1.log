@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.3)  11 NOV 2014 15:14
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.3)  12 NOV 2014 01:49
 entering extended mode
 **jornal_1.tex
 (E:\joournalpaper_1\jornal_1.tex
@@ -788,11 +788,6 @@ File: j_img/exp03.png Graphic file (type png)
 Package pdftex.def Info: j_img/exp03.png used on input line 765.
 (pdftex.def)             Requested size: 216.81pt x 149.40585pt.
 
-Underfull \hbox (badness 1755) in paragraph at lines 773--774
-\OT1/ptm/m/n/10 Edge-SIFT[36] are mod-i-fied ver-sions of SIFT ap-proach
- []
-
-
 Underfull \vbox (badness 3281) has occurred while \output is active []
 
  [6 <E:/joournalpaper_1/j_img/wp11.jpg> <E:/joournalpaper_1/j_img/wp15.jpg> <E:
@@ -845,7 +840,7 @@ Missing character: There is no â in font ptmri7t!
 Missing character: There is no € in font ptmri7t!
 Missing character: There is no  in font ptmri7t!
 
-Underfull \hbox (badness 5787) in paragraph at lines 1072--1073
+Underfull \hbox (badness 5787) in paragraph at lines 1073--1074
 []\OT1/ptm/m/n/8 Sa[]so D[]zeroski\OT1/ptm/m/it/8 "Multi-relational Data Min-in
 g: An In-tro-duc-tion"\OT1/ptm/m/n/8 ,
  []
@@ -854,7 +849,7 @@ Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no “ in font ptmr7t!
 
-Underfull \hbox (badness 3148) in paragraph at lines 1106--1108
+Underfull \hbox (badness 3148) in paragraph at lines 1107--1109
 []\OT1/ptm/m/n/8 Yoshua Ben-gio, Pas-cal Lam-blin, Popovici Dan, and Larochelle
 
  []
@@ -892,7 +887,7 @@ Here is how much of TeX's memory you used:
  9120 multiletter control sequences out of 15000+200000
  53296 words of font info for 116 fonts, out of 3000000 for 9000
  844 hyphenation exceptions out of 8191
- 44i,16n,42p,1346b,386s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,16n,42p,1439b,386s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
 m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program 
 Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx5.pfb><C:/Program Fil
@@ -914,7 +909,7 @@ lic/amsfonts/cm/cmsy9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/ti
 mes/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a
 .pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Pr
 ogram Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on jornal_1.pdf (8 pages, 1620595 bytes).
+Output written on jornal_1.pdf (8 pages, 1593682 bytes).
 PDF statistics:
  152 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
