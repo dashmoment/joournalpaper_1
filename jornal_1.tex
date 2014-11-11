@@ -282,7 +282,7 @@
 % paper title
 % can use linebreaks \\ within to get better formatting as desired
 % Do not put math or special symbols in the title.
-\title{ Self-Taught Visual Servo System for 3D Object Recognition by Hierarchical Model}
+\title{ A Self-Taught Vision System for Automatic Learning and Recognizing 3D Objects}
 
 
 
@@ -299,7 +299,7 @@ Taiwan University, Taipei, Taiwan 106}
 
 \IEEEtitleabstractindextext{%
 \begin{abstract}
-Visual servo systems for 3D object recognition are widely applied on industrial robot arm recent years. In most of tasks, we only cares about the relation between input image and result rather than a delicate model of 3D object. We propose an intelligent visual servo system which can automatically constructed relational model for input and output by self-taught learning method with only 2D image input. The relational model is established based on hierarchical Model. 2D images are used to infer the rotation angle for robot in Cartesian space, so we propose a MLN-based descriptor which is born for finding relational model. The experiment results show the feasibility of proposed structure that can transfer knowledge in different domains, and complete assigned task by only modeling the relation between input and output.
+Visual servo systems for 3D object recognition are widely applied on industrial robot arm recent years. In most of tasks, we only cares about the relation between input image and result rather than a delicate model of 3D object. We propose an intelligent visual servo system which can automatically constructed relational model for input and output by self-taught learning method with only 2D image input. The relational model is established based on hierarchical Model. 2D images are used to infer the rotation angle for robot in Cartesian space, so we propose a descriptor based on \textit{Markov Logic Network(MLN)} which is suitable finding relational model. The experiment results show the feasibility of proposed structure that can transfer knowledge in different domains, and complete assigned task by only modeling the relation between input and output.
 
 \end{abstract}
 
@@ -361,19 +361,19 @@ Visual servo system, Hierarchical Model, Machine learning
 % 
 % Here we have the typical use of a "T" for an initial drop letter
 % and "HIS" in caps to complete the first word.
-\IEEEPARstart{R}{obot} arm with visual servo system had been widely applied in automatic industrial production line recent years[1-4]. Visual servo system provides additional perception of environment, and make robot arm become more adaptive to complete various tasks. For vision system, model-based recognition methods are commonly used in industrial applications. The performance is mainly related to the labeled data which is captured manually. Hence, the system is hard to adapt with adding new kinds of work pieces. For 2D object recognition, users need to capture numerous raw data of target objects in specific poses. These cumbersome works lift to much more complex level while the methods are expanded to 3D object recognition. These manual works not only increase the labor cost, but also point out the dilemma of present vision-based robot which is unable to automatically adapt to various assignments. 
+\IEEEPARstart{R}{obot} arm with vision had been widely applied in automatic industrial production line recent years[1-4]. Vision-based system provides additional information to make robot arm become more adaptive to complete various tasks. For vision system, model-based recognition methods are commonly used in industrial applications. The performance is mainly related to the manually labeled data. Hence, the system is hard to adapt with adding new kinds of work pieces. For 2D object recognition, users need to capture numerous raw data of target objects in specific poses. These cumbersome works lift to much more complex level while the methods are expanded to 3D object recognition. These manual works not only increase the labor cost, but also point out the dilemma of present vision-based robot which is unable to automatically adapt to various assignments. 
 
-In general industrial purposes, we do not really concern about all details of entire 3D object. Instead, the relation between input and target is the key point for completing the tasks like pick and place,etc. To solve these issues, we propose an intelligent tasked-oriented visual servo based system which acquires ability of learning relational model of input and target automatically. In task-oriented view, system tends to learn the relation between input and target rather than delicate models for target 3D objects. Therefore, the state problem is that We only provide target face of 3D objects which are desired to be placed on top by robot arm, but the other faces of 3D objects are unknown. The labelled data is target faces, and inputs are arbitrary objects with random faces on top. The input of system is 2-D image data, and output is rotation angle of robot arm in Cartesian space which are different feature domains. Therefore, the traditional single layer model[5,6] which end in a linear or kernel classifier is not enough. We introduced a hierarchical model to tackle our problems. 
+In general industrial purposes, we do not really concern about all details of entire 3D object. Instead, the relation between input and target is the key point for completing the tasks like pick and place,etc. To solve these issues, we propose an intelligent task-oriented vision-based system which acquires ability in automatic learning relational model of input and target. In task-oriented view, system tends to learn the relation between input and target rather than delicate models for target 3D objects. Therefore, the state problem is that we only provide target face of 3D objects which are intended to be placed on top by robot arm, but the other faces of 3D objects are unknown. The labelled data is target faces, and inputs are arbitrary objects with random faces on top. The input of system is 2-D image data, and output is rotation angle of robot arm in Cartesian space which are different feature domains. Therefore, the traditional single layer model[5,6] which end in a linear or kernel classifier is not enough. We introduced a hierarchical model to tackle these problems. 
 
-The learning of multilayer model achieve dramatically success recent years while deep learning architectures showed up. Hinton et al. [7] proposed a hierarchical structure which hidden layers are formed by lower level feature to higher level, and had been successfully applied on different research fields[8-11]. Comparing with traditional \textbf{Artificial Neural Network (ANN)} model, the deep learning method is aim to learn the representation of data in different level rather than produces classifiers through features in the same level. Enlightening by deep learning methods, hierarchical structure is applied to our model which is constructed by four layers: \textbf{Feature}, \textbf{Descriptor}, \textbf{Object} and \textbf{RotationAngle}.
+The learning of multilayer model achieve dramatically success recent years. Hinton et al. [7] proposed deep structure learning which hidden layers are formed by lower level feature to higher level hierarchically, and had been successfully applied on different research fields[8-11]. Comparing with traditional \textbf{\textit{Artificial Neural Network (ANN)}} model, the deep learning method is aim to learn the representation of data in different level rather than produce classifiers through features in the same level. Enlightening by deep learning methods, hierarchical structure is applied to our model which is constructed by four layers: \textbf{Feature}, \textbf{Descriptor}, \textbf{Object} and \textbf{RotationAngle}.
 
-Through this model, the feature in different domains could be correlated through hierarchical structure, but the system still cannot automatically learn the relation between input images and output rotation angle. Being a self-taught system, the ability which could "infer" latent edges between labeled and unlabeled data is needed. Latent edge means two variables in different layers exist an edge in graph model if prior data is sufficient, but, in our case, system only have small amount of prior data. Hence, there are many latent edges which are waiting to be revealed through learning process. 
+Through this model, the feature in different domains could be correlated through hierarchical structure, but the system still cannot automatically learn the relation between input images and output rotation angle. Being a automatic system, the ability which could "infer" latent edges between labeled and unlabeled data is needed. Latent edge means two variables in different layers exist an edge in graph model if prior data is sufficient, but, in our case, system only have small amount of prior data. Hence, there are many latent edges which are waiting to be revealed through learning process. 
 
-The most challenge part of state problem is that the appearance of different faces of a single object might be huge different, so we design three modules to tackle self-taught problem. Firstly, we design a probabilistic based image descriptor. Extracting scale- and rotation-invariant sparse feature is a pervasive topic in areas of computer vision. Although many brilliant methods[12-16] provide high quality performance by extracting sparse features, the sparse feature is not compact on inferring the relational model. The sparse feature only model strong features of observed face shows on top, but most of faces is unknown in our case. We need a descriptor which can provide sufficient information for inferring latent edges, but still retain scale- and rotation-invariant. Proposed probabilistic based descriptor is established based on the Markov Logic Network (MLN) [17-20]. MLN is an approach combines first-order logic and probabilistic graphical model. First-order logic enable compactly representing the neighborhood of feature points. Probabilistic graphical model can reveal latent edges by proper inference method, and also handle the uncertainty. 
+The most challenge part of state problem is that the appearance of different faces of a single object might be quite different, so we design three modules to tackle self-taught problem. Firstly, we design a probabilistic based image descriptor. Extracting scale- and rotation-invariant sparse feature is a pervasive topic in areas of computer vision. Although many methods[12-16] provide high quality performance by extracting sparse features, the sparse feature is not compact on inferring the relational model. The sparse feature only model strong features of observed face shows on top, but most of faces is unknown in our case. We need a descriptor which can provide sufficient information for inferring latent edges, but still retain scale- and rotation-invariant. Proposed probabilistic based descriptor is established based on the \textit{\textbf{Markov Logic Network (MLN)}} [17-20]. MLN is an approach combines first-order logic and probabilistic graphical model. First-order logic enable compactly representing the neighborhood of feature points. Probabilistic graphical model can reveal latent edges by proper inference method, and also handle the uncertainty. 
 
-Secondly, transfer information module is proposed for constructing latent edges. Transfer information module is realized by Self-taught Clustering algorithm [21]. Self-taught Clustering algorithm is a transfer learning method [22-25] which is built for enhancing model through large amount of auxiliary unlabelled data. The input face can be considered auxiliary unlabelled data, and find co-cluster between priors face in the dataset. Hereafter, we further utilize the distribution of co-cluster to infer the possible rotation angle for robot arm, and robot arm will rotate target object from input face to output face. Finally, the validation module is an eye-to-hand camera which used to validate the error between the output face and desired target face. Hereafter, the validation module feedback the error to the model to refined the model. Through these three modules, proposed system can automatically learn the relations between input images and corresponding rotation angles with only labelled the target face of each object.
+Secondly, transfer information module is proposed for constructing latent edges. Transfer information module is realized by Self-taught Clustering algorithm [21]. Self-taught Clustering algorithm is a transfer learning method [22-25] which is built for enhancing model through large amount of auxiliary unlabelled data. The input face can be considered auxiliary unlabelled data, and find co-cluster between priors face in the dataset. Hereafter, we further utilize the distribution of co-cluster to infer the possible rotation angle for robot arm, and robot arm will rotate target object from input face to output face. Finally, the validation module is an eye-to-hand camera which used to validate the error between the output face and desired target face. Then, the validation module feedback the error to the model to refined the existed model. Through these three modules, proposed system can automatically learn the relations between input images and corresponding rotation angles with only labelled the target face of each object.
 
-In this paper, we start with briefly overview of system design and structure in section 2. The MLN-based descriptor for recognized object is described in section 3. Section 4 introduces how to model the proposed hierarchical networks, and learn by self-taught learning. Then, we compare the performance of proposed system with several state of arts in section 5. Finally, the performance review and conclusion are presented in final section.
+In this paper, we start with briefly overview of system design and structure in section 2. The MLN-based descriptor for recognizing object is described in section 3. Section 4 introduces how to model the proposed hierarchical networks, and learn by self-taught learning. Then, we compare the performance of proposed system with several state of developments in section 5. Finally, the review of performance and conclusions are presented in final section.
 
 \begin{figure}[!t]
 \begin{center}
@@ -394,12 +394,12 @@ In this paper, we start with briefly overview of system design and structure in 
 %\hfill mds
 \section{System architecture} 
 
-The main purpose of this system is that desire to automatically derive the relationship between input face and target face of 3D assigned objects. The only prior knowledge are the target face. Input is arbitrary assigned object with random face on top, so input is very likely an unknown face of assigned object rather than prior target face. Therefore, system has to infer the correlation between input and existed priors.  Proposed system is shown in Fig. 1. Camera 1 captures images of all input objects with random faces on top, and construct MLN-based descriptor for each input. Then, system match the input with data in database and output rotation angle for robot arm. After robot arm placing an object, camera 2 will validate result, and feedback error for refining existed model. The system architecture in Fig. 1 is realized by a hierarchical-deep model in Fig. 2. 
+The main purpose of this system is to automatically derive the relationship between input face and target face of 3D assigned objects. The only prior knowledge are the target face. Input is arbitrary assigned object with random face on top, so input is very likely an unknown face of assigned object showed-up rather than prior target face. Therefore, system has to infer the correlation between input and existed priors.  Proposed system is shown in Fig. 1. Camera 1 captures images of all input objects with random faces on top, and construct MLN-based descriptor for each input. Then, system match the input with data in database and output rotation angle for robot arm. After robot arm placing an object, camera 2 will validate result, and feedback error for refining existed model. The system architecture in Fig. 1 is realized by a hierarchical-deep model in Fig. 2. 
 
-The variables in the same layer are independent, and vertical adjacent two layers are full connected. Variables in \textbf{Feature($\bf{\Gamma^{C}}$)} layer are extracted image features, and variables in both \textbf{Classified Descriptor($\bf{D^C}$)} and \textbf{Unclassified Descriptor($\bf{D^U}$)} are MLN-based descriptor. Variables in \textbf{Rotation angle($\bf{\Theta^{C}}$)} and \textbf{Inferred Rotation angle($\bf{\Theta^U}$)} are set of rotation angles $\{$ Row ($\alpha$), Pitch($\beta$) , Yaw($\gamma$) $\}$ respect to target faces. Finally, variables in \textbf{Object($\bf{O^C}$)} are combinations of rotation angles.
+The variables in the same layer are independent, and vertical adjacent two layers are full connected. Variables in \textbf{Feature($\bf{\Gamma}$)} layer are extracted image features, and variables in both \textbf{Classified Descriptor($\bf{D^C}$)} and \textbf{Unclassified Descriptor($\bf{D^U}$)} are MLN-based descriptor. Variables in \textbf{Rotation angle($\bf{\Theta^{C}}$)} and \textbf{Inferred Rotation angle($\bf{\Theta^U}$)} are set of rotation angles $\{$ Row ($\alpha$), Pitch($\beta$) , Yaw($\gamma$) $\}$ respect to target faces. Finally, variables in \textbf{Object($\bf{O^C}$)} are combinations of rotation angles.
 
 
-The difference between classic \textbf{Deep Belief Networks}(\textbf{DBN}) is that proposed model exist two parallel parts as shown in Fig. 3. \textbf{$\bf{D^C}$-$\bf{\Theta^{C}}$} and \textbf{$\bf{D^U}$-$\bf{\Theta^U}$} have no connection between each other, but both have full connection with deepest layer $\bf{O^C}$ and first layer \textbf{$\bf{\Gamma^{C}}$}. To handle tons of unknown data, the structure of connection will dynamically change with observed evidences. Sparse coding method is used to constructs edge in the model, most of connection is zero which is called latent edge in this paper. Latent edge might become non-zero while some new evidences have been discovered. For variable $d^C_w$ in layer $\bf{D^C}$, the sparse coding result should be formulated as:
+The difference between classic \textbf{Deep Belief Networks}(\textbf{DBN}) is that proposed model exist two parallel parts in Fig. 2. \textbf{$\bf{D^C}$-$\bf{\Theta^{C}}$} and \textbf{$\bf{D^U}$-$\bf{\Theta^U}$} have no connection between each other, but both have full connection with deepest layer $\bf{O^C}$ and first layer \textbf{$\bf{\Gamma^{C}}$}. To handle tons of unknown data, the structure of connection will dynamically change with observed evidences. Sparse coding method is used to constructs edge in the model, most of connection is zero which is called latent edge in this paper. Latent edge might become non-zero while some new evidences have been discovered. For variable $d^C_w$ in layer $\bf{D^C}$, the sparse coding result should be formulated as:
 
 \begin{equation}
 d^C_w=\sum_{i\in{d^C_w}}a_{i}\Gamma_{i}+\sum_{j\notin{d^C_w}}b_{j}\Gamma_{j}
@@ -418,7 +418,7 @@ $d^C_w$ is considered a prior descriptor which the edge between $\bf{\Theta^{C}}
 
 \begin{figure}[!t]
 \begin{center}
-\subfigure[Result of background subtracting and clustering]{\includegraphics[width=2.5in]{j_img/fig2b.jpg}}
+\subfigure[Result of background subtracton and clustering]{\includegraphics[width=3in]{j_img/fig2b.jpg}}
 \subfigure[Serial captured frames]{\includegraphics[width=3.5in]{j_img/fig2a.jpg}}
 \caption{Preprocessing of input objects}\label{test}
 \end{center}
@@ -427,11 +427,11 @@ $d^C_w$ is considered a prior descriptor which the edge between $\bf{\Theta^{C}}
 
 \section{MLN-based Descriptor}
 \subsection{The concept of constructing MLN-based descriptor}
-Being an self-taught system, deriving more valuable information from raw data helps system deriving more reliable results with poor prior knowledge. Most of present image descriptors [12-16] are constructed based on strong sparse feature point, because these points are consistent even in different environment. These kinds of descriptor can efficiently and precisely match given image. Nevertheless, most of observed face is not in prior data, so we need a descriptor which can infer the relation between observations and priors. To avoid lose of information, we choose normal distributed feature instead of sparse feature. Since different faces of an object may exist different strong features, normal distributed feature is more suit for our case. 
+Being an self-taught system, deriving more valuable information from raw data helps system deriving more reliable results with scarce prior knowledge. Most of present image descriptors [12-16] are constructed based on strong sparse feature point, because these points are consistent even in different environment. These kinds of descriptor can efficiently and precisely match given image. Nevertheless, most of observed face is not in prior data, so we need a descriptor which can infer the relation between observations and priors. To avoid losing information, we choose normal distributed feature instead of sparse feature. Since different faces of an object may exist different strong features, normal distributed feature is more suitable for our case. 
 
-For prepossessing of input images, each channel of RGB domain is classified into 5 parts, and get 125 classes in RGB domain. An input image will be segmented by these classes. In Fig. 3(a), an observed face of input object is segmented into 4 classes, and class 0 is background. Hereafter, predicates for MLN networks are constructed by segmented results. We have only two kinds of predicate \textit{ne(a,v)} and  \textit{des(x)} for MLN model. Variable \textit{a} is an atom cluster, and variable \textit{v} is a neighbor of atom cluster. Variable \textit{x} is a MLN-based descriptor. The variables of feature layer in Fig. 2 are predicates \textit{ne(a,v)}. Since every classes can be the atom cluster, we have $\binom{125}{2}$ binary variables in feature layer.
+For prepossessing of input images, each channel of RGB domain is classified into 5 parts, and get 125 classes in RGB domain. An input image will be segmented by these classes. In Fig. 3(a), an observed face of input object is segmented into 4 classes, and class 0 is background. Hereafter, predicates for MLN networks are constructed by segmented results. We have only two kinds of predicate \textit{ne(a,v)} and  \textit{des(x)} for MLN model. Variable \textit{a} is an atom cluster, and variable \textit{v} is a neighbor of atom cluster, so predicate \textit{ne(a,v)} represent adjacency of atom cluster. Variable \textit{x} in \textit{des(x)} is a MLN-based descriptor. The variables of feature layer in Fig. 2 are predicates \textit{ne(a,v)}. Since every classes can be the atom cluster, we have $\binom{125}{2}$ binary variables in feature layer.
 
-Taking Fig. 3(a) as an example, the predicates of preprocessed image are shown in Table 1, and first order logic is formulated as:
+Taking Fig. 3(a) as an example, the predicates of preprocessed image are shown in Table $\uppercase\expandafter{\romannumeral1}$, and first order logic is formulated as:
 
 \begin{equation}
 \forall{a}\forall{v}\quad\textit{ne(a,v)}\Rightarrow\textit{des(x)}
@@ -446,9 +446,9 @@ P(\bf{D^{in}} = d^{in}) = \frac{1}{Z}exp(\sum_{j=1}^{F*S} w_j n_j(d^{in}))
 \bf{Z}=\sum_{d^{in}\in\bf{D^{in}}}exp(\sum_{j=1}^{F*S} w_j n_j(d^{in}))
 \end{equation}
 
-Where  $n_j(d^{in})$ is the number of true grounding of formula j in $d^{in}$, and $w_j$ is weight of formula j .
+Where $d^{in}$ is the descriptor of input image. $n_j(d^{in})$ is the number of true grounding of formula j in $d^{in}$, and $w_j$ is weight of formula j .
 
-Consequently, probability distribution Eq.(5) is a MLN-based descriptor for 2D face recognition. 
+Consequently, probability distribution Eq.(5) is MLN-based descriptor for each 2D faces within input 3D object. 
 
 \begin{table}[!t]
 \caption{Example of predicates and first-order logic formulas}
@@ -489,7 +489,7 @@ ne(1,0) &
 
 
 \subsection{Inference and Weight learning of MLN-based descriptor}
-The weights of MLN-based descriptor is learned by maximizing the pseudo-log-likelihood. Since each descriptor can be considered as a closed world, we only need to consider the atoms which derive from captured serial frames. Comparing with uniform sampling approach, maximizing pseudo-log-likelihood is more efficient, because pseudo-log likelihood only need to considered relational data. The pseudo-log -likelihood of Eq.(5) can be written as:
+The weights of MLN-based descriptor is learned by maximizing the pseudo-log-likelihood. Since each descriptor can be consider as a closed world, we only need to consider the atoms which derive from captured serial frames. Comparing with uniform sampling approach, maximizing pseudo-log-likelihood is more efficient, because pseudo-log likelihood only need to considered relational data. The pseudo-log -likelihood of Eq.(5) can be written as:
 
 \begin{equation}
 \log P^*_w(\mathbf{D^{in}} = d^{in}) = \sum_{j=1}^{F*S} \log P_{w}(\mathbf{D^{in}} = d^{in}|\mathbf{MB}(d^{in}))
@@ -507,10 +507,10 @@ Where $\bf{MB}(d^{in})$ is Markov blanket while $d^{in}$ is observed. The MLN we
 -P_w(\mathbf{D^{in}}=1|\mathbf{MB}(d^{in})n_i(d^{in}=1)\}
 \end{equation}
 
-Where $n_i(d^{in}=0)$ is the number of true grounding of $j^{th}$ formula while force $\mathbf{d^{in}}=0$, and similar for $n_i(d^{in}=1)$. The learning of pseudo-log-likelihood in our approach are further boosted by the L-BFGS optimizer [20], to make entire process become more efficiency.
+Where $n_i(d^{in}=0)$ is the number of true grounding of $j^{th}$ formula while force $\mathbf{d^{in}}=0$, and similar for $n_i(d^{in}=1)$. The learning of pseudo-log-likelihood in our approach are further boosted by  \textbf{\textit{Limited-memory Broyden-Fletcher-Goldfarb-Shanno(L-BFGS)}} optimizer [20] to make entire process become more efficiency.
 
 \subsection{Matching of MLN-based descriptors}
-For each constructed input descriptor $d^{in}_k$, system would search for the matched descriptor in the database, and further arrange it to the proper layer of $\bf{D^C}$ or $\bf{D^U}$ as shown in fig.2. Since input is possible to be assigned to one of parallel layers, matching step is separated into two parts. One is utilized pseudo-log-likelihood to decide that observation should be assigned to which layer. The pseudo-log-likelihood of descriptors matching could be formulated as:
+For each constructed input descriptor $d^{in}_k$, system would search for the matched descriptor in the database, and further arrange it to the proper layer of $\bf{D^C}$ or $\bf{D^U}$ as shown in Fig.2. Since input is possible to be assigned to one of parallel layers, matching step is separated into two parts. One is using pseudo-log-likelihood for deciding observation should be assigned to which layer. The pseudo-log-likelihood of descriptors matching could be formulated as:
 
 
 \begin{equation}
@@ -522,12 +522,12 @@ For each constructed input descriptor $d^{in}_k$, system would search for the ma
 \end{equation}
 
 
-If input descriptor doesn't match any descriptor in $\bf{D^C}$ layer, the descriptor become a variable of  $\bf{D^U}$ layer. For a variable in $\bf{D^U}$, we would like to infer rotation angle to make input object can be placed on corresponding target face. Since the rotation angles for descriptors in $\bf{D^U}$ had been identified, the second part for matching is try to find a descriptor in $\bf{D^C}$ which have max co-cluster with input descriptor. Finding max co-cluster can be alternately considered as minimizing loss of information as:
+If input descriptor doesn't match any descriptor in $\bf{D^C}$ layer, the descriptor become a variable of  $\bf{D^U}$ layer. For a variable in $\bf{D^U}$, we infer rotation angle to make input object can be placed on corresponding target face. Since the rotation angles for descriptors in $\bf{D^U}$ are unidentified, the second part for matching is trying to find a descriptor in $\bf{D^C}$ which have max co-cluster with input descriptor. Finding max co-cluster can be alternately considered as minimizing information loss as:
 \begin{equation}
 \mathbf{argMin}(I(d^in , \mathbf{\Gamma}_{k \in d^{in} \cap d^C_w}) - I(d^C_w , \mathbf{\Gamma}_{k \in d^{in} \cap d^C_w}))
 \end{equation}
 
-The common feature $\mathbf{\Gamma}_{k \in d^{in} \cap d^C_w}$ is further represented by co-Markov Blanket of $d^{in}$ and $d^C_w$, and the loss of mutual information can be further formulated by KL divergence [28] as:
+The common feature $\mathbf{\Gamma}_{k \in d^{in} \cap d^C_w}$ is further represented by co-Markov Blanket of $d^{in}$ and $d^C_w$, and the loss of mutual information can be further formulated by \textbf{\textit{Kullback–Leibler divergence(KL divergence)}}[28] as:
 
 \begin{equation}
 \begin{array}{ll}
@@ -536,18 +536,18 @@ The common feature $\mathbf{\Gamma}_{k \in d^{in} \cap d^C_w}$ is further repres
 \end{array}
 \end{equation}
 
-By Eq.(10), classified descriptor $d^C_w$ with min DL-divergence is considered acquired max co-cluster with $d^{in}$. The relation between the co-cluster become the evidence for inferring rotation angle of $d^{in}$. Through Eq.(8) and Eq.(10), the input descriptors are classified to corresponding layer, and become inputs $\bf{\Theta^{U}}$ or $\bf{\Theta^{C}}$ layer.
+In Eq.(10), classified descriptor $d^C_w$ with min KL divergence is considered as acquired max co-cluster with $d^{in}$. The relation between the co-cluster become the evidence for inferring rotation angle of $d^{in}$. Through Eq.(8) and Eq.(10), the input descriptors are classified to corresponding layer, and become inputs $\bf{\Theta^{U}}$ or $\bf{\Theta^{C}}$ layer.
 
 
 \section{Hierarchical model}
 \subsection{Inference of rotation angle in $\bf{\Theta^{U}}$ layer}
-Inference rotation angle $\bf{\theta^{U}_i}$ is based on max co-cluster between $d^{in}$ and $d^C_w$. A set of co-cluster $\{$$C_{w1}$, $C_{w2}$, ..., $C_{wL}$$\}$ can be derived by minimizing KL divergence. The center of co-cluster with respect to center of camera in Cartesian space can derived two set $\bf{V^{in}}$=$\{$$v^{in}_1$, $v^{in}_2$, ..., $v^{in}_L$ $\}$ and $\bf{V^{C}_w}$=$\{$$v^{C}_{w1}$, $v^{C}_{w2}$, ..., $v^{C}_{wL}$ $\}$. The roll angle $\alpha$ of robot arm is calculated by:
+Inference rotation angle $\bf{\theta^{U}_i}$ is based on max co-cluster between $d^{in}$ and $d^C_w$. A set of co-cluster $\{$$C_{w1}$, $C_{w2}$, ..., $C_{wL}$$\}$ can be derived by minimizing KL divergence. The center of co-cluster with respect to center of camera in Cartesian space can be derived inti two sets $\bf{V^{in}}$=$\{$$v^{in}_1$, $v^{in}_2$, ..., $v^{in}_L$ $\}$ and $\bf{V^{C}_w}$=$\{$$v^{C}_{w1}$, $v^{C}_{w2}$, ..., $v^{C}_{wL}$ $\}$. The roll angle $\alpha$ of robot arm is calculated by:
 
 \begin{equation}
 \alpha =\cos^{-1}\frac{1}{L}\sum_{l=1}^K\frac{v^C_{wl}-v^{in}_l}{|v^C_{wl}-v^{in}_l|}
 \end{equation}
 
-Where roll angle $\alpha$ is the mean angle of co-cluster in two descriptors. For  pitch angle $\beta$ and yaw angle $\gamma$, since we don't have depth information, the pitch and yaw angle are impossible to be estimated by 2D descriptor. Hence, we random sample these two angle in value $\pi/2$ , and $-\pi/2$ initially, and approximate to actual angles by algorithm 1 though several iterations.
+Where roll angle $\alpha$ is the mean angle of co-cluster in two descriptors. As for  pitch angle $\beta$ and yaw angle $\gamma$, the pitch and yaw angle are hard to be estimated by 2D descriptor directly. We random sample these two angle in value $\pi/2$ , and $-\pi/2$ initially, and approximate to actual angles by algorithm 1.
 
 
 
@@ -602,13 +602,13 @@ Where roll angle $\alpha$ is the mean angle of co-cluster in two descriptors. Fo
 \begin{figure}[!t]
 \begin{center}
 \includegraphics*[width=2.5 in]{j_img/fig4.jpg}
-\caption{Structure configuration of proposed model}\label{test}
+\caption{Structure configuration of each layer in the proposed model}\label{test}
 \end{center}
 \end{figure}
 
-Proposed hierarchical model is a generative model of Deep Belief Network (DBN). Structure between each layer is shown in Fig. 4. each layer is considered as an Restricted Boltzmann Machine ($\bf{RBM}$)[8] except $\bf{\Gamma_K}$, $\bf{D^C}$, and $\bf{D^U}$. The MLN is trained by pseudo-log-likelihood as mention before, and RBM is trained by greedy layer-wise training [30].
+Proposed hierarchical model is a generative model of \textbf{\textit{Deep Belief Network (DBN)}}. Structure between each layer is shown in Fig. 4. each layer is considered as a \textbf{\textit{Restricted Boltzmann Machine (RBM)}}[8] except $\bf{\Gamma}$, $\bf{D^C}$, and $\bf{D^U}$. The MLN is trained by pseudo-log-likelihood as mention previously, and RBM is trained by greedy layer-wise training [30].
 
-Initially, left part of model ($\bf{\Gamma_K}$-$\bf{D^C}$-$\bf{\Theta^C}$-$\bf{O^C}$) are trained with prior target face of objects, and number of variables $\bf{N}$ in $\bf{O^C}$ equal to the number of prior target faces. The right part of model is activated only while a new observed is classified into $\bf{D^U}$. The activation probability of $\theta^U_i$ is a sigmoid activation function:
+Initially, left part of model ($\bf{\Gamma_K}$-$\bf{D^C}$-$\bf{\Theta^C}$-$\bf{O^C}$) are trained with prior target face of objects, and number of variables $\bf{N}$ in $\bf{O^C}$ equal to the number of prior target faces. The right part of model is activated only when a new observation is classified into $\bf{D^U}$. The activation probability of $\theta^U_i$ is a sigmoid activation function:
 
 \begin{equation}
 \begin{array}{ll}
@@ -624,13 +624,13 @@ P(\theta^U_i|\bf{D^U})=\frac{1}{1+exp \left( \mu*b_l-\sum_r d^U_r w_{lr}\right)}
 
 
 
-where $\mu$ is penalty factor which decrease the probability while the inference is failed. $\mu$ is depended on log-likelihood of $\theta^U_i$ which can lead to lower activation probability if inference result had failed several times, and avoid system derives wrong results over again. 
-In the other hand, for both $\bf{\Theta^U}$ and $\bf{\Theta^C}$ layer, if results are correct, the model will retrained by greedy layer-wise training. If validated result is derived from left part of Fig.(4), the generative model is defined by the joint distribution of top layers $P(\bf{O^C} , \bf{\Theta^C})$, and if the result is derived from right part, the generative model is defined by  $P(\bf{O^C} , \bf{\Theta^U})$. By doing so, the relation between prior and observations can be self-taught from numerous random unlabelled inputs, and self-inferred possible relational model while new assigned objects involve to proposed model.
+where $\mu$ is penalty factor which decrease the probability while the inference is failed. $\mu$ is depended on log-likelihood of $\theta^U_i$ which can lead to lower activation probability if inference result failed several times, and avoid system derives wrong results over again. 
+On the other hand, for both $\bf{\Theta^U}$ and $\bf{\Theta^C}$ layer, if results are correct, the model will be retrained by greedy layer-wise training. If validated result is derived from left part of Fig. 4, the generative model is defined by the joint distribution of top layers $P(\bf{O^C} , \bf{\Theta^C})$. If the result is derived from right part, the generative model is defined by  $P(\bf{O^C} , \bf{\Theta^U})$. By doing so, the relation between prior and observations can be self-taught from numerous random unlabelled inputs, and self-inferred possible relational model while new assigned objects involved with proposed model.
 
 
 
 \section{Experiments}
-The experiments for proposed model are separated into two parts. Firstly, we would like to evaluate the performance of MLN-based descriptor by standard object recognition datasets: $\bf{Caltech-101}$ [31] and $\bf{Caltech-256}$ [32]. Results shown in table 2 are comparisons with recently published state of art. The images in the datasets will be rescaled into five different scales for training proposed MLN-based descriptor. For $\bf{Caltech-101}$, we following general procedure randomly selecting 30 images for each class, and, for $\bf{Caltech-256}$, selecting 45 and 60 images for each class, and trained by pseudo-log likelihood. Although, the result doesn't outstanding in $\bf{Caltech-101}$, but the accuracy in $\bf{Caltech-256}$ is only behind ImageNet-pretrained model. In the other scope, the result shows that MLN-based descriptor keep well performance even increasing categories. Most of state of art get dramatically decreasing  of accuracy while categories increase from 101 to 256. Therefore, it's proved that MLN-based descriptor is compatible to be a descriptor in large amounts of unlabeled data.
+The experiments for proposed model are separated into two parts. Firstly, we evaluate the performance of MLN-based descriptor by standard object recognition datasets: $\bf{Caltech-101}$ [31] and $\bf{Caltech-256}$ [32]. Results shown in Table $\uppercase\expandafter{\romannumeral2}$ are comparisons with recently published papers. The images in the datasets are rescaled into five different scales for training proposed MLN-based descriptor. For $\bf{Caltech-101}$, we follow general procedure and randomly selecting 30 images for each class. For $\bf{Caltech-256}$, select 45 and 60 images for each class, and trained by pseudo-log likelihood. Although,for the proposed model, the result does not outstanding in $\bf{Caltech-101}$, but the accuracy in $\bf{Caltech-256}$ is only behind ImageNet-pretrained model. In the other scope, the result shows that MLN-based descriptor keep well performance even increasing categories. Most of recently published method get dramatically performance decreasing while categories increase from 101 to 256. Therefore, it's proved that MLN-based descriptor is compatible to be a descriptor in large amounts of unlabeled data.
 
 
 \begin{table}[!t]
@@ -730,23 +730,23 @@ WP1.4 & & WP 2.4 & & WP3.4 &\\
 \end{center}
 \end{table*}
 
-For the second part of experiment, we would like to implement proposed system in real industrial case. The prior knowledge are target face of assigned objects, and there are twenty kinds of assigned object in our experiment. Table 4 shows twenty target face for each assigned object. The experiment is implemented based on several assumptions: The input objects are not occluded, and not adjacent with each other. Hereafter, the inputs of self-taught system are that random choose assigned objects with random face on top. 
+For the second part of experiment, we implement proposed system in real industrial application. The prior knowledge are target face of assigned objects, and there are twenty kinds of assigned object in our experiment. Table 4 shows twenty target face for each assigned object. The experiment is implemented based on several assumptions: The input objects are not occluded, and not adjacent with each other. Hereafter, the inputs of self-taught system are random choose the assigned objects with random face on top. 
 
-The testing objected are classified into three classes in table 4. For class $\bf{WP1}$, the work pieces are featureless and small, so it's hard to construct robustness descriptor even building relational model for entire model. For class $\bf{WP2}$, all work pieces acquire similar shapes and size, so this kind of object is easily mismatch in the matching process. The work pieces in $\bf{WP3}$ are matched group of this experiment. The work pieces acquire sufficient feature for descriptor, and have plenty of information for identifying and constructing relational model. In the first stage of experiment, we would like to compare the performance of proposed system between different classes in different environments.  The results of different classes are shown in Fig.5. In Fig.5(b), the environment lighting is controlled by on-axis lighting source, so the information of object are more complete and distinct than images without lighting control in Fig.5(a). The accuracy is average of 100 times repeatedly testing.
+The testing objects are classified into three classes in Table $\uppercase\expandafter{\romannumeral4}$. For class $\bf{WP1}$, the work pieces are featureless and relative small, so it's hard to construct robustness descriptor even building relational model for entire model. For class $\bf{WP2}$, all work pieces acquire similar shapes and size, so this kind of object is easily mismatch in the matching process. The work pieces in $\bf{WP3}$ are matched group of this experiment. The work pieces acquire sufficient features for descriptor, and have plenty of information for identifying and constructing relational model. In the first stage of experiment, we compare the performance of proposed system between different classes in different lighting condition.  The results of different classes are shown in Fig.5. In Fig.5(b), the environment lighting is controlled by on-axis lighting source, so the information of object are more complete and distinct than images without lighting control in Fig.5(a). The accuracy is average of 100 times repeatedly testing.
 
-The system is considered convergence while accuracy is over 95$\%$, and stop learning approach. If the accuracy is under 95$\%$ again, the learning approach would be re-excuted. Comparing the results, in both cases, class $\bf{WP3}$ could be convergent with least input sample, and convergent time of class $\bf{WP2}$ is slowest. The results shows the efficiency of learning could be slightly improved by environment constrain, but the accuracy is not effected, and always over 95$\%$ after learning approach stopped. Similarly, 
+The system is considered convergence while accuracy is over 95$\%$, and stop learning approach. If the accuracy is under 95$\%$ again, the learning approach would be re-excuted. Comparing the results, in both cases, class $\bf{WP3}$ could be convergent with least input sample, and convergent time of class $\bf{WP2}$ is slowest. The results show that the efficiency of learning could be slightly improved by environment constrain, but the accuracy is not effected, and always keep over 95$\%$ after learning approach stopped. 
  
-Fig. 6 shows the result while all twenty kinds of assigned object are involved in the same time. The result shows that system need more inputs to convergent while more kinds of objects are involved, but the system still slightly converge, and accuracy is all over 95$\%$ for both conditions. In brief, these two experiments verify proposed system is competent to learn the relational model automatically. Although the learning rate would be dragged by the number of assigned objects, the learning rate still can be convergent by reasonable number of inputs. 
+Fig. 6 shows the result while all twenty kinds of assigned object are involved in the same time. The result shows that system need more inputs to converge while more kinds of objects are involved, but the system still slightly converge, and accuracy is all keeping over 95$\%$ for both conditions. In brief, these two experiments verify proposed system is competent to learn the relational model automatically. Although the learning rate is dragged by the number of assigned objects, the learning rate still can be convergent by reasonable number of inputs. 
 
 
  
 \begin{figure}[!t]
 \centering
-	\subfigure[Performance without environment constrains]{
+	\subfigure[Performance without on-axis lighting source]{
 		\includegraphics[width=3 in]{j_img/exp02.png}
 	}
 
-	\subfigure[Performance with environment constrains]{
+	\subfigure[Performance with on-axis lighting source]{
 		\includegraphics[width=3 in]{j_img/exp01.png}
 	}
 
@@ -756,23 +756,23 @@ Fig. 6 shows the result while all twenty kinds of assigned object are involved i
 
 \begin{figure}[!t]
 \centering
-	\subfigure[Performance without environment constrains]{
+	\subfigure[Performance without on-axis lighting source]{
 		\includegraphics[width=3 in]{j_img/exp04.png}
 	}
 
-	\subfigure[Performance with environment constrains]{
+	\subfigure[Performance with on-axis lighting source]{
 		\includegraphics[width=3 in]{j_img/exp03.png}
 	}
 
-\caption{Experimental Results of all work pieces in different environment constrains}
+\caption{Experimental Results of all work pieces in different }
 
 \end{figure}
 
-The experiment in Fig. 5 and 6 testified the performance of proposed system can meet our requirements. Then, we would like to compare the performance of proposed system with other advanced approaches. Since none of similar systems could handle this issue in our survey, so the comparisons would be done by dividing our system into two parts. One is 2-D descriptors for each face of objects, and the other is machine learning approach for learning relational model.
+The experiment in Fig. 5 and 6 testified that the performance of proposed system can meet our requirements. We compare the performance of proposed system with other advanced approaches. Since none of similar systems could handle this issue in our literature survey results, so the comparisons are done by dividing our system into two parts. One is 2-D descriptors for each face of objects, and the other is machine learning approach for learning relational model.
 
-For the descriptor part, four kinds of other descriptors are chosen to compare with proposed system. B-SIFT[35]and Edge-SIFT[36] are modified versions of SIFT approach which enhanced the accuracy of feature point registration. BRISK[13] descriptor is constructed based on binary robust invariant scalable key points, and Zernike Moment (ZM)[13] phase-based descriptor is a moment-based descriptor which use the phase information of signal. All of these descriptors are representative methods in relative field recent years, and had been testified by plenty of researchers. To compare the robustness and accuracy, the performance is testified by two conditions as shown in Table 5. One is relationship of each faces is prior of system, and the descriptors only provide information for object matching. The experiments are implemented by the same learning approach which proposed in previous section.The other is no prior for learning approach that information of descriptor need to use for inferring the relational model. The ZM descriptor have the best performance in the condition without prior, but accuracy of descriptors are close. In condition without prior, the MLN-based descriptor acquire best performance which testified MLN-based descriptor is suited for self-taught system. 
+For the descriptor part, four kinds of other descriptors are chosen to compare with proposed system. B-SIFT[35]and Edge-SIFT[36] are modified versions of SIFT approach which enhanced the accuracy of feature point registration. BRISK[13] descriptor is constructed based on binary robust invariant scalable key points, and Zernike Moment (ZM)[13] phase-based descriptor is a moment-based descriptor which use the phase information of signal. All of these descriptors are representative methods in relative field recent years, and had been testified by many researchers. To compare the robustness and accuracy, the performance is testified by two conditions as shown in Table $\uppercase\expandafter{\romannumeral5}$. One is relationship of each face is prior of system, and the descriptors only provide information for object matching. The experiments are implemented by the same learning approach which is proposed in the previous section.The other is no prior for learning approach that information of descriptor need to be used for inferring the relational model. The ZM descriptor has the best performance in the condition without prior, but accuracy of descriptors are close. In condition, without prior, the MLN-based descriptor acquires best performance which testified MLN-based descriptor is suited for self-taught system. 
 
-Hereafter, the performance of different learning methods should be further discussed. The other three kinds of transfer learning approaches: Locally Weighted Ensemble approach(LWE)[25], Transductive SVM(TSVM)[26], and Weighted Neural Network(WNN)[27] are chosen to compare with proposed method. Similarly, the experiments are divided into two parts as shown in table 6. The result shows LEW acquires the best accuracy in the condition with priors, and proposed learning approach acquire greatest performance in condition without prior, but, in both two conditions, the performance between different methods are pretty close. It's seem that the results are mainly effected by the performance of the descriptor. The performance of descriptor not only influence the result of 2-D image, but also the relational model of each faces, so the results are reasonable. 
+Hereafter, the performance of different learning methods is further discussed. The other three kinds of transfer learning approaches: \textbf{\textit{Locally Weighted Ensemble approach(LWE)}}[25], \textbf{\textit{Transductive SVM(TSVM)}}[26], and \textbf{\textit{Weighted Neural Network(WNN)}}[27] are chosen to compare with proposed method. Similarly, the experiments are divided into two parts as shown in table $\uppercase\expandafter{\romannumeral6}$. The result shows LEW acquires the best accuracy in the condition with priors, and proposed learning approach acquire greatest performance in condition without prior, but, in both two conditions, the performance between different methods are quite close. It seems that the results are mainly affected by the performance of the descriptor. The performance of descriptor not only influence the result of 2-D image, but also the relational model of each faces. 
 
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
 
@@ -922,55 +922,36 @@ All &
 \multirow{4}{*}{\tabincell{l}{Without\\prior}} &
 WP1 &
 0.9611&
-<<<<<<< HEAD
-0.8601&
+0.5601&
 0.6443&
-0.8103
-=======
-0.7101&
-0.6543&
-0.7303
->>>>>>> origin/ver2-sendtoRCL
+0.6103
+
 \\
 \cline{2-6}
 &
 WP2 &
 0.9505&
-<<<<<<< HEAD
-0.7543&
+0.6543&
 0.7158&
-0.82197
-=======
-0.6743&
-0.6558&
-0.7197
->>>>>>> origin/ver2-sendtoRCL
+0.72197
+
 \\
 \cline{2-6}
 &
 WP3 &
 0.9718&
-<<<<<<< HEAD
-0.8188&
+0.7188&
 0.7799&
 0.7946
-=======
-0.7688&
-0.7899&
-0.7146
->>>>>>> origin/ver2-sendtoRCL
+
 \\
 \cline{2-6}
 &
 All &
 0.9603&
 0.6553&
-<<<<<<< HEAD
 0.7497&
-=======
-0.5997&
->>>>>>> origin/ver2-sendtoRCL
-0.6486
+0.5997
 \\
 \hline
 
@@ -981,15 +962,13 @@ All &
 
 
 \section{Conclusion}
-The self-taught approaches for visual-servo system is an important part in industrial application. In this work, we reverse the concept of traditional visual-servo system. The robustness of feature points and descriptor is not a thing which should be most concerned. Instead, the relational model between input and output is the most important. 
+The self-taught approaches for visual-servo system is an important part in industrial application. In this work, we reverse the concept of traditional vision system. The robustness of feature points and descriptor is not a thing main concerns. Instead, the relational model between input and output is the most essential. 
 
-To learn the relationship between input and output, we proposed a hierarchical model which combines the concept of deep learning and transfer learning. The model acquires self-taught ability which can infer relational model and self-supervised the performance of learning results. Being a self-taught system, tackling large amount of unlabeled data and inferring relation with labeled data is our top tasks. The MLN-based descriptor is born for inferring the relational model. Since MLN-based model is a probability distribution of features, the relation between features can be represented as a discriminative distribution. Through these discriminative distribution, KL divergence is further involved to fined the max co-cluster, and the relational model is constructed based on max co-cluster between labeled and unlabeled data. The experiment result shows the MLN-based descriptor is compatible to face numerous unlabeled data.
+To learn the relationship between input and output, we propose a hierarchical model which combines the concept of deep learning and transfer learning. The model acquires self-taught ability which can infer relational model and self-supervised the performance of learning results. Being a self-taught system, tackling large amount of unlabeled data and inferring relation with labeled data is our main tasks. The MLN-based descriptor is suitable for inferring the relational model. Since MLN-based model is a probability distribution of features, the relation between features can be represented as a discriminative distribution. Through these discriminative distribution, KL divergence is further involved to find the max co-cluster, and the relational model is constructed based on max co-cluster between labeled and unlabeled data. The experimental results show the MLN-based descriptor is compatible to face numerous unlabeled data.
 
-Moreover, hierarchical model can separate different level knowledge by multilayer structure, so the features in different domains can be easily transferred and learned. proposed system include image feature, descriptor and rotation angle for robot arm. Distributions of these features are impossible to approximate by traditional single layer model. Hence, transferring knowledge in different domains owe to hierarchical model, and experiments results prove proposed system can recognized 3D object by only learned relational model. We believe this system is piratical in real industrial production line, and save tons of labor cost.
+Moreover,proposed system include image features, descriptors and rotation angles for robot arm. These different level features are impossible to be learned simultaneously by traditional single layer model, but the experimental results prove proposed hierarchical model can transfer and learn different level knowledge by multilayer structure, and recognize 3D object by only learned relational model. We believe this system is practical in real industrial production line, and save labor cost.
 
-
-
-
+ 
 
 .
 \ifCLASSOPTIONcaptionsoff
