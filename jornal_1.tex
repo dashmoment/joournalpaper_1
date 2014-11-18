@@ -451,7 +451,7 @@ Where $d^{in}$ is the descriptor of input image. $n_j(d^{in})$ is the number of 
 Consequently, probability distribution Eq.(5) is MLN-based descriptor for each 2D faces within input 3D object. 
 
 \begin{table}[!t]
-\caption{Example of predicates and first-order logic formulas}
+\caption{Example of predicates}
 \centering
 \begin{tabular}{|c|c|c|c|c|} 
 \hline
@@ -772,13 +772,13 @@ The experiment in Fig. 5 and 6 testified the performance of proposed system can 
 
 For the descriptor part, four kinds of other descriptors are chosen to compare with proposed system. B-SIFT[35]and Edge-SIFT[36] are modified versions of SIFT approach which enhanced the accuracy of feature point registration.  \textbf{\textit{Binary Robust Invariant Scalable Keypoints(BRISK)}}[15] descriptor is constructed based on binary robust invariant scalable key points, and \textbf{\textit{Zernike Moment (ZM)}}[13] phase-based descriptor is a moment-based descriptor which use the phase information of signal. All of these descriptors are representative methods in relative field recent years, and had been testified by many researchers. To compare the robustness and accuracy, the performance is testified by two conditions as shown in Table \uppercase\expandafter{\romannumeral5}. One is relationship of each face is prior of system, and the descriptors only provide information for object matching. The experiments are implemented by the same learning approach which is proposed in the previous section. The other is no prior for learning approach that information of descriptor need to be used for inferring the relational model. The ZM descriptor has the best performance in the condition with prior, but accuracies of descriptors are close. In condition, without prior, the MLN-based descriptor acquires best performance which testified MLN-based descriptor is suited for self-taught system. 
 
-Hereafter, the performances of different learning methods are further discussed. The other three kinds of transfer learning approaches: \textbf{\textit{Locally Weighted Ensemble approach(LWE)}}[25], \textbf{\textit{Transductive SVM(TSVM)}}[26], and \textbf{\textit{Weighted Neural Network(WNN)}}[27] are chosen to compare with proposed method. Similarly, the experiments are divided into two parts as shown in Table \uppercase\expandafter{\romannumeral6}. The result shows LEW acquires the best accuracy in the condition with priors, and proposed learning approach acquire greatest performance in condition without prior. Although the performances between different methods are quite close when priors are provided, the accuracy of the other methods goes down in no prior condition. It seems that the results are not only affected by descriptor, but also learning approach. The proposed system is only one method which can automatically learn and recognize object without prior knowledge of 3D model. 
+Hereafter, the performances of different learning methods are further discussed. The other three kinds of transfer learning approaches: \textbf{\textit{Locally Weighted Ensemble approach(LWE)}}[25], \textbf{\textit{Transductive SVM(TSVM)}}[26], and self-taught learning[21] are chosen to compare with proposed method. Similarly, the experiments are divided into two parts as shown in Table \uppercase\expandafter{\romannumeral6}. The result shows LEW acquires the best accuracy in the condition with priors, and proposed learning approach acquire greatest performance in condition without prior. Although the performances between different methods are quite close when priors are provided, the accuracy of the other methods goes down in no prior condition. It seems that the results are not only affected by descriptor, but also learning approach. The proposed system is only one method which can automatically learn and recognize object without prior knowledge of 3D model. 
 
 
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
 
 \begin{table}[!t]
-\caption{Comparisons of system performance with different 2-D descriptors}
+\caption{Comparisons of different descriptors}
 \centering
 \begin{tabular}{|c|c|c|c|c|c|c|} 
 \hline
@@ -872,9 +872,9 @@ All &
 \end{table} 
 
 \begin{table}[!t]
-\caption{Comparisons of different transfer learning approach}
+\caption{Comparisons of different learning approaches}
 \centering
-\begin{tabular}{|l|l|l|l|l|l|} 
+\begin{tabular}{|c|c|c|c|c|c|} 
 \hline
 \multirow{2}{*}{} &
 &
@@ -885,7 +885,7 @@ All &
 \bf{Proposed} &
 \bf{LEW} &
 \bf{TSVM} &
-\bf{WNN} 
+\bf{Self-taught} 
 \\
 \hline
 \multirow{4}{*}{\tabincell{l}{With\\prior}} &
@@ -893,7 +893,7 @@ WP1 &
 0.9781&
 0.9802&
 0.9511&
-0.9513
+0.9603
 \\
 \cline{2-6}
 &
@@ -901,7 +901,7 @@ WP2 &
 0.9630&
 0.9763&
 0.9690&
-0.9601
+0.9701
 \\
 \cline{2-6}
 &
@@ -909,7 +909,7 @@ WP3 &
 0.9901&
 0.9899&
 0.9799&
-0.9684
+0.9807
 \\
 \cline{2-6}
 &
@@ -917,7 +917,7 @@ All &
 0.9594&
 0.9677&
 0.9567&
-0.9541
+0.9701
 \\
 \hline\hline
 \multirow{4}{*}{\tabincell{l}{Without\\prior}} &
@@ -925,7 +925,7 @@ WP1 &
 0.9611&
 0.5601&
 0.6443&
-0.6103
+0.6213
 
 \\
 \cline{2-6}
@@ -934,7 +934,7 @@ WP2 &
 0.9505&
 0.6543&
 0.7158&
-0.72197
+0.7128
 
 \\
 \cline{2-6}
@@ -943,7 +943,7 @@ WP3 &
 0.9718&
 0.7188&
 0.7799&
-0.7946
+0.7846
 
 \\
 \cline{2-6}
@@ -952,7 +952,7 @@ All &
 0.9603&
 0.6553&
 0.7497&
-0.5997
+0.7081
 \\
 \hline
 
@@ -1080,14 +1080,12 @@ Sinno Jialin Pan, and  Qiang Yang,\emph{"A Survey on Transfer Learning"},\hskip 
 \bibitem{IEEEhowto:kopka} 
 T. Dietterich, L. Getoor, and K. Murphy,\emph{"Statistical Relational Learning and its Connections to Other Fields"},\hskip 1em plus 0.5em minus 0.4em\relax ICML-2004 Workshop on Statistical Relational Learning (SRL), Banff, Canada, July 2004.
 
+
 \bibitem{IEEEhowto:kopka} 
 Jing Gao and Wei Fan and Jing Jiang and Jiawei Han, \emph{"Knowledge Transfer via Multiple Model Local Structure Mapping"},\hskip 1em plus 0.5em minus 0.4em\relax in the 14th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining,pp. 283-291,New York, USA,2008
 
 \bibitem{IEEEhowto:kopka} 
 T. Joachims, \emph{"Making large-scale svm learning practical."},\hskip 1em plus 0.5em minus 0.4em\relax advances in kernel methods - support vector learning, MIT-Press, 1999.
-D. Lowe, \emph{"Distinctive Image Features from Scale-Invariant Keypoints"},\hskip 1em plus 0.5em minus 0.4em\relax International Journal of Computer Vision 60(2), pp. 91–110, 2004.
-
-
 
 \bibitem{IEEEhowto:kopka} 
 A. J. Carlson, C. M. Cumby, J. L. R. Nicholas D. Rizzolo,
@@ -1110,7 +1108,7 @@ Yoshua Bengio, Pascal Lamblin, Popovici Dan, and Larochelle Hugo,\emph{"Greedy L
 %%%Caltech 101 and 256%%%%
 
 \bibitem{IEEEhowto:kopka} 
-Fei-Fei L., R. Fergus , and P. Perona ,\emph{" Learning generative visual models
+Fei-Fei Li, R. Fergus , and P. Perona ,\emph{" Learning generative visual models
 from few training examples: an incremental Bayesian approach tested on
 101 object categories"},\hskip 1em plus 0.5em minus 0.4em\relax IEEE. CVPR 2004, Workshop on Generative-Model Based Vision, 2004.
 

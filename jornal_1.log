@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.3)  17 NOV 2014 18:33
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.3)  18 NOV 2014 17:22
 entering extended mode
 **jornal_1.tex
 (E:\joournalpaper_1\jornal_1.tex
@@ -344,7 +344,134 @@ Package caption Info: We need package `newfloat' on input line 278.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\newfloat.sty"
 Package: newfloat 2013/05/11 v1.1-91 Defining new floating environments (AR)
 )
-(E:\joournalpaper_1\jornal_1.aux)
+(E:\joournalpaper_1\jornal_1.aux
+
+LaTeX Warning: Label `test' multiply defined.
+
+
+LaTeX Warning: Label `test' multiply defined.
+
+
+LaTeX Warning: Label `test' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 280.
 LaTeX Font Info:    ... okay on input line 280.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 280.
@@ -421,8 +548,7 @@ LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 280.
 LaTeX Font Info:    ... okay on input line 280.
 LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 280.
 LaTeX Font Info:    ... okay on input line 280.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count120
 \scratchdimen=\dimen141
@@ -675,11 +801,6 @@ nalpaper_1/j_img/wp33.jpg> <E:/joournalpaper_1/j_img/wp37.jpg> <E:/joournalpape
 r_1/j_img/wp14.jpg> <E:/joournalpaper_1/j_img/wp24.jpg> <E:/joournalpaper_1/j_i
 mg/wp34.jpg> <E:/joournalpaper_1/j_img/exp02.png> <E:/joournalpaper_1/j_img/exp
 01.png>]
-Underfull \hbox (badness 2790) in paragraph at lines 775--776
-\OT1/ptm/b/it/10 work(WNN)\OT1/ptm/m/n/10 [27] are cho-sen to com-pare with pro
--posed
- []
-
 [7 <E:/joournalpaper_1/j_img/exp04.png> <E:/joournalpaper_1/j_img/exp03.png>]
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no ¥ in font ptmr7t!
@@ -719,11 +840,8 @@ Underfull \hbox (badness 5787) in paragraph at lines 1073--1074
 g: An In-tro-duc-tion"\OT1/ptm/m/n/8 ,
  []
 
-Missing character: There is no â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no “ in font ptmr7t!
 
-Underfull \hbox (badness 3148) in paragraph at lines 1107--1109
+Underfull \hbox (badness 3148) in paragraph at lines 1105--1107
 []\OT1/ptm/m/n/8 Yoshua Ben-gio, Pas-cal Lam-blin, Popovici Dan, and Larochelle
 
  []
@@ -751,13 +869,13 @@ Missing character: There is no € in font ptmr7t!
 Missing character: There is no  in font ptmr7t!
 [8] (E:\joournalpaper_1\jornal_1.aux)
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
  5943 strings out of 493921
  86529 string characters out of 3144862
- 160061 words of memory out of 3000000
+ 159108 words of memory out of 3000000
  9120 multiletter control sequences out of 15000+200000
  53296 words of font info for 116 fonts, out of 3000000 for 9000
  844 hyphenation exceptions out of 8191
@@ -783,7 +901,7 @@ lic/amsfonts/cm/cmsy9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/ti
 mes/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a
 .pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Pr
 ogram Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on jornal_1.pdf (8 pages, 1593672 bytes).
+Output written on jornal_1.pdf (8 pages, 1593504 bytes).
 PDF statistics:
  152 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
