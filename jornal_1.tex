@@ -282,30 +282,32 @@
 % paper title
 % can use linebreaks \\ within to get better formatting as desired
 % Do not put math or special symbols in the title.
-\title{ Learning and Recognizing 3D Objects without Manual Interference by a Self-taught Vision System}
+\title{ An Intelligent Self-Taught Vision System Automated 3D Object Learning and Recognition}
 
 
 
 
-\author{\IEEEauthorblockN{Ren C. Luo\IEEEauthorrefmark{1},
-and Po-Yu Chuang\IEEEauthorrefmark{2},
-}
+%\author{Ren C. Luo,~\IEEEmembership{Fellow,~IEEE,}
+%and Po-Yu Chuang
 
-\IEEEauthorblockA{\IEEEauthorrefmark{1} \IEEEauthorrefmark{2}Electrical Engineering Department, National
-Taiwan University, Taipei, Taiwan 106}
 
-}
+%\IEEEcompsocitemizethanks{\IEEEcompsocthanksitem Ren C. Luo and Po-Yu Chuang are with Electrical Engineering Department, National Taiwan University, Taipei, Taiwan 106.
+%(e-mail: renluo@ntu.edu.tw;pychuang@ira.ee.ntu.edu.tw).\protect\\
+
+%}}
+
+
 
 
 \IEEEtitleabstractindextext{%
 \begin{abstract}
-Vision systems for 3D object recognition are widely applied on industrial robot arm recent years. Conventionally, vision, learning approach, and robot arm are separated into three different systems, so learning approach can only learn the distributions of input data, but cannot refine qualities of input and output without manual interference. Therefore, it may cause misfiring performance by erratic input or sustainable growth database. In this paper, we propose an intelligent vision system for 3D object recognition which is able to automatically construct and refine model for 3D object recognition without any manual interference. Although 2D images and rotation angles of robot arm are different domains, we model 3D objects by multiple 2D images and rotation angles, and information from different domains are integrated by a Hierarchical-Deep (HD) model with parallel branch. The model hierarchically extracts information by domains and levels. The parallel branch distinct labeled and unlabeled data to avoid performance drag by sustainable growth of unlabeled input. The relationships between label and unlabeled data are learned by proposed self-taught approach. The experimental results show the feasibility of proposed structure that can transfer knowledge in different domains with limited prior knowledge, and complete assigned task by only modeling the relation between input and output.
+Vision systems for 3D object recognition are widely applied on industrial integrating with robot arm. Conventionally, vision, learning approach, and robot arm are separated into three different systems, so that learning approach can only learn the distributions of input data, but cannot refine qualities of input and output without manual intervention. Therefore, it may cause misfiring performance by erratic input or sustainable growth database. In this paper, we propose an intelligent vision system for 3D object recognition which is able to automatically construct and refine model for 3D object recognition without any manual intervention. Although 2D images and rotation angles of robot arm are different domains, we model 3D objects by multiple 2D images and rotation angles, and information from different domains are integrated by a Hierarchical-Deep (HD) model with parallel branch. The model hierarchically extracts information by domains and levels. The parallel branch distinct labeled and unlabeled data to avoid performance drag by sustainable growth of unlabeled input. The relationships between label and unlabeled data are learned by proposed self-taught approach. The experimental results support the feasibility of proposed structure which can transfer knowledge in different domains with limited prior knowledge, and complete assigned task by only modeling the relation between input and output.
 
 \end{abstract}
 
 % Note that keywords are not normally used for peerreview papers.
 \begin{IEEEkeywords}
-industrial automation, machine vision, object recognition, Hierarchical-Deep model
+Automation, Computer vision, Image recognition, Learning systems, Intelligent robots 
 \end{IEEEkeywords}}
 
 
@@ -361,9 +363,9 @@ industrial automation, machine vision, object recognition, Hierarchical-Deep mod
 % 
 % Here we have the typical use of a "T" for an initial drop letter
 % and "HIS" in caps to complete the first word.
-\IEEEPARstart{R}{obot} arm with vision have been widely applied in automatic industrial production line in recent years [1-4]. New hurdles of conventional vision system arise due to rise of consumer electronic market. The components in assembling production line become small volume but large variety. The types of components are also changed rapidly because of short product life cycle. These conditions are tough for conventional vision system. Model-based recognition methods are commonly used in present industrial applications. The performance is mainly related to the manually labeled data. These manual works not only increase the labor cost, but also point out the dilemma of present vision-based robot is unable to automatically adapt to various assignments, and growing database.
+\IEEEPARstart{R}{obot} arm with vision has been widely applied in automatic industrial production line for many years [1-4]. New hurdles of conventional vision system arise due to the rise of consumer electronic market. The components in assembling production line are become small volume with large varieties. The types of components are also changed rapidly because of short product life cycle. These conditions are tough for conventional vision system. Model-based recognition methods are commonly used in present industrial applications. The performance is mainly related to the manually labeled data. These manual works not only increase the labor cost, but also point out the dilemma of present vision-based robot is unable to automatically adapt to various assignments, and growing database.
 
-Therefore, we propose an intelligent system which is able to handle sustainable growth of unlabeled input, and refine existed model without any manual interference. The situation of this paper is that we only provide target face of 3D objects which are intended to be placed on top by robot arm, but the other faces of 3D objects are unknown. The only prior knowledge is target faces, and inputs are arbitrary objects with random faces on top. The input of system is 2D image, and output is rotation angle of robot arm in Cartesian. Since input and output are different domains, the traditional single layer models [5,6] which end in a linear or kernel classifier is not enough. We introduced a \textit{\textbf{Hierarchical-Deep(HD)}} model[7] to tackle the problems. 
+Therefore, we propose an intelligent system which is able to handle sustainable growth of unlabeled input, and refine existed model without any manual intervention. The situation of this paper is that we only provide target face of 3D objects which are intended to be placed on top by robot arm, but the other faces of 3D objects are unknown. The only prior knowledge is target faces, and inputs are arbitrary objects with random faces on top. The input of system is 2D image, and output is rotation angle of robot arm in Cartesian. Since input and output are different domains, the traditional single layer models [5,6] which end in a linear or kernel classifier are not enough. We introduce a \textit{\textbf{Hierarchical-Deep(HD)}} model[7] to tackle the problems. 
 
 The learning of HD model achieves dramatically success recent years. Hinton et al. [7] proposed deep structure learning which hidden layers are formed by lower level feature to higher level hierarchically, and had been successfully applied on different research fields [8-11]. The proposed HD model is constructed by four layers:\textbf{Feature}, \textbf{Descriptor}, \textbf{Object} and \textbf{RotationAngle}. Being an automatic system, the ability which could "infer" latent edges between labeled and unlabeled data is needed. Latent edge means two variables in different layers exist an edge in graph model if prior data is sufficient, but, in our case, system only have small amount of prior data. Hence, there are many latent edges which are waiting to be revealed through learning process. 
 
@@ -550,7 +552,7 @@ Where roll angle $\alpha$ is the mean angle of co-cluster in two descriptors. As
 
 
 
-\begin{algorithm}
+\begin{algorithm}[!t]
   \caption{Inferring rotation angle from co-cluster}
    $\bf{Function}$ inferringTheta$(d^{in},\bf{D^C},\bf{D^U})$\\ 
   $\bf{Input:}$\\
@@ -624,7 +626,7 @@ P(\theta^U_i|\bf{MB}(d^{in}))=\frac{1}{1+exp \left( \mu*b-\sum_r d^U_r w_{r}\rig
 
 
 where $w_r$ and $b$ are the weights and bias. $\mu$ is penalty factor which decreases the probability while the inference is failed. $\mu$ is depended on log likelihood of $\theta^U_i$ which can lead to lower activation probability if inference result failed several times, and avoid system derives wrong results over again. 
-On the other hand, for both $\bf{\Theta^U}$ and $\bf{\Theta^C}$ layer, if results are correct, the model will be retrained by greedy layer-wise training. If validated result is derived from left part of Fig. 4, the generative model is defined by the joint distribution of top layers $P(\bf{O^C} , \bf{\Theta^C})$. If the result is derived from right part, the generative model is defined by  $P(\bf{O^C} , \bf{\Theta^U})$. By doing so, the relation between prior and observations can be self-taught from numerous random unlabeled inputs, and infer possible relationship without any manual interference.
+On the other hand, for both $\bf{\Theta^U}$ and $\bf{\Theta^C}$ layer, if results are correct, the model will be retrained by greedy layer-wise training. If validated result is derived from left part of Fig. 4, the generative model is defined by the joint distribution of top layers $P(\bf{O^C} , \bf{\Theta^C})$. If the result is derived from right part, the generative model is defined by  $P(\bf{O^C} , \bf{\Theta^U})$. By doing so, the relation between prior and observations can be self-taught from numerous random unlabeled inputs, and infer possible relationship without any manual intervention.
 
 
 
@@ -958,16 +960,16 @@ All &
 \end{table} 
 
 \section{Comparisons of related works}
-The proposed system is a HD model with parallel branches. Conventionally, the descriptors [13, 15, 35-39] and learning model [27-28] are separated, so the learning approaches only learn the distribution of descriptors but cannot adjust the distribution of descriptors. According to our surveys, no such a descriptor constructor can fit every case without manual interference. Therefore, the proposed approach takes an alternative way to make learning approach can adjust the distribution of descriptors to make the MLN-based descriptor can be refined during learning stage. This thought is proved by experimental results show in Table V and VI. The descriptors have to be constructed without manual interference in condition of without prior knowledge, and the result shows the performances of other than proposed method are dramatic decreased. 
+The proposed system is a HD model with parallel branches. Conventionally, the descriptors [13, 15, 35-39] and learning model [27-28] are separated, so that the learning approaches only learn the distribution of descriptors but cannot adjust the distribution of descriptors. According to our surveys, there are no such descriptors construction can fit every case without manual intervention. Therefore, we propose to establish a learning approach which can adjust the distribution of descriptors to make the MLN-based descriptor can be refined during learning stage. This approach is proved by experimental results as shown in Table V and VI. The descriptors have to be constructed without manual intervention under the condition of without prior knowledge. 
 
-Moreover, the other feature of proposed system is that learn knowledge in both image and rotation angle by just one model. Most of HD models [8-11] are focus on learning knowledge in the same domains, e.g.  handwriting [8], text categorization[9], Speech Recognition [10], images[11]. To handle the knowledge in different domains, we involve the technique of self-taught clustering and parallel structure model, and the experimental result also shows the feasibility of learning knowledge in different domains by proposed HD model.
+Moreover, the other distinct feature of our proposed system is that the learning knowledge in both image and rotation angle can be done by just only one model. Most of HD models [8-11] are focus on learning knowledge in the same domains, e.g.  handwriting [8], text categorization[9], Speech Recognition [10], images[11]. To handle the knowledge in different domains, we involve the technique of self-taught clustering and parallel structure model, and the experimental results also support the feasibility of learning knowledge in different domains by our proposed HD model.
 
 \section{Conclusion}
 An automatic learning system for vision system is an important part in assembling production line with small-volume, large-variety components. In this work, we reverse the concept of traditional vision system. The robustness of feature points and descriptor is not main concerns. Instead, the relation between input and output is the most essential. 
 
 To learn the relationship between input and output, we propose a HD model which combines the concept of deep learning, transfer learning, and Markov logic network. The model acquires self-taught ability which can infer relational model and self-supervised the performance of learning results. Being an automatic system, tackling large amount of unlabeled data and inferring relation with labeled data is necessary. The relation between features in different levels can be represented as a discriminative distribution by the model. Through the discriminative distributions, KL divergence is further involved to find the max co-cluster between labeled and unlabeled data, and makes system stable under growing database. 
 
-Moreover, proposed system includes image features, descriptors and rotation angles for robot arm. These different domain features are impossible to be learned simultaneously by traditional single layer model, but the experimental results prove proposed HD model can transfer and learn different domain knowledge, and recognize 3D object without manual interference. We believe this system is practical in real industrial assembling production line, and save labor cost.
+Moreover, proposed system includes image features, descriptors and rotation angles for robot arm. These different domain features are impossible to be learned simultaneously by traditional single layer model, but the experimental results prove proposed HD model can transfer and learn different domain knowledge, and recognize 3D object without manual intervention. We believe this system is practical in real industrial assembling production line, and save labor cost.
 
 
  
