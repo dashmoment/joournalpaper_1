@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.3)  24 NOV 2014 09:54
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.3)  19 JAN 2015 15:24
 entering extended mode
 **jornal_1.tex
-(E:\joournalpaper_1\jornal_1.tex
+(E:\Github\journalpaper#1\jornal_1.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -13,7 +13,7 @@ german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
 ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
 an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
 ishmax, welsh, loaded.
-(E:\joournalpaper_1\IEEEtran.cls
+(E:\Github\journalpaper#1\IEEEtran.cls
 Document Class: IEEEtran 2012/12/27 V1.8 by Michael Shell
 -- See the "IEEEtran_HOWTO" manual for usage information.
 -- http://www.michaelshell.org/tex/ieeetran/
@@ -344,7 +344,7 @@ Package caption Info: We need package `newfloat' on input line 278.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\newfloat.sty"
 Package: newfloat 2013/05/11 v1.1-91 Defining new floating environments (AR)
 )
-(E:\joournalpaper_1\jornal_1.aux
+(E:\Github\journalpaper#1\jornal_1.aux
 
 LaTeX Warning: Label `test' multiply defined.
 
@@ -353,123 +353,6 @@ LaTeX Warning: Label `test' multiply defined.
 
 
 LaTeX Warning: Label `test' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
-
-
-LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
 
 )
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 280.
@@ -623,8 +506,9 @@ Overfull \hbox (0.94499pt too wide) in paragraph at lines 422--424
  [] 
  []
 
-[2 <E:/joournalpaper_1/j_img/fig1.jpg> <E:/joournalpaper_1/j_img/fig2b.jpg> <E:
-/joournalpaper_1/j_img/fig2a.jpg>] [3 <E:/joournalpaper_1/j_img/fig3.jpg>]
+[2 <E:/Github/journalpaper#1/j_img/fig1.jpg> <E:/Github/journalpaper#1/j_img/fi
+g2b.jpg> <E:/Github/journalpaper#1/j_img/fig2a.jpg>] [3 <E:/Github/journalpaper
+#1/j_img/fig3.jpg>]
 Missing character: There is no ‚ in font ptmbi7t!
 Missing character: There is no Ä in font ptmbi7t!
 Missing character: There is no ì in font ptmbi7t!
@@ -770,7 +654,7 @@ File: j_img/wp34.jpg Graphic file (type jpg)
  <use j_img/wp34.jpg>
 Package pdftex.def Info: j_img/wp34.jpg used on input line 727.
 (pdftex.def)             Requested size: 72.27107pt x 43.36212pt.
- [5 <E:/joournalpaper_1/j_img/fig4.jpg>]
+ [5 <E:/Github/journalpaper#1/j_img/fig4.jpg>]
 <j_img/exp01.png, id=67, 586.3506pt x 394.5942pt>
 File: j_img/exp01.png Graphic file (type png)
  <use j_img/exp01.png>
@@ -800,93 +684,57 @@ Underfull \vbox (badness 3989) has occurred while \output is active []
 
 Underfull \vbox (badness 1259) has occurred while \output is active []
 
- [6 <E:/joournalpaper_1/j_img/wp11.jpg> <E:/joournalpaper_1/j_img/wp15.jpg> <E:
-/joournalpaper_1/j_img/wp21.jpg> <E:/joournalpaper_1/j_img/wp25.jpg> <E:/joourn
-alpaper_1/j_img/wp31.jpg> <E:/joournalpaper_1/j_img/wp35.jpg> <E:/joournalpaper
-_1/j_img/wp12.jpg> <E:/joournalpaper_1/j_img/wp16.jpg> <E:/joournalpaper_1/j_im
-g/wp22.jpg> <E:/joournalpaper_1/j_img/wp26.jpg> <E:/joournalpaper_1/j_img/wp32.
-jpg> <E:/joournalpaper_1/j_img/wp36.jpg> <E:/joournalpaper_1/j_img/wp13.jpg> <E
-:/joournalpaper_1/j_img/wp17.jpg> <E:/joournalpaper_1/j_img/wp23.jpg> <E:/joour
-nalpaper_1/j_img/wp33.jpg> <E:/joournalpaper_1/j_img/wp37.jpg> <E:/joournalpape
-r_1/j_img/wp14.jpg> <E:/joournalpaper_1/j_img/wp24.jpg> <E:/joournalpaper_1/j_i
-mg/wp34.jpg> <E:/joournalpaper_1/j_img/exp01.png> <E:/joournalpaper_1/j_img/exp
-02.png>]
-[7 <E:/joournalpaper_1/j_img/exp03.png> <E:/joournalpaper_1/j_img/exp04.png>]
-Missing character: There is no √ in font ptmr7t!
-Missing character: There is no • in font ptmr7t!
-Missing character: There is no ‚ in font ptmri7t!
-Missing character: There is no Ä in font ptmri7t!
-Missing character: There is no î in font ptmri7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ì in font ptmr7t!
-Missing character: There is no ‚ in font ptmri7t!
-Missing character: There is no Ä in font ptmri7t!
-Missing character: There is no ù in font ptmri7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ì in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ô in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ì in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ì in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ì in font ptmr7t!
-Missing character: There is no ‚ in font ptmri7t!
-Missing character: There is no Ä in font ptmri7t!
-Missing character: There is no ú in font ptmri7t!
-Missing character: There is no ‚ in font ptmri7t!
-Missing character: There is no Ä in font ptmri7t!
-Missing character: There is no ù in font ptmri7t!
-
-Underfull \hbox (badness 5787) in paragraph at lines 1076--1077
-[]\OT1/ptm/m/n/8 Sa[]so D[]zeroski\OT1/ptm/m/it/8 "Multi-relational Data Min-in
-g: An In-tro-duc-tion"\OT1/ptm/m/n/8 ,
- []
-
-
-Underfull \hbox (badness 3148) in paragraph at lines 1108--1110
-[]\OT1/ptm/m/n/8 Yoshua Ben-gio, Pas-cal Lam-blin, Popovici Dan, and Larochelle
-
- []
-
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ù in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ì in font ptmr7t!
+ [6 <E:/Github/journalpaper#1/j_img/wp11.jpg> <E:/Github/journalpaper#1/j_img/w
+p15.jpg> <E:/Github/journalpaper#1/j_img/wp21.jpg> <E:/Github/journalpaper#1/j_
+img/wp25.jpg> <E:/Github/journalpaper#1/j_img/wp31.jpg> <E:/Github/journalpaper
+#1/j_img/wp35.jpg> <E:/Github/journalpaper#1/j_img/wp12.jpg> <E:/Github/journal
+paper#1/j_img/wp16.jpg> <E:/Github/journalpaper#1/j_img/wp22.jpg> <E:/Github/jo
+urnalpaper#1/j_img/wp26.jpg> <E:/Github/journalpaper#1/j_img/wp32.jpg> <E:/Gith
+ub/journalpaper#1/j_img/wp36.jpg> <E:/Github/journalpaper#1/j_img/wp13.jpg> <E:
+/Github/journalpaper#1/j_img/wp17.jpg> <E:/Github/journalpaper#1/j_img/wp23.jpg
+> <E:/Github/journalpaper#1/j_img/wp33.jpg> <E:/Github/journalpaper#1/j_img/wp3
+7.jpg> <E:/Github/journalpaper#1/j_img/wp14.jpg> <E:/Github/journalpaper#1/j_im
+g/wp24.jpg> <E:/Github/journalpaper#1/j_img/wp34.jpg> <E:/Github/journalpaper#1
+/j_img/exp01.png> <E:/Github/journalpaper#1/j_img/exp02.png>] [7 <E:/Github/jou
+rnalpaper#1/j_img/exp03.png> <E:/Github/journalpaper#1/j_img/exp04.png>]
 Missing character: There is no Ô in font ptmri7t!
 Missing character: There is no ¨ in font ptmri7t!
 Missing character: There is no Å in font ptmri7t!
+Missing character: There is no À in font ptmr7t!
+Missing character: There is no á in font ptmr7t!
+Missing character: There is no À in font ptmr7t!
+Missing character: There is no á in font ptmr7t!
+
+Underfull \hbox (badness 2644) in paragraph at lines 1008--1009
+[]\OT1/ptm/m/n/8 Saso Dze-roski, ``Multi-relational Data Min-ing: An In-tro-duc
+-tion,"
+ []
+
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ù in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ù in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ù in font ptmr7t!
-[8] (E:\joournalpaper_1\jornal_1.aux)
+Missing character: There is no Ô in font ptmr7t!
+Missing character: There is no ¨ in font ptmr7t!
+Missing character: There is no Å in font ptmr7t!
+Missing character: There is no Ô in font ptmr7t!
+Missing character: There is no ¨ in font ptmr7t!
+Missing character: There is no Å in font ptmr7t!
+
+Underfull \hbox (badness 1975) in paragraph at lines 1025--1026
+\OT1/ptm/m/n/8 constrained Lin-ear Cod-ing for Im-age Clas-si-ca-tion,'' in \OT
+1/ptm/m/it/8 Int. Conf.
+ []
+
+[8] (E:\Github\journalpaper#1\jornal_1.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5919 strings out of 493921
- 86162 string characters out of 3144862
- 159108 words of memory out of 3000000
- 9097 multiletter control sequences out of 15000+200000
+ 5958 strings out of 493921
+ 86399 string characters out of 3144862
+ 159255 words of memory out of 3000000
+ 9136 multiletter control sequences out of 15000+200000
  48876 words of font info for 102 fonts, out of 3000000 for 9000
  844 hyphenation exceptions out of 8191
  44i,16n,42p,1459b,386s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -911,7 +759,7 @@ lic/amsfonts/cm/cmsy9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/ti
 mes/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a
 .pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Pr
 ogram Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on jornal_1.pdf (8 pages, 1592658 bytes).
+Output written on jornal_1.pdf (8 pages, 1589732 bytes).
 PDF statistics:
  152 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
