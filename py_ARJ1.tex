@@ -3,79 +3,46 @@
 
 \documentclass{tADR2e}
 
+\usepackage{graphicx}
+\usepackage{subfloat}
+\usepackage{subfigure}
+\usepackage{subfig}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{multirow}
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+\usepackage{amsmath}
+\usepackage{graphics}
+\usepackage{epsfig}
+\usepackage{CJK}
+\usepackage{amsmath}
+\usepackage{caption}
+
 \begin{document}
 
-\jvol{00} \jnum{00} \jyear{2013} \jmonth{January}
+%\jvol{00} \jnum{00} \jyear{2013} \jmonth{January}
 
-\articletype{GUIDE}
+%\articletype{GUIDE}
 
-\title{{\itshape Advanced Robotics} \LaTeX\ style guide for authors \break (Style 4 + NLM reference style)}
+\title{{\itshape An Intelligent Self-Taught Vision System Automated 3D Object Learning and Recognition}}
 
-\author{A.N. Author$^{a}$$^{\ast}$\thanks{$^\ast$Corresponding author. Email: latex.helpdesk@tandf.co.uk
-\vspace{6pt}} and I.T. Consultant$^{b}$\\\vspace{6pt}  $^{a}${\em{Taylor \& Francis, 4 Park Square, Milton Park, Abingdon, UK}};
-$^{b}${\em{Institut f\"{u}r Informatik, Albert-Ludwigs-Universit\"{a}t, Freiburg,
-Germany}}\\\vspace{6pt}\received{v1.0 released January 2013} }
+%\author{Ren C. Luo$^{a}$$^{\ast}$\thanks{$^\ast$Corresponding author. Email: latex.helpdesk@tandf.co.uk
+%\vspace{6pt}} and  Po-Yu Chuang$^{b}$\\\vspace{6pt}  $^{a}${\em{Taylor \& Francis, 4 Park Square, Milton Park, Abingdon, UK}};
+%$^{b}${\em{Institut f\"{u}r Informatik, Albert-Ludwigs-Universit\"{a}t, Freiburg,
+%Germany}}\\\vspace{6pt}\received{v1.0 released January 2013} }
 
 \maketitle
 
 \begin{abstract}
-This guide is for authors who are preparing papers for the Taylor \& Francis journal {\it Advanced Robotics} ({\it tADR}) using the \LaTeX\ document preparation system and the class file {\tt tADR2e.cls},
-which is available via the journal's homepage on the Taylor \& Francis website. Authors planning to submit papers
-in \LaTeX\ are advised to use {\tt tADR2e.cls} as early as possible in the creation of their files.\medskip
+Vision systems for 3D object recognition are widely applied on industrial integrating with robot arm. Conventionally, vision, learning approach, and robot arm are separated into three different systems, so that learning approach can only learn the distributions of input data, but cannot refine qualities of input and output without manual intervention. Therefore, it may cause misfiring performance by erratic input or sustainable growth database. In this paper, we propose an intelligent vision system for 3D object recognition which is able to automatically construct and refine model for 3D object recognition without any manual intervention. Although 2D images and rotation angles of robot arm are different domains, we model 3D objects by multiple 2D images and rotation angles, and information from different domains are integrated by a Hierarchical-Deep (HD) model with parallel branch. The model hierarchically extracts information by domains and levels. The parallel branch distinct labeled and unlabeled data to avoid performance drag by sustainable growth of unlabeled input. The relationships between label and unlabeled data are learned by proposed self-taught approach. The experimental results support the feasibility of proposed structure which can transfer knowledge in different domains with limited prior knowledge, and complete assigned task by only modeling the relation between input and output.\medskip
 
-\begin{keywords}submission instructions; source file coding;
-environments; references citation; fonts; numbering {\bf{(Please provide three to six keywords taken
-from terms used in your manuscript}})
+\begin{keywords}Automation; Computer vision; Image recognition; Learning systems; Intelligent robots 
 \end{keywords}\medskip
 
-\centerline{\bfseries Index to information contained in this guide}\vspace{12pt}
-
-\hbox to \textwidth{\hsize\textwidth\vbox{\hsize19pc
-\hspace*{-12pt} {1.}    Introduction\\
-\hspace*{7pt} {1.1.}  The {\it tADR} document class\\
-\hspace*{7pt} {1.2.}  Submission of \LaTeX\ articles to\\
-\hspace*{24pt}        the journal\\
-{2.}    Using the {\it tADR} class file\\
-{3.}    Additional features\\
-\hspace*{10pt}{3.1.}  Footnotes to article titles and\\
-\hspace*{24pt}        authors' names\\
-\hspace*{10pt}{3.2.}  Abstracts\\
-\hspace*{10pt}{3.3.}  Lists\\
-\hspace*{10pt}{3.4.}  Landscape pages\\
-{4.}    Some guidelines for using standard\\
-\hspace*{6pt}         features\\
-\hspace*{10pt}{4.1.}   Sections\\
-\hspace*{10pt}{4.2.}   Illustrations (figures)\\
-\hspace*{10pt}{4.3.}   Tables\\
-\hspace*{10pt}{4.4.}   Theorem-like environments\\
-\noindent \hspace*{7pt} {4.5.}   Typesetting mathematics\\
-\hspace*{24pt} {4.5.1.}   Displayed mathematics\\
-\hspace*{24pt} {4.5.2.}  Bold math italic symbols\\
-\hspace*{24pt} {4.5.3.}   Bold Greek\\
-\hspace*{24pt} {4.5.4.}   Upright Greek characters and\\
-\hspace*{47pt}            the upright partial derivative\\
-\hspace*{47pt}            sign \\}
-\hspace{-24pt}\vbox{\noindent\hsize19pc
-\hspace*{7pt} {4.6.}   Acknowledgements \\
-\hspace*{7pt} {4.7.}   Notes \\
-\hspace*{7pt} {4.8.}   References \\
-\hspace*{24pt} {4.8.1.}   References cited in the text\\
-\hspace*{24pt} {4.8.2.}   The list of references\\
-\hspace*{7pt} {4.9.}   Appendices \\
-\hspace*{7pt} {4.10.}   {\it tADR} macros  \\
-{5.}    Example of a section heading including \\*
-\hspace*{6pt}    {\fontencoding{T1}\scshape{small caps}}, {\it italic}, and bold Greek\\
-\hspace*{6pt}    such as ${\bm\kappa}$ \\
-{6.}    {\it tADR} journal style \\
-\hspace*{10pt}{6.1.}   Hyphens, n-rules, m-rules and\\ \hspace*{27pt}minus signs\\
-\hspace*{10pt}{6.2.}   References \\
-\hspace*{10pt}{6.3.}   Maths fonts\\
-{7.}    Troubleshooting\\
-{8.}    Fixes for coding problems\\
-{9.}    Obtaining the tADR2e class file\\
-\hspace*{10pt}{9.1}  Via the Taylor \& Francis website\\
-\hspace*{10pt}{9.2}   Via e-mail\\
-      }}
 \end{abstract}
 
 
