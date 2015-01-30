@@ -1,7 +1,10 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.3)  23 JAN 2015 12:24
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.3)  28 JAN 2015 14:50
 entering extended mode
-**py_ARJ1.tex
-(E:\Github\journalpaper#1\py_ARJ1.tex
+**An*Intelligent*Self-Taught*Vision*System*Automated*3D*Object*Learning*and*Rec
+ognition.tex
+
+("E:\Github\journalpaper#1\An Intelligent Self-Taught Vision System Automated 3
+D Object Learning and Recognition.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -265,70 +268,8 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count109
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\subfloat\subfloat.sty"
-Package: subfloat 2003/08/21 version 2.14
-
-Package `subfloat', Version 2.14 of 2003/08/21.
-
-Package subfloat Warning: Numbers of floats not counted:
-(subfloat)                If you use one of the counters subfloatfiguremax or
-(subfloat)                subfloattablemax you will get strange error messages
-(subfloat)                containing \c@subfloatfiguremax or
-(subfloat)                \c@subfloattablemax:
-(subfloat)                Please switch on countmax or remove the code using
-(subfloat)                the counter then..
-
-) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\subfig\subfig.sty"
-Package: subfig 2005/06/28 ver: 1.3 subfig package
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption.sty"
-Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption3.sty"
-Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 57.
-\captionmargin=\dimen150
-\captionmargin@=\dimen151
-\captionwidth=\dimen152
-\caption@tempdima=\dimen153
-\caption@indent=\dimen154
-\caption@parindent=\dimen155
-\caption@hangindent=\dimen156
-Package caption Info: Unknown document class (or package),
-(caption)             standard defaults will be used.
-)
-
-Package caption Warning: Unsupported document class (or package) detected,
-(caption)                usage of the caption package is not recommended.
-See the caption package documentation for explanation.
-
-Package caption Info: \@makecaption = \long macro:#1#2->\ifx \FigName \@captype
- \vskip 5pt \setbox \tempbox \hbox {\figcaptionfont {\fignumfont #1}\hskip 4pt#
-2}\ifdim \wd \tempbox >\hsize {\figcaptionfont \noindent {\fignumfont #1}\hskip
- 7pt\ignorespaces #2\par } \else \centerline {\box \tempbox } \fi \else {\table
-captionfont {\tablenumfont #1}\hskip 7pt\ignorespaces {#2}\par }\vskip \belowca
-ptionskip \fi .
-\c@ContinuedFloat=\count110
-Package caption Info: rotating package is loaded.
-Package caption Info: subfigure package is loaded.
-)
-\c@KVtest=\count111
-\sf@farskip=\skip60
-\sf@captopadj=\dimen157
-\sf@capskip=\skip61
-\sf@nearskip=\skip62
-\sf@top=\skip63
-\sf@bottom=\skip64
-) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\color.sty"
-Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
-File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
-)
-Package color Info: Driver file: pdftex.def on input line 130.
-)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
-\bigstrutjot=\dimen158
+\bigstrutjot=\dimen150
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\algorithms\algorithm.sty"
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
@@ -336,141 +277,62 @@ nment
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count112
+\c@float@type=\count110
 \float@exts=\toks28
 \float@box=\box30
 \@float@everytoks=\toks29
 \@floatcapt=\box31
 )
 \@float@every@algorithm=\toks30
-\c@algorithm=\count113
+\c@algorithm=\count111
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\algorithmicx\algorithmicx.sty"
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count114
-\c@ALG@rem=\count115
-\c@ALG@nested=\count116
-\ALG@tlm=\skip65
-\ALG@thistlm=\skip66
-\c@ALG@Lnr=\count117
-\c@ALG@blocknr=\count118
-\c@ALG@storecount=\count119
-\c@ALG@tmpcounter=\count120
-\ALG@tmplength=\skip67
+\c@ALG@line=\count112
+\c@ALG@rem=\count113
+\c@ALG@nested=\count114
+\ALG@tlm=\skip60
+\ALG@thistlm=\skip61
+\c@ALG@Lnr=\count115
+\c@ALG@blocknr=\count116
+\c@ALG@storecount=\count117
+\c@ALG@tmpcounter=\count118
+\ALG@tmplength=\skip62
 ) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\algorithmicx\algpseudocode.sty"
 Package: algpseudocode 
 Document Style - pseudocode environments for use with the `algorithmicx' style
-) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\cjk\CJK.sty"
-Package: CJK 2012/05/07 4.8.3
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\cjk\mule\MULEenc.sty"
-Package: MULEenc 2012/05/07 4.8.3
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\cjk\CJK.enc"
-File: CJK.enc 2012/05/07 4.8.3
-)
-LaTeX Info: Redefining \selectfont on input line 755.
-\CJK@indent=\box32
-)
-(E:\Github\journalpaper#1\py_ARJ1.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
+("E:\Github\journalpaper#1\An Intelligent Self-Taught Vision System Automated 3
+D Object Learning and Recognition.aux")
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count121
-\scratchdimen=\dimen159
-\scratchbox=\box33
-\nofMPsegments=\count122
-\nofMParguments=\count123
+\scratchcounter=\count119
+\scratchdimen=\dimen151
+\scratchbox=\box32
+\nofMPsegments=\count120
+\nofMParguments=\count121
 \everyMPshowfont=\toks31
-\MPscratchCnt=\count124
-\MPscratchDim=\dimen160
-\MPnumerator=\count125
-\makeMPintoPDFobject=\count126
+\MPscratchCnt=\count122
+\MPscratchDim=\dimen152
+\MPnumerator=\count123
+\makeMPintoPDFobject=\count124
 \everyMPtoPDFconversion=\toks32
 )
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: subfig package v1.3 is loaded.
-Package caption Info: float package is loaded.
-Package caption Info: End \AtBeginDocument code.
-
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <13> not available
 (Font)              size <12> substituted on input line 38.
@@ -479,22 +341,57 @@ LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <13> not available
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <13> not available
 (Font)              size <12> substituted on input line 38.
 
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 38.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
+File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/it' in size <10> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 38.
+LaTeX Font Info:    Font shape `OML/cmr/m/it' in size <7> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 38.
+LaTeX Font Info:    Font shape `OML/cmr/m/it' in size <5> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 38.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 38.
 
-LaTeX Font Warning: Font shape `OT1/cmr/bx/it' in size <13> not available
-(Font)              size <12> substituted on input line 38.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 38.
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <7> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 38.
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <5> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 38.
+LaTeX Font Info:    Try loading font information for OMX+cmr on input line 38.
+LaTeX Font Info:    No file OMXcmr.fd. on input line 38.
 
 
-LaTeX Warning: No \author given.
+LaTeX Font Warning: Font shape `OMX/cmr/m/n' undefined
+(Font)              using `OMX/cmex/m/n' instead on input line 38.
 
+LaTeX Font Info:    Try loading font information for U+msa on input line 38.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 38.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/it' in size <8> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 38.
+LaTeX Font Info:    Font shape `OML/cmr/m/it' in size <6> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 38.
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 38.
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <6> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 38.
 LaTeX Font Info:    Calculating math sizes for size <11> on input line 49.
+
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
 (Font)              size <5> substituted on input line 49.
 
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 49.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
-File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
 LaTeX Font Info:    Font shape `OML/cmr/m/it' in size <11> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 49.
 LaTeX Font Info:    Font shape `OML/cmr/m/it' in size <7.69997> not available
@@ -502,14 +399,9 @@ LaTeX Font Info:    Font shape `OML/cmr/m/it' in size <7.69997> not available
 LaTeX Font Info:    Font shape `OML/cmr/m/it' in size <5.5> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 49.
 
-
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <5.5> not available
 (Font)              size <5> substituted on input line 49.
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 49.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <11> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 49.
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <7.69997> not available
@@ -517,25 +409,13 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <7.69997> not available
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <5.5> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 49.
 
-
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.5> not available
 (Font)              size <5> substituted on input line 49.
 
-LaTeX Font Info:    Try loading font information for OMX+cmr on input line 49.
-LaTeX Font Info:    No file OMXcmr.fd. on input line 49.
 
-LaTeX Font Warning: Font shape `OMX/cmr/m/n' undefined
-(Font)              using `OMX/cmex/m/n' instead on input line 49.
+Overfull \vbox (3.5792pt too high) has occurred while \output is active []
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 49.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 49.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -559,46 +439,28 @@ Overfull \vbox (29.0pt too high) has occurred while \output is active []
 
 Overfull \vbox (711.0pt too high) has occurred while \output is active []
 
-LaTeX Font Info:    Font shape `OML/cmr/m/it' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 68.
-LaTeX Font Info:    Font shape `OML/cmr/m/it' in size <7> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 68.
-LaTeX Font Info:    Font shape `OML/cmr/m/it' in size <5> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 68.
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 68.
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <7> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 68.
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <5> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 68.
- [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
+ [1
 
 
-]
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+<j_img/fig1.jpg, id=16, 819.5418pt x 505.4082pt>
+File: j_img/fig1.jpg Graphic file (type jpg)
+ <use j_img/fig1.jpg>
+Package pdftex.def Info: j_img/fig1.jpg used on input line 79.
+(pdftex.def)             Requested size: 819.5398pt x 505.40695pt.
+
+<j_img/fig3.jpg, id=17, 1480.0896pt x 531.9072pt>
+File: j_img/fig3.jpg Graphic file (type jpg)
+ <use j_img/fig3.jpg>
+Package pdftex.def Info: j_img/fig3.jpg used on input line 86.
+(pdftex.def)             Requested size: 1480.086pt x 531.90588pt.
+
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 70.
+(Font)              size <5> substituted on input line 93.
 
 
-LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <5.5> not available
-(Font)              size <5> substituted on input line 70.
-
-LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <11> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 70.
-LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <7.69997> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 70.
-LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <5.5> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 70.
-
-LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 70.
-
-
-LaTeX Font Warning: Font shape `OMX/cmr/bx/n' undefined
-(Font)              using `OMX/cmr/m/n' instead on input line 70.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1558) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -625,19 +487,43 @@ Overfull \vbox (29.0pt too high) has occurred while \output is active []
 Overfull \vbox (711.0pt too high) has occurred while \output is active []
 
  [2]
-LaTeX Font Info:    Font shape `OML/cmr/m/it' in size <8> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 120.
-LaTeX Font Info:    Font shape `OML/cmr/m/it' in size <6> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 120.
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 120.
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <6> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 120.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Overfull \hbox (15.3924pt too wide) in paragraph at lines 150--150
-[]\OT1/cmtt/m/n/10.95 latex.helpdesk@tandf.co.uk \vspace{6pt}} and I.T. Consult
-ant$^{b}$\\\vspace{6pt} %[] 
- []
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (36.0pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (36.0pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (650.43pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (29.0pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (711.0pt too high) has occurred while \output is active []
+
+ [3 <E:/Github/journalpaper#1/j_img/fig1.jpg> <E:/Github/journalpaper#1/j_img/f
+ig3.jpg>] <j_img/fig2b.jpg, id=32, 452.892pt x 258.2448pt>
+File: j_img/fig2b.jpg Graphic file (type jpg)
+ <use j_img/fig2b.jpg>
+Package pdftex.def Info: j_img/fig2b.jpg used on input line 130.
+(pdftex.def)             Requested size: 452.89088pt x 258.24416pt.
+
+<j_img/fig2a.jpg, id=33, 747.2718pt x 164.2938pt>
+File: j_img/fig2a.jpg Graphic file (type jpg)
+ <use j_img/fig2a.jpg>
+Package pdftex.def Info: j_img/fig2a.jpg used on input line 132.
+(pdftex.def)             Requested size: 747.26997pt x 164.29338pt.
+
+Underfull \vbox (badness 1331) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -663,42 +549,8 @@ Overfull \vbox (29.0pt too high) has occurred while \output is active []
 
 Overfull \vbox (711.0pt too high) has occurred while \output is active []
 
- [3]
-Underfull \hbox (badness 5374) in paragraph at lines 167--171
-\OT1/cmr/m/n/10.95 Alternative num-ber-ing can be achieved by an ar-gu-ment in 
-square brack-ets, e.g.
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \vbox (36.0pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (36.0pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (650.43pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (29.0pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (711.0pt too high) has occurred while \output is active []
-
- [4]
-
-LaTeX Warning: Reference `sample-figure' on page 5 undefined on input line 262.
-
-
-
+ [4 <E:/Github/journalpaper#1/j_img/fig2b.jpg> <E:/Github/journalpaper#1/j_img/
+fig2a.jpg>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -723,12 +575,9 @@ Overfull \vbox (29.0pt too high) has occurred while \output is active []
 Overfull \vbox (711.0pt too high) has occurred while \output is active []
 
  [5]
-LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 326.
-LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <6> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 326.
-LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <5> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 326.
+Missing character: There is no ‚ in font cmbxti10!
+Missing character: There is no Ä in font cmbxti10!
+Missing character: There is no ì in font cmbxti10!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -754,18 +603,34 @@ Overfull \vbox (29.0pt too high) has occurred while \output is active []
 Overfull \vbox (711.0pt too high) has occurred while \output is active []
 
  [6]
-LaTeX Font Info:    Try loading font information for OT1+ams on input line 391.
 
-LaTeX Font Info:    No file OT1ams.fd. on input line 391.
+LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <5.5> not available
+(Font)              size <5> substituted on input line 252.
+
+LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <11> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 252.
+LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <7.69997> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 252.
+LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <5.5> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 252.
+
+LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <5.5> not available
+(Font)              size <5> substituted on input line 252.
 
 
-LaTeX Font Warning: Font shape `OT1/ams/bx/n' undefined
-(Font)              using `OT1/cmr/m/n' instead on input line 391.
+LaTeX Font Warning: Font shape `OMX/cmr/bx/n' undefined
+(Font)              using `OMX/cmr/m/n' instead on input line 252.
 
 
-LaTeX Font Warning: Font shape `OT1/ams/bx/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 391.
+Underfull \hbox (badness 10000) in paragraph at lines 265--272
 
+ []
+
+<j_img/fig4.jpg, id=44, 479.8728pt x 445.1832pt>
+File: j_img/fig4.jpg Graphic file (type jpg)
+ <use j_img/fig4.jpg>
+Package pdftex.def Info: j_img/fig4.jpg used on input line 313.
+(pdftex.def)             Requested size: 479.87163pt x 445.18211pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -791,21 +656,35 @@ Overfull \vbox (29.0pt too high) has occurred while \output is active []
 Overfull \vbox (711.0pt too high) has occurred while \output is active []
 
  [7]
-
-LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 471.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-LaTeX Font Warning: Font shape `OML/eur/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 492.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 492.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Missing character: There is no ‚ in font cmtt10!
-Missing character: There is no Ä in font cmtt10!
-Missing character: There is no ì in font cmtt10!
+
+Overfull \vbox (36.0pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (36.0pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (650.43pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (29.0pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (711.0pt too high) has occurred while \output is active []
+
+ [8 <E:/Github/journalpaper#1/j_img/fig4.jpg>]
+<j_table/wptype.png, id=53, 863.8674pt x 547.8066pt>
+File: j_table/wptype.png Graphic file (type png)
+ <use j_table/wptype.png>
+Package pdftex.def Info: j_table/wptype.png used on input line 390.
+(pdftex.def)             Requested size: 863.8653pt x 547.80525pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -830,42 +709,30 @@ Overfull \vbox (29.0pt too high) has occurred while \output is active []
 
 Overfull \vbox (711.0pt too high) has occurred while \output is active []
 
- [8]
-Underfull \hbox (badness 2359) in paragraph at lines 564--566
-[]\OT1/cmr/m/n/10 Holland M. Guide to cit-ing in-ter-net sources. 2004 [cited 2
-012 Nov 4]. Avail-able from:
- []
+ [9 <E:/Github/journalpaper#1/j_table/wptype.png>]
+<j_img/exp01.png, id=59, 586.3506pt x 394.5942pt>
+File: j_img/exp01.png Graphic file (type png)
+ <use j_img/exp01.png>
+Package pdftex.def Info: j_img/exp01.png used on input line 406.
+(pdftex.def)             Requested size: 216.81pt x 145.90121pt.
 
+<j_img/exp02.png, id=60, 586.3506pt x 394.5942pt>
+File: j_img/exp02.png Graphic file (type png)
+ <use j_img/exp02.png>
+Package pdftex.def Info: j_img/exp02.png used on input line 410.
+(pdftex.def)             Requested size: 216.81pt x 145.90121pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+<j_img/exp03.png, id=61, 615.2586pt x 423.984pt>
+File: j_img/exp03.png Graphic file (type png)
+ <use j_img/exp03.png>
+Package pdftex.def Info: j_img/exp03.png used on input line 420.
+(pdftex.def)             Requested size: 216.81pt x 149.40585pt.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \vbox (36.0pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (36.0pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (650.43pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (29.0pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (711.0pt too high) has occurred while \output is active []
-
- [9]
-Overfull \hbox (26.88977pt too wide) in paragraph at lines 648--648
-[] \OT1/cmtt/m/n/10.95 http://www.bournemouth.ac.uk/library/using/guide\_to\_ci
-ting\_internet\_sourc.html.[] 
- []
-
+<j_img/exp04.png, id=62, 616.2222pt x 423.5022pt>
+File: j_img/exp04.png Graphic file (type png)
+ <use j_img/exp04.png>
+Package pdftex.def Info: j_img/exp04.png used on input line 424.
+(pdftex.def)             Requested size: 216.81pt x 149.00343pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -920,9 +787,21 @@ Overfull \vbox (29.0pt too high) has occurred while \output is active []
 
 Overfull \vbox (711.0pt too high) has occurred while \output is active []
 
- [11]
-Underfull \vbox (badness 1478) has occurred while \output is active []
+ [11 <E:/Github/journalpaper#1/j_img/exp01.png> <E:/Github/journalpaper#1/j_img
+/exp02.png> <E:/Github/journalpaper#1/j_img/exp03.png> <E:/Github/journalpaper#
+1/j_img/exp04.png>] <j_table/table5.png, id=73, 983.17313pt x 419.31656pt>
+File: j_table/table5.png Graphic file (type png)
 
+<use j_table/table5.png>
+Package pdftex.def Info: j_table/table5.png used on input line 445.
+(pdftex.def)             Requested size: 983.17073pt x 419.31552pt.
+
+<j_table/table6.png, id=74, 924.45375pt x 380.17032pt>
+File: j_table/table6.png Graphic file (type png)
+
+<use j_table/table6.png>
+Package pdftex.def Info: j_table/table6.png used on input line 452.
+(pdftex.def)             Requested size: 924.45149pt x 380.16939pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -947,14 +826,11 @@ Overfull \vbox (29.0pt too high) has occurred while \output is active []
 
 Overfull \vbox (711.0pt too high) has occurred while \output is active []
 
- [12]
-Underfull \hbox (badness 10000) in paragraph at lines 830--833
-
- []
-
-
-Overfull \vbox (4.56915pt too high) has occurred while \output is active []
-
+ [12 <E:/Github/journalpaper#1/j_table/table5.png> <E:/Github/journalpaper#1/j_
+table/table6.png>]
+Missing character: There is no Ô in font cmti10!
+Missing character: There is no ¨ in font cmti10!
+Missing character: There is no Å in font cmti10!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -972,11 +848,6 @@ Overfull \vbox (36.0pt too high) has occurred while \output is active []
 
 
 Overfull \vbox (650.43pt too high) has occurred while \output is active []
-
-
-Overfull \hbox (76.0pt too wide) has occurred while \output is active
-[] 
- []
 
 
 Overfull \vbox (29.0pt too high) has occurred while \output is active []
@@ -985,22 +856,19 @@ Overfull \vbox (29.0pt too high) has occurred while \output is active []
 Overfull \vbox (711.0pt too high) has occurred while \output is active []
 
  [13]
-Underfull \hbox (badness 10000) in paragraph at lines 841--842
-
- []
-
-
-Overfull \hbox (32.53714pt too wide) in paragraph at lines 866--866
- []\OT1/cmtt/m/n/10.95 The high-resolution observations were made along a line 
-at an angle[] 
- []
-
-
-Overfull \hbox (26.78845pt too wide) in paragraph at lines 866--866
- []\OT1/cmtt/m/n/10.95 of $-15^\circ$ (East from North) from the axis of the je
-t -- which[] 
- []
-
+Missing character: There is no À in font cmr10!
+Missing character: There is no á in font cmr10!
+Missing character: There is no À in font cmr10!
+Missing character: There is no á in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no Ô in font cmr10!
+Missing character: There is no ¨ in font cmr10!
+Missing character: There is no Å in font cmr10!
+Missing character: There is no Ô in font cmr10!
+Missing character: There is no ¨ in font cmr10!
+Missing character: There is no Å in font cmr10!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1026,31 +894,8 @@ Overfull \vbox (29.0pt too high) has occurred while \output is active []
 Overfull \vbox (711.0pt too high) has occurred while \output is active []
 
  [14]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \vbox (36.0pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (36.0pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (650.43pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (29.0pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (711.0pt too high) has occurred while \output is active []
-
- [15]
-(E:\Github\journalpaper#1\py_ARJ1.aux)
+("E:\Github\journalpaper#1\An Intelligent Self-Taught Vision System Automated 3
+D Object Learning and Recognition.aux")
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
@@ -1058,50 +903,40 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
  ) 
 Here is how much of TeX's memory you used:
- 5882 strings out of 493921
- 78886 string characters out of 3144862
- 143779 words of memory out of 3000000
- 9071 multiletter control sequences out of 15000+200000
- 24128 words of font info for 87 fonts, out of 3000000 for 9000
+ 3856 strings out of 493921
+ 49686 string characters out of 3144862
+ 112491 words of memory out of 3000000
+ 7075 multiletter control sequences out of 15000+200000
+ 17311 words of font info for 65 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 44i,15n,42p,1441b,307s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\dashmoment\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dp
-i600\ecxc1095.pk><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmbx9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
-xti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmc
-sc10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex
-10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10
-.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pf
-b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><
-C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmmib5.pfb
-><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmmib8.
-pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb
-><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:
-/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Pro
-gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program
- Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Program Fi
-les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Fi
-les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program File
-s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files (
-x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86
-)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmti7.pfb><C:/Program Files (x86)/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/Program Files (x86)/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files (x86)/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/euler/eurm10.pfb>
-Output written on py_ARJ1.pdf (15 pages, 377916 bytes).
+ 41i,12n,30p,1535b,349s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx5.pfb><C:/P
+rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Prog
+ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program
+ Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program
+ Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Program
+ Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files (
+x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86
+)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (x86)/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmti8.pfb>
+Output written on "An Intelligent Self-Taught Vision System Automated 3D Object
+ Learning and Recognition.pdf" (14 pages, 3084533 bytes).
 PDF statistics:
- 173 PDF objects out of 1000 (max. 8388607)
+ 150 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

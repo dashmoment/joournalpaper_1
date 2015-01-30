@@ -959,10 +959,10 @@
 %
 \mark{{}{}}
 %
-\def\endpage#1{\gdef\@endpage{#1}}
+\def\endpage#1{\gdef\@endpage{}}
 \endpage{}%
-\def\jname#1{\gdef\@jname{#1}}
-\jname{Advanced Robotics}
+\def\jname#1{\gdef\@jname{}}
+\jname{Advanced Robotics} %
 \def\jvol#1{\gdef\@jvol{#1}}
 \gdef\@jvol{00}
 \def\articletype#1{\gdef\@articletype{#1}}
@@ -977,18 +977,18 @@
 %\def\paperright{{\ooalign{\hfil\raise.07ex\hbox{$\scriptstyle\infty$}%
 %                \hfil\crcr\mathhexbox20D}}}
 %
-\def\ps@plain{%
-     \let\@mkboth\@gobbletwo
-     \let\@oddfoot\@evenfoot
-     \def\@oddhead{\hbox to \textwidth{{\small\begin{tabular}[t]{@{}l@{}}
-                                                                                     \\ %[14.9pt]
-                          {To appear in \itshape \@jname} \\Vol. \@jvol, No. \@jnum,
-                          \ifx\@jmonth\empty\else\@jmonth\ \fi\@jyear,  \thepage--\@endpage\\
-                          \end{tabular}}%
-                          \hfill%
-                          }}%
-     \let\@evenhead\@oddhead
-}
+%\def\ps@plain{%
+%     \let\@mkboth\@gobbletwo
+%     \let\@oddfoot\@evenfoot
+%     \def\@oddhead{\hbox to \textwidth{{\small\begin{tabular}[t]{@{}l@{}}
+%                                                                                     \\ %[14.9pt]
+%                          {To appear in \itshape \@jname} \\Vol. \@jvol, No. \@jnum,
+%                          \ifx\@jmonth\empty\else\@jmonth\ \fi\@jyear,  \thepage--\@endpage\\
+%                          \end{tabular}}%
+%                          \hfill%
+%                          }}%
+%     \let\@evenhead\@oddhead
+%}
 %
 \def\markboth#1#2{%
   \begingroup
@@ -1099,7 +1099,7 @@
   \def\floatqtoa{}
   \def\Qauthor#1{}
 \else
-   \def\draftnote{{\footnotesize\today\qquad\jobtag\qquad\jobname}\hfill}%
+   \def\draftnote{{}\hfill}% I comment "\footnotesize\today\qquad\jobtag\qquad\jobname"
 %%   \def\draftnote{\vbox to 0pt{\vskip-12pt%
 %%   \hbox{\ \footnotesize\TeXversion}
 %%   }\hbox{\ \footnotesize \jobtag\qquad\jobname\qquad\today\hfil}}

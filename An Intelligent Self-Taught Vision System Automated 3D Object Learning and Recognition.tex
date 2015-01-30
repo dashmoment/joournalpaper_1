@@ -1,369 +1,54 @@
 
-%
-\documentclass[journal]{IEEEtran}
-%
-% If IEEEtran.cls has not been installed into the LaTeX system files,
-% manually specify the path to it like:
-% \documentclass[journal]{../sty/IEEEtran}
+\documentclass{tADR2e}
 
+%\hyphenation{op-tical net-works semi-conduc-tor}
+%\usepackage{graphicx}
+%\usepackage{subfloat}
+%\usepackage{subfigure}
+%\usepackage{graphics}
+%\usepackage{epsfig}
+%\usepackage{CJK}
+%\usepackage{amsmath}
+%\usepackage{caption}
+%\usepackage{subfig}
+%\usepackage{color}
+%\usepackage{amsmath}
+%\usepackage{amsfonts}
+%\usepackage{amssymb}
+%\usepackage{amsmath}
 
-
-
-% *** MISC UTILITY PACKAGES ***
-%
-%\usepackage{ifpdf}
-% Heiko Oberdiek's ifpdf.sty is very useful if you need conditional
-% compilation based on whether the output is pdf or dvi.
-% usage:
-% \ifpdf
-%   % pdf code
-% \else
-%   % dvi code
-% \fi
-% The latest version of ifpdf.sty can be obtained from:
-% http://www.ctan.org/tex-archive/macros/latex/contrib/oberdiek/
-% Also, note that IEEEtran.cls V1.7 and later provides a builtin
-% \ifCLASSINFOpdf conditional that works the same way.
-% When switching from latex to pdflatex and vice-versa, the compiler may
-% have to be run twice to clear warning/error messages.
-
-
-% *** CITATION PACKAGES ***
-%
-%\usepackage{cite}
-% cite.sty was written by Donald Arseneau
-% V1.6 and later of IEEEtran pre-defines the format of the cite.sty package
-% \cite{} output to follow that of IEEE. Loading the cite package will
-% result in citation numbers being automatically sorted and properly
-% "compressed/ranged". e.g., [1], [9], [2], [7], [5], [6] without using
-% cite.sty will become [1], [2], [5]--[7], [9] using cite.sty. cite.sty's
-% \cite will automatically add leading space, if needed. Use cite.sty's
-% noadjust option (cite.sty V3.8 and later) if you want to turn this off
-% such as if a citation ever needs to be enclosed in parenthesis.
-% cite.sty is already installed on most LaTeX systems. Be sure and use
-% version 4.0 (2003-05-27) and later if using hyperref.sty. cite.sty does
-% not currently provide for hyperlinked citations.
-% The latest version can be obtained at:
-% http://www.ctan.org/tex-archive/macros/latex/contrib/cite/
-% The documentation is contained in the cite.sty file itself.
-
-
-% *** GRAPHICS RELATED PACKAGES ***
-%
-\ifCLASSINFOpdf
-  % \usepackage[pdftex]{graphicx}
-  % declare the path(s) where your graphic files are
-  % \graphicspath{{../pdf/}{../jpeg/}}
-  % and their extensions so you won't have to specify these with
-  % every instance of \includegraphics
-  % \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
-\else
-  % or other class option (dvipsone, dvipdf, if not using dvips). graphicx
-  % will default to the driver specified in the system graphics.cfg if no
-  % driver is specified.
-  % \usepackage[dvips]{graphicx}
-  % declare the path(s) where your graphic files are
-  % \graphicspath{{../eps/}}
-  % and their extensions so you won't have to specify these with
-  % every instance of \includegraphics
-  % \DeclareGraphicsExtensions{.eps}
-\fi
-
-
-
-
-% *** MATH PACKAGES ***
-%
-%\usepackage[cmex10]{amsmath}
-% A popular package from the American Mathematical Society that provides
-% many useful and powerful commands for dealing with mathematics. If using
-% it, be sure to load this package with the cmex10 option to ensure that
-% only type 1 fonts will utilized at all point sizes. Without this option,
-% it is possible that some math symbols, particularly those within
-% footnotes, will be rendered in bitmap form which will result in a
-% document that can not be IEEE Xplore compliant!
-%
-% Also, note that the amsmath package sets \interdisplaylinepenalty to 10000
-% thus preventing page breaks from occurring within multiline equations. Use:
-%\interdisplaylinepenalty=2500
-% after loading amsmath to restore such page breaks as IEEEtran.cls normally
-% does. amsmath.sty is already installed on most LaTeX systems. The latest
-% version and documentation can be obtained at:
-% http://www.ctan.org/tex-archive/macros/latex/required/amslatex/math/
-
-
-
-
-
-% *** SPECIALIZED LIST PACKAGES ***
-%
-%\usepackage{algorithmic}
-% algorithmic.sty was written by Peter Williams and Rogerio Brito.
-% This package provides an algorithmic environment fo describing algorithms.
-% You can use the algorithmic environment in-text or within a figure
-% environment to provide for a floating algorithm. Do NOT use the algorithm
-% floating environment provided by algorithm.sty (by the same authors) or
-% algorithm2e.sty (by Christophe Fiorio) as IEEE does not use dedicated
-% algorithm float types and packages that provide these will not provide
-% correct IEEE style captions. The latest version and documentation of
-% algorithmic.sty can be obtained at:
-% http://www.ctan.org/tex-archive/macros/latex/contrib/algorithms/
-% There is also a support site at:
-% http://algorithms.berlios.de/index.html
-% Also of interest may be the (relatively newer and more customizable)
-% algorithmicx.sty package by Szasz Janos:
-% http://www.ctan.org/tex-archive/macros/latex/contrib/algorithmicx/
-
-
-
-
-% *** ALIGNMENT PACKAGES ***
-%
-%\usepackage{array}
-% Frank Mittelbach's and David Carlisle's array.sty patches and improves
-% the standard LaTeX2e array and tabular environments to provide better
-% appearance and additional user controls. As the default LaTeX2e table
-% generation code is lacking to the point of almost being broken with
-% respect to the quality of the end results, all users are strongly
-% advised to use an enhanced (at the very least that provided by array.sty)
-% set of table tools. array.sty is already installed on most systems. The
-% latest version and documentation can be obtained at:
-% http://www.ctan.org/tex-archive/macros/latex/required/tools/
-
-
-% IEEEtran contains the IEEEeqnarray family of commands that can be used to
-% generate multiline equations as well as matrices, tables, etc., of high
-% quality.
-
-
-
-
-% *** SUBFIGURE PACKAGES ***
-%\ifCLASSOPTIONcompsoc
-%  \usepackage[caption=false,font=normalsize,labelfont=sf,textfont=sf]{subfig}
-%\else
-%  \usepackage[caption=false,font=footnotesize]{subfig}
-%\fi
-% subfig.sty, written by Steven Douglas Cochran, is the modern replacement
-% for subfigure.sty, the latter of which is no longer maintained and is
-% incompatible with some LaTeX packages including fixltx2e. However,
-% subfig.sty requires and automatically loads Axel Sommerfeldt's caption.sty
-% which will override IEEEtran.cls' handling of captions and this will result
-% in non-IEEE style figure/table captions. To prevent this problem, be sure
-% and invoke subfig.sty's "caption=false" package option (available since
-% subfig.sty version 1.3, 2005/06/28) as this is will preserve IEEEtran.cls
-% handling of captions.
-% Note that the Computer Society format requires a larger sans serif font
-% than the serif footnote size font used in traditional IEEE formatting
-% and thus the need to invoke different subfig.sty package options depending
-% on whether compsoc mode has been enabled.
-%
-% The latest version and documentation of subfig.sty can be obtained at:
-% http://www.ctan.org/tex-archive/macros/latex/contrib/subfig/
-
-
-
-% *** FLOAT PACKAGES ***
-%
-%\usepackage{fixltx2e}
-% fixltx2e, the successor to the earlier fix2col.sty, was written by
-% Frank Mittelbach and David Carlisle. This package corrects a few problems
-% in the LaTeX2e kernel, the most notable of which is that in current
-% LaTeX2e releases, the ordering of single and double column floats is not
-% guaranteed to be preserved. Thus, an unpatched LaTeX2e can allow a
-% single column figure to be placed prior to an earlier double column
-% figure. The latest version and documentation can be found at:
-% http://www.ctan.org/tex-archive/macros/latex/base/
-
-
-%\usepackage{stfloats}
-% stfloats.sty was written by Sigitas Tolusis. This package gives LaTeX2e
-% the ability to do double column floats at the bottom of the page as well
-% as the top. (e.g., "\begin{figure*}[!b]" is not normally possible in
-% LaTeX2e). It also provides a command:
-%\fnbelowfloat
-% to enable the placement of footnotes below bottom floats (the standard
-% LaTeX2e kernel puts them above bottom floats). This is an invasive package
-% which rewrites many portions of the LaTeX2e float routines. It may not work
-% with other packages that modify the LaTeX2e float routines. The latest
-% version and documentation can be obtained at:
-% http://www.ctan.org/tex-archive/macros/latex/contrib/sttools/
-% Do not use the stfloats baselinefloat ability as IEEE does not allow
-% \baselineskip to stretch. Authors submitting work to the IEEE should note
-% that IEEE rarely uses double column equations and that authors should try
-% to avoid such use. Do not be tempted to use the cuted.sty or midfloat.sty
-% packages (also by Sigitas Tolusis) as IEEE does not format its papers in
-% such ways.
-% Do not attempt to use stfloats with fixltx2e as they are incompatible.
-% Instead, use Morten Hogholm'a dblfloatfix which combines the features
-% of both fixltx2e and stfloats:
-%
-% \usepackage{dblfloatfix}
-% The latest version can be found at:
-% http://www.ctan.org/tex-archive/macros/latex/contrib/dblfloatfix/
-
-
-
-
-%\ifCLASSOPTIONcaptionsoff
-%  \usepackage[nomarkers]{endfloat}
-% \let\MYoriglatexcaption\caption
-% \renewcommand{\caption}[2][\relax]{\MYoriglatexcaption[#2]{#2}}
-%\fi
-% endfloat.sty was written by James Darrell McCauley, Jeff Goldberg and 
-% Axel Sommerfeldt. This package may be useful when used in conjunction with 
-% IEEEtran.cls'  captionsoff option. Some IEEE journals/societies require that
-% submissions have lists of figures/tables at the end of the paper and that
-% figures/tables without any captions are placed on a page by themselves at
-% the end of the document. If needed, the draftcls IEEEtran class option or
-% \CLASSINPUTbaselinestretch interface can be used to increase the line
-% spacing as well. Be sure and use the nomarkers option of endfloat to
-% prevent endfloat from "marking" where the figures would have been placed
-% in the text. The two hack lines of code above are a slight modification of
-% that suggested by in the endfloat docs (section 8.4.1) to ensure that
-% the full captions always appear in the list of figures/tables - even if
-% the user used the short optional argument of \caption[]{}.
-% IEEE papers do not typically make use of \caption[]'s optional argument,
-% so this should not be an issue. A similar trick can be used to disable
-% captions of packages such as subfig.sty that lack options to turn off
-% the subcaptions:
-% For subfig.sty:
-% \let\MYorigsubfloat\subfloat
-% \renewcommand{\subfloat}[2][\relax]{\MYorigsubfloat[]{#2}}
-% However, the above trick will not work if both optional arguments of
-% the \subfloat command are used. Furthermore, there needs to be a
-% description of each subfigure *somewhere* and endfloat does not add
-% subfigure captions to its list of figures. Thus, the best approach is to
-% avoid the use of subfigure captions (many IEEE journals avoid them anyway)
-% and instead reference/explain all the subfigures within the main caption.
-% The latest version of endfloat.sty and its documentation can obtained at:
-% http://www.ctan.org/tex-archive/macros/latex/contrib/endfloat/
-%
-% The IEEEtran \ifCLASSOPTIONcaptionsoff conditional can also be used
-% later in the document, say, to conditionally put the References on a 
-% page by themselves.
-
-
-
-
-% correct bad hyphenation here
-\hyphenation{op-tical net-works semi-conduc-tor}
-\usepackage{graphicx}
-\usepackage{subfloat}
-\usepackage{subfigure}
-\usepackage{subfig}
-\usepackage{color}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
+%% Pusedo code 
 \usepackage{multirow}
 \usepackage{algorithm}
 \usepackage{algorithmicx}
 \usepackage{algpseudocode}
-\usepackage{amsmath}
-\usepackage{graphics}
-\usepackage{epsfig}
-\usepackage{CJK}
-\usepackage{amsmath}
-\usepackage{caption}
+%% Pusedo code %%
 
-
-
-
-
-\usepackage[font=small,labelsep=period]{caption}
-\captionsetup{%
-  figurename=Fig.,
-  tablename=Table
-  }
 
 \begin{document}
-%
-% paper title
-% can use linebreaks \\ within to get better formatting as desired
-% Do not put math or special symbols in the title.
+\jvol{00} \jnum{00} \jyear{2013} \jmonth{January}
+
 \title{ An Intelligent Self-Taught Vision System Automated 3D Object Learning and Recognition}
 
+\author{Ren C. Luo$^{\ast}$\thanks{$^{\ast}$Corresponding author. Email: renluo@
+ntu.edu.tw
+\vspace{6pt}} and Po Yu Chuang$^{\dagger}$
+\\\vspace{6pt}  $^{\ast,\dagger}${\em{Center for Intelligent Robotics and Automation Research, National Taiwan University, Taipei 10617, Taiwan}}\\\vspace{6pt}\received{v1.0 released January 2015}}
 
-
-
-%\author{Ren C. Luo,~\IEEEmembership{Fellow,~IEEE,}
-%and Po-Yu Chuang
-
-
-%\IEEEcompsocitemizethanks{\IEEEcompsocthanksitem Ren C. Luo and Po-Yu Chuang are with Electrical Engineering Department, National Taiwan University, Taipei, Taiwan 106.
-%(e-mail: renluo@ntu.edu.tw;pychuang@ira.ee.ntu.edu.tw).\protect\\
-
-%}}
-
-
-
-
-\IEEEtitleabstractindextext{%
-\begin{abstract}
-Vision systems for 3D object recognition are widely applied on industrial integrating with robot arm. Conventionally, vision, learning approach, and robot arm are separated into three different systems, so that learning approach can only learn the distributions of input data, but cannot refine qualities of input and output without manual intervention. Therefore, it may cause misfiring performance by erratic input or sustainable growth database. In this paper, we propose an intelligent vision system for 3D object recognition which is able to automatically construct and refine model for 3D object recognition without any manual intervention. Although 2D images and rotation angles of robot arm are different domains, we model 3D objects by multiple 2D images and rotation angles, and information from different domains are integrated by a Hierarchical-Deep (HD) model with parallel branch. The model hierarchically extracts information by domains and levels. The parallel branch distinct labeled and unlabeled data to avoid performance drag by sustainable growth of unlabeled input. The relationships between label and unlabeled data are learned by proposed self-taught approach. The experimental results support the feasibility of proposed structure which can transfer knowledge in different domains with limited prior knowledge, and complete assigned task by only modeling the relation between input and output.
-
-\end{abstract}
-
-% Note that keywords are not normally used for peerreview papers.
-\begin{IEEEkeywords}
-Automation, Computer vision, Image recognition, Learning systems, Intelligent robots 
-\end{IEEEkeywords}}
-
-
-
-% make the title area
 \maketitle
 
+\begin{abstract}
+Vision systems for 3D object recognition are widely applied on industrial integrating with robot arm. Conventionally, vision, learning approach, and robot arm are separated into three different systems, so that learning approach can only learn the distributions of input data, but cannot refine qualities of input and output without manual intervention. Therefore, it may cause misfiring performance by erratic input or sustainable growth database. In this paper, we propose an intelligent vision system for 3D object recognition which is able to automatically construct and refine model for 3D object recognition without any manual intervention. Although 2D images and rotation angles of robot arm are different domains, we model 3D objects by multiple 2D images and rotation angles, and information from different domains are integrated by a Hierarchical-Deep (HD) model with parallel branch. The model hierarchically extracts information by domains and levels. The parallel branch distinct labeled and unlabeled data to avoid performance drag by sustainable growth of unlabeled input. The relationships between label and unlabeled data are learned by proposed self-taught approach. The experimental results support the feasibility of proposed structure which can transfer knowledge in different domains with limited prior knowledge, and complete assigned task by only modeling the relation between input and output.\medskip
 
-% To allow for easy dual compilation without having to reenter the
-% abstract/keywords data, the \IEEEtitleabstractindextext text will
-% not be used in maketitle, but will appear (i.e., to be "transported")
-% here as \IEEEdisplaynontitleabstractindextext when the compsoc 
-% or transmag modes are not selected <OR> if conference mode is selected 
-% - because all conference papers position the abstract like regular
-% papers do.
-\IEEEdisplaynontitleabstractindextext
-% \IEEEdisplaynontitleabstractindextext has no effect when using
-% compsoc or transmag under a non-conference mode.
+\begin{keywords}Automation; Computer vision; Image recognition; Learning systems; Intelligent robots 
+\end{keywords}\medskip
 
-
-
-
-
-
-
-% For peer review papers, you can put extra information on the cover
-% page as needed:
-% \ifCLASSOPTIONpeerreview
-% \begin{center} \bfseries EDICS Category: 3-BBND \end{center}
-% \fi
-%
-% For peerreview papers, this IEEEtran command inserts a page break and
-% creates the second title. It will be ignored for other modes.
-\IEEEpeerreviewmaketitle
-
+\end{abstract}
 
 
 \section{Introduction}
 
-
-% The very first letter is a 2 line initial drop letter followed
-% by the rest of the first word in caps.
-% 
-% form to use if the first word consists of a single letter:
-% \IEEEPARstart{A}{demo} file is ....
-% 
-% form to use if you need the single drop letter followed by
-% normal text (unknown if ever used by IEEE):
-% \IEEEPARstart{A}{}demo file is ....
-% 
-% Some journals put the first two words in caps:
-% \IEEEPARstart{T}{his demo} file is ....
-% 
-% Here we have the typical use of a "T" for an initial drop letter
-% and "HIS" in caps to complete the first word.
-\IEEEPARstart{R}{obot} arm with vision has been widely applied in automatic industrial production line for many years [1-4]. New hurdles of conventional vision system arise due to the rise of consumer electronic market. The components in assembling production line are become small volume with large varieties. The types of components are also changed rapidly because of short product life cycle. These conditions are tough for conventional vision system. Model-based recognition methods are commonly used in present industrial applications. The performance is mainly related to the manually labeled data. These manual works not only increase the labor cost, but also point out the dilemma of present vision-based robot is unable to automatically adapt to various assignments, and growing database.
+Robot arm with vision has been widely applied in automatic industrial production line for many years [1-4]. New hurdles of conventional vision system arise due to the rise of consumer electronic market. The components in assembling production line are become small volume with large varieties. The types of components are also changed rapidly because of short product life cycle. These conditions are tough for conventional vision system. Model-based recognition methods are commonly used in present industrial applications. The performance is mainly related to the manually labeled data. These manual works not only increase the labor cost, but also point out the dilemma of present vision-based robot is unable to automatically adapt to various assignments, and growing database.
 
 Therefore, we propose an intelligent system which is able to handle sustainable growth of unlabeled input, and refine existed model without any manual intervention. The situation of this paper is that we only provide target face of 3D objects which are intended to be placed on top by robot arm, but the other faces of 3D objects are unknown. The only prior knowledge is target faces, and inputs are arbitrary objects with random faces on top. The input of system is 2D image, and output is rotation angle of robot arm in Cartesian. Since input and output are different domains, the traditional single layer models [5,6] which end in a linear or kernel classifier are not enough. We introduce a \textit{\textbf{Hierarchical-Deep(HD)}} model[7] to tackle the problems. 
 
@@ -373,28 +58,36 @@ The most challenge part is that the appearance of different faces of a single ob
 
 Secondly, transfer information module is tailored to handle unlabeled data. Transfer information module is realized by Self-taught Clustering algorithm [21]. Self-taught Clustering algorithm is a transfer learning method [22-26] which is built for enhancing model through large amount of auxiliary unlabeled data. The input face can be considered auxiliary unlabeled data, and find co-cluster between prior faces in the dataset. The distribution of co-cluster is further utilized to infer the possible rotation angle for robot arm, and robot arm will rotate target object from input face to output face. Finally, the validation module is an eye-to-hand camera which used to validate the error between the output face and desired target. Then, the validation module returns the error to the model in order to refine the existed model. Through these three modules, proposed system can automatically learn the relations between input images and corresponding rotation angles with only labeled the target face of each object.
 
-In this paper, we start with briefly overview of system design and structure in section 2. The MLN-based descriptor for recognizing object is described in section 3. Section 4 introduces how to model the proposed hierarchical networks, and learn by self-taught learning. Then, we compare the performance of proposed system with several states of development in section 5. Finally, reviewing performance and conclusions are presented in final section.
+In this paper, we start with briefly overview of system design and structure in section 2. The MLN-based descriptor for recognizing object is described in section 3. Section 4 introduces how to model the proposed hierarchical networks, and learn by self-taught learning. Then, we compare the performance of proposed system with several states of development in section 5. Finally, reviewing performance and conclusions are presented in the final section.
 
 
-\begin{figure}[!t]
+%\begin{figure}
+%\begin{center}
+%\subfigure[An example of an individual figure sub-caption.]{
+%\resizebox*{6cm}{!}{\includegraphics{j_img/fig1.jpg}}}
+%\subfigure[An example of an individual figure sub-caption.]{
+%\resizebox*{6cm}{!}{\includegraphics{j_img/fig3.jp}}}
+%\caption{\label{fig2} Example of a two-part figure with individual 
+%sub-captions showing that captions are flush left and justified if 
+%greater than one line of text, otherwise centred under the figure.}
+%\label{sample-figure}
+%\end{center}
+%\end{figure}
+\begin{figure}
 \begin{center}
 %\subfigure[System architecture]{}
-\includegraphics[width=0.5\textwidth]{j_img/fig1.jpg}
-\caption{System architecture}\label{test}
+\resizebox*{10cm}{!}{\includegraphics{j_img/fig1.jpg}}
+\caption{System architecture}
+
 \end{center}
 \end{figure}
-
-\begin{figure*}[!t]
+\begin{figure}
 \begin{center}
-\includegraphics*[width=7 in]{j_img/fig3.jpg}
-\caption{Hierarchical-deep model for self-taught system}\label{test}
+\resizebox*{14cm}{!}{\includegraphics{j_img/fig3.jpg}}
+\caption{Hierarchical-deep model for self-taught system}
 \end{center}
-\end{figure*}
-
-
-%\hfill mds
-\section{System architecture} 
-
+\end{figure}
+\section{System architecture}
 The main purpose of this system is to automatically derive the relationship between input face and corresponding rotation angle to make robot arm can rotate objects to the assigned faces. The only prior knowledge are the target face. Input is arbitrary assigned object with random face on top, so input is very likely an unknown face of assigned object showed-up rather than prior target face. Therefore, system has to infer the correlation between input and existed priors.  Proposed system is shown in Fig. 1. Camera 1 captures images of all input objects with random faces on top, and constructs MLN-based descriptor for each input. Then, system matches the input with data in database and output rotation angle for robot arm. After robot arm placing an object, camera 2 will validate result, and feedback error for refining existed model. The system architecture in Fig. 1 is realized by a hierarchical-deep model in Fig. 2. 
 
 The variables in the same layer are independent, and vertical adjacent two layers are full connected. Variables in \textbf{Feature($\bf{\Gamma}$)} layer are extracted image features, and variables in both \textbf{Classified Descriptor($\bf{D^C}$)} and \textbf{Unclassified Descriptor($\bf{D^U}$)} are MLN-based descriptor. Variables in \textbf{Rotation angle($\bf{\Theta^{C}}$)} and \textbf{Inferred Rotation angle($\bf{\Theta^U}$)} are set of rotation angles $\{$ Row ($\alpha$), Pitch($\beta$) , Yaw($\gamma$) $\}$ respect to target faces. Finally, variables in \textbf{Object($\bf{O^C}$)} are combinations of rotation angles.
@@ -417,17 +110,37 @@ d^U_r=\sum_{\Gamma_{j}\in{d^U_r}}b_{j}\Gamma_{j}
 
 $d^C_w$ is a prior descriptor which the edge between $\bf{\Theta^{C}}$ and $\bf{O^C}$ had been established. $d^U_r$ is a descriptor in $\bf{D^U}$ layer which match none of descriptors in $\bf{D^C}$. Therefore, we propose an inference method to infer the possible rotation angle, and camera 2 will check inferred results. If inference is success, latent edge between $d^U_r$ and $\theta^{U}$ will be established, and become stronger as more successful inferences.
 
-\begin{figure}[!t]
+\begin{equation}
+d^C_w=\sum_{i\in{d^C_w}}a_{i}\Gamma_{i}+\sum_{j\notin{d^C_w}}b_{j}\Gamma_{j}
+\end{equation}
+
+Although Eq.(1) can handle the problem of latent edge, it's impractical to sample all possible conditions whenever new evidence showing up. Therefore, proposed model separate descriptor layer into two parallel parts as: 
+
+\begin{equation}
+d^C_w=\sum_{\Gamma_{i}\in{d^C_w}}a_{i}\Gamma_{i}
+\end{equation}
+\begin{equation}
+d^U_r=\sum_{\Gamma_{j}\in{d^U_r}}b_{j}\Gamma_{j}
+\end{equation}
+
+$d^C_w$ is a prior descriptor which the edge between $\bf{\Theta^{C}}$ and $\bf{O^C}$ had been established. $d^U_r$ is a descriptor in $\bf{D^U}$ layer which match none of descriptors in $\bf{D^C}$. Therefore, we propose an inference method to infer the possible rotation angle, and camera 2 will check inferred results. If inference is success, latent edge between $d^U_r$ and $\theta^{U}$ will be established, and become stronger as more successful inferences.
+
+\begin{figure}
 \begin{center}
-\subfigure[Result of background subtracton and clustering]{\includegraphics[width=3in]{j_img/fig2b.jpg}}
-\subfigure[Serial captured frames]{\includegraphics[width=3.5in]{j_img/fig2a.jpg}}
-\caption{Preprocessing of input objects}\label{test}
+\subfigure[Result of background subtracton and clustering]{\resizebox*{5cm}{!}{\includegraphics{j_img/fig2b.jpg}}}
+\hspace{2cm}
+\subfigure[Serial captured frames]{\resizebox*{6cm}{!}{\includegraphics{j_img/fig2a.jpg}}}
+\caption{Preprocessing of input objects}
 \end{center}
 \end{figure}
 
 
+%\subfigure[An example of an individual figure sub-caption.]{
+%\resizebox*{6cm}{!}{\includegraphics{j_img/fig1.jpg}}}
+
 \section{MLN-based Descriptor}
 \subsection{The concept of constructing MLN-based descriptor}
+
 Being a self-taught system, deriving more valuable information from raw data helps system deriving more reliable results with scarce prior knowledge. Most of present image descriptors [12-16] are constructed based on strong sparse feature point, because these points are consistent even in different environment. These kinds of descriptor can efficiently and precisely match given image. Nevertheless, most of observed face is not in prior data, so we need a descriptor which can infer the relation between observations and priors. To avoid losing information, we choose normal distributed feature instead of sparse feature. Since different faces of an object may derive different strong features, normal distributed feature is more suitable for our case. 
 
 For prepossessing of input images, each channel of RGB domain is classified into 5 parts, and get 125 classes in RGB domain. Every input image is segmented by these classes. In Fig. 3(a), an observed face of input object is segmented into 4 classes, and class 0 is background. Hereafter, predicates for MLN networks are constructed by segmented results. We have only two kinds of predicate \textit{ne(a,v)} and  \textit{des(x)} for MLN model. Variable \textit{a} is an atom cluster, and variable \textit{v} is a neighbor of atom cluster, so predicate \textit{ne(a,v)} represent adjacency of atom cluster. Variable \textit{x} in \textit{des(x)} is a MLN-based descriptor. The variables of \textbf{$\bf\Gamma$} layer in Fig. 2 are predicates \textit{ne(a,v)}. Since every class can be the atom cluster, we have $\binom{125}{2}$ binary variables in \textbf{$\bf\Gamma$} layer.
@@ -441,20 +154,19 @@ Taking Fig. 3(a) as an example, the predicates of preprocessed image are shown i
 Each image will further be down sampled, and derived several images with different scales. For each image, we derive  \textbf{F*S} formulas where F is number of serial captured images and S is number of images with different scales. Through these formulas, a MLN model can be constructed. The probability distribution over possible world $d^{in}$ specified by MLN is given by:
 
 \begin{displaymath}
-P(\bf{D^{in}} = d^{in}) = \frac{1}{Z}exp(\sum_{j=1}^{F*S} w_j n_j(d^{in}))
+P(\mathbf{D^{in}} = d^{in}) = \frac{1}{Z}exp(\sum_{j=1}^{F*S} w_j n_j(d^{in}))
 \end{displaymath}
 \begin{equation}
-\bf{Z}=\sum_{d^{in}\in\bf{D^{in}}}exp(\sum_{j=1}^{F*S} w_j n_j(d^{in}))
+Z=\sum_{d^{in}\in\bf{D^{in}}}exp(\sum_{j=1}^{F*S} w_j n_j(d^{in}))
 \end{equation}
 
 Where $d^{in}$ is the descriptor of input image. $n_j(d^{in})$ is the number of true grounding of formula j in $d^{in}$, and $w_j$ is weight of formula j .
 
 Consequently, probability distribution Eq.(5) is MLN-based descriptor for each 2D faces within input 3D object. 
 
-\begin{table}[!t]
-\caption{Example of predicates}
-\centering
-\begin{tabular}{|c|c|c|c|c|} 
+\begin{table}
+\tbl{Example of predicates}
+{\begin{tabular}{@{}|c|c|c|c|c|}
 \hline
 Key Atom & 1 & 2 & 3 & 4\\
 \hline\hline
@@ -482,12 +194,8 @@ ne(1,0) &
  &
  \\
 \hline
-\end{tabular} 
+\end{tabular}}
 \end{table} 
-
-
-
-
 
 \subsection{Inference and Weight learning of MLN-based descriptor}
 The weights of MLN-based descriptor are learned by maximizing the pseudo-log likelihood. Since each descriptor can be consider as a closed world, we only need to consider the atoms which derive from captured serial frames. Comparing with uniform sampling approach, maximizing pseudo-log-likelihood is more efficient, because pseudo-log likelihood only need to consider relational data. The pseudo-log likelihood of Eq.(5) can be written as:
@@ -602,8 +310,8 @@ Where roll angle $\alpha$ is the mean angle of co-cluster in two descriptors. As
 
 \begin{figure}[!t]
 \begin{center}
-\includegraphics*[width=2.5 in]{j_img/fig4.jpg}
-\caption{Structure configuration of each layer in the proposed model}\label{test}
+\resizebox*{6cm}{!}{\includegraphics{{j_img/fig4.jpg}}}
+\caption{Structure configuration of each layer in the proposed model}
 \end{center}
 \end{figure}
 
@@ -629,15 +337,13 @@ where $w_r$ and $b$ are the weights and bias. $\mu$ is penalty factor which decr
 On the other hand, for both $\bf{\Theta^U}$ and $\bf{\Theta^C}$ layer, if results are correct, the model will be retrained by greedy layer-wise training. If validated result is derived from left part of Fig. 4, the generative model is defined by the joint distribution of top layers $P(\bf{O^C} , \bf{\Theta^C})$. If the result is derived from right part, the generative model is defined by  $P(\bf{O^C} , \bf{\Theta^U})$. By doing so, the relation between prior and observations can be self-taught from numerous random unlabeled inputs, and infer possible relationship without any manual intervention.
 
 
-
 \section{Experiments}
 The experiments for proposed model are separated into two parts. Firstly, we evaluate the performance of MLN-based descriptor by standard object recognition datasets: $\bf{Caltech-101}$ [31] and $\bf{Caltech-256}$ [32]. Results shown in Table \uppercase\expandafter{\romannumeral2} are comparisons with recently published papers. The images in the datasets are rescaled into five different scales for training proposed MLN-based descriptor. For $\bf{Caltech-101}$, we follow general procedure and randomly selecting 30 images for each class. For $\bf{Caltech-256}$, select 45 and 60 images for each class, and trained by pseudo-log likelihood. Although, for the proposed model, the result does not outperform in $\bf{Caltech-101}$, but the accuracy in $\bf{Caltech-256}$ is slightly behind ImageNet-pretrained model. In the other scopes, the result shows that MLN-based descriptor keep well performance even increasing categories. Most of recently published methods get dramatically performance decreasing while categories increase from 101 to 256. 
 
 
-\begin{table}[!t]
-\caption{Comparisons on $\bf{Caltech-101}$}
-\begin{center}
-\begin{tabular}{|c|c|}
+\begin{table}
+\tbl{Comparisons on $\bf{Caltech-101}$}
+{\begin{tabular}{|c|c|}
 \hline
 Methods & Accuracy \\
 \hline
@@ -653,14 +359,12 @@ M-HMP[39] & 82.5 \\
 \hline
 ImageNet-pretrained convnet[40] & 86.5 \\
 \hline
-\end{tabular}
-\end{center}
+\end{tabular}}
 \end{table}
 
-\begin{table}[!t]
-\caption{Comparisons on $\bf{Caltech-256}$}
-\begin{center}
-\begin{tabular}{|c|c|c|}
+\begin{table}
+\tbl{Comparisons on $\bf{Caltech-256}$}
+{\begin{tabular}{|c|c|c|}
 \hline
 Methods & 45 & 60 \\
 \hline
@@ -676,60 +380,17 @@ M-HMP & 54.8 & 58 \\
 \hline
 ImageNet-pretrained convnet & 72.7 & 74.2 \\
 \hline
-\end{tabular}
-\end{center}
+\end{tabular}}
 \end{table}
 
 
 
-\begin{table*}[!t]
-\caption{Three classes of testing work pieces for experiments}
-\begin{center}
-\begin{tabular}{|c|c||c|c||c|c|}
-\hline
-\multicolumn{2}{|c||}{\bf{WP1}} & \multicolumn{2}{c||}{\bf{WP2}} & \multicolumn{2}{c|}{\bf{WP3}}\\
-\hline\hline
-WP1.1 & WP1.5 & WP 2.1 & WP 2.5 & WP3.1 & WP3.5\\
-\hline
-\includegraphics[width=1in,height=0.6in]{j_img/wp11.jpg} & 
-\includegraphics[width=1in,height=0.6in]{j_img/wp15.jpg} & 
-\includegraphics[width=1in,height=0.6in]{j_img/wp21.jpg} & 
-\includegraphics[width=1in,height=0.6in]{j_img/wp25.jpg} &
-\includegraphics[width=1in,height=0.6in]{j_img/wp31.jpg} & 
-\includegraphics[width=1in,height=0.6in]{j_img/wp35.jpg} \\
-\hline
-WP1.2 & WP1.6 & WP 2.2 & WP 2.6 & WP3.2 & WP3.6\\
-\hline
-\includegraphics[width=1in,height=0.6in]{j_img/wp12.jpg} & 
-\includegraphics[width=1in,height=0.6in]{j_img/wp16.jpg} & 
-\includegraphics[width=1in,height=0.6in]{j_img/wp22.jpg} & 
-\includegraphics[width=1in,height=0.6in]{j_img/wp26.jpg} &
-\includegraphics[width=1in,height=0.6in]{j_img/wp32.jpg} & 
-\includegraphics[width=1in,height=0.6in]{j_img/wp36.jpg} 
-\\
-\hline
-WP1.3 & WP1.7 & WP 2.3 & & WP3.3 & WP3.7\\
-\hline
-\includegraphics[width=1in,height=0.6in]{j_img/wp13.jpg} & 
-\includegraphics[width=1in,height=0.6in]{j_img/wp17.jpg} & 
-\includegraphics[width=1in,height=0.6in]{j_img/wp23.jpg} & 
- &
-\includegraphics[width=1in,height=0.6in]{j_img/wp33.jpg} & 
-\includegraphics[width=1in,height=0.6in]{j_img/wp37.jpg} 
-\\
-\hline
-WP1.4 & & WP 2.4 & & WP3.4 &\\
-\hline
-\includegraphics[width=1in,height=0.6in]{j_img/wp14.jpg} & 
- & 
-\includegraphics[width=1in,height=0.6in]{j_img/wp24.jpg} & 
- &
-\includegraphics[width=1in,height=0.6in]{j_img/wp34.jpg} & 
-\\ 
-\hline
-\end{tabular}
-\end{center}
-\end{table*}
+\begin{table}
+\tbl{Three classes of testing work pieces for experiments}
+{\resizebox*{14cm}{!}{\includegraphics{{j_table/wptype.png}}}}
+\end{table}
+
+
 
 For the second part of experiment, we implement the proposed system in real industrial application. The prior knowledge is target faces of assigned objects, and there are twenty kinds of assigned objects in our experiment. Table \uppercase\expandafter{\romannumeral4} shows twenty target faces for each assigned object. The experiment is implemented based on several assumptions: The input objects are not occluded, and not adjacent with each other. Hereafter, the inputs are randomly chosen from assigned objects with random face on top. 
 
@@ -739,34 +400,31 @@ The system is considered convergence while accuracy is over 95$\%$, and stop lea
  
 Fig. 6 shows the result while all twenty kinds of assigned object are involved in the same time. The result shows that system need more inputs to converge while more kinds of objects are involved, but the system still slightly converge, and accuracy is all keeping over 95$\%$ for both conditions. In brief, these two experiments verify proposed system is competent to learn the HD model automatically. Although the learning rate is dragged by the number of assigned objects, the learning rate still can be convergent by reasonable number of inputs. 
 
-
- 
-\begin{figure}[!t]
-\centering
+\begin{figure}
+\begin{center}
 	\subfigure[Performance with on-axis lighting source]{
-		\includegraphics[width=3 in]{j_img/exp01.png}
-	}
+		\resizebox*{7cm}{!}{\includegraphics[width=3 in]{j_img/exp01.png}}}
 
 	\subfigure[Performance without on-axis lighting source]{
-		\includegraphics[width=3 in]{j_img/exp02.png}
-	}
+		\resizebox*{7cm}{!}{\includegraphics[width=3 in]{j_img/exp02.png}
+	}}
 
 \caption{Experimental Results of different classes in different lighting conditions}
-
+\end{center}
 \end{figure}
 
-\begin{figure}[!t]
-\centering
+\begin{figure}
+\begin{center}
 	\subfigure[Performance with on-axis lighting source]{
-		\includegraphics[width=3 in]{j_img/exp03.png}
-	}
+		\resizebox*{7cm}{!}{\includegraphics[width=3 in]{j_img/exp03.png}
+	}}
 
 	\subfigure[Performance without on-axis lighting source]{
-		\includegraphics[width=3 in]{j_img/exp04.png}
-	}
+		\resizebox*{7cm}{!}{\includegraphics[width=3 in]{j_img/exp04.png}
+	}}
 
 \caption{Experimental Results of all work pieces in different lighting conditions}
-
+\end{center}
 \end{figure}
 
 The experiment in Fig. 5 and 6 testified the performance of proposed system can meet our requirements. We compare the performance of proposed system with other advanced approaches. Since none of similar systems could handle this issue in our literature survey results, so the comparisons are done by dividing our system into two parts. One is 2D descriptors for each face of objects, and the other is machine learning approach for learning relational model.
@@ -775,194 +433,24 @@ For the descriptor part, four kinds of other descriptors are chosen to compare w
 
 Hereafter, the performances of different learning methods are further discussed. The other three kinds of transfer learning approaches: \textbf{\textit{Locally Weighted Ensemble approach(LWE)}}[25], \textbf{\textit{Transductive SVM(TSVM)}}[26], and self-taught learning[21] are chosen to compare with proposed method. Similarly, the experiments are divided into two parts as shown in Table \uppercase\expandafter{\romannumeral6}. The result shows LEW acquires the best accuracy in the condition with priors, and proposed learning approach acquire greatest performance in condition without prior. Although the performances between different methods are quite close when priors are provided, the accuracy of the other methods goes down in no prior condition. It seems that the results are not only affected by descriptor, but also learning approach. The proposed system is only one method which can automatically learn and recognize object without prior knowledge of 3D model. 
 
-\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
-
-\begin{table}[!t]
-\caption{Comparisons of different descriptors}
-\centering
-\begin{tabular}{|c|c|c|c|c|c|c|} 
-\hline
-\multirow{2}{*}{} &
-&
-\multicolumn{5}{|c|}{\bf{Descriptor}} \\
-\cline{3-7}
- &
- & 
-\bf{\tabincell{l}{MLN-\\based}} &
-\bf{B-SIFT} &
-\bf{\tabincell{l}{Edge-\\SIFT}} &
-\bf{BRISK} &
-\bf{ZM} 
- \\
-\hline
-\multirow{4}{*}{\tabincell{l}{With\\prior}} &
-WP1 &
-\bf{0.9781}&
-0.9664&
-0.8384&
-0.9556&
-0.9788
-\\
-\cline{2-7}
-&
-WP2 &
-0.9630&
-\bf{0.9766}&
-0.9233&
-0.9676&
-0.9523
-\\
-\cline{2-7}
-&
-WP3 &
-0.9901&
-\bf{0.9963}&
-0.9454&
-0.9899&
-0.9949
-\\
-\cline{2-7}
-&
-All &
-0.9594&
-0.8982&
-0.8066&
-0.9432&
-\bf{0.9634}
-\\
-\hline\hline
-\multirow{4}{*}{\tabincell{l}{Without\\prior}} &
-WP1 &
-\bf{0.9611}&
-0.7688&
-0.7544&
-0.8103&
-0.7787
-\\
-\cline{2-7}
-&
-WP2 &
-\bf{0.9505}&
-0.7043&
-0.7123&
-0.7197&
-0.7979
-\\
-\cline{2-7}
-&
-WP3 &
-\bf{0.9718}&
-0.8044&
-0.7963&
-0.8243&
-0.8231
-\\
-\cline{2-7}
-&
-All &
-\bf{0.9543}&
-0.6431&
-0.6144&
-0.6741&
-0.7570
-\\
-\hline
-
-\end{tabular} 
-\end{table} 
-
-\begin{table}[!t]
-\caption{Comparisons of different learning approaches}
-\centering
-\begin{tabular}{|c|c|c|c|c|c|} 
-\hline
-\multirow{2}{*}{} &
-&
-\multicolumn{4}{|c|}{\bf{Learning approach}} \\
-\cline{3-6}
- &
- & 
-\bf{Proposed} &
-\bf{LEW} &
-\bf{TSVM} &
-\bf{Self-taught} 
-\\
-\hline
-\multirow{4}{*}{\tabincell{l}{With\\prior}} &
-WP1 &
-0.9781&
-\bf{0.9802}&
-0.9511&
-0.9603
-\\
-\cline{2-6}
-&
-WP2 &
-0.9630&
-\bf{0.9763}&
-0.9690&
-0.9701
-\\
-\cline{2-6}
-&
-WP3 &
-\bf{0.9901}&
-0.9899&
-0.9799&
-0.9807
-\\
-\cline{2-6}
-&
-All &
-0.9594&
-0.9677&
-0.9567&
-\bf{0.9701}
-\\
-\hline\hline
-\multirow{4}{*}{\tabincell{l}{Without\\prior}} &
-WP1 &
-\bf{0.9611}&
-0.5601&
-0.6443&
-0.6213
-
-\\
-\cline{2-6}
-&
-WP2 &
-\bf{0.9505}&
-0.6543&
-0.7158&
-0.7128
-
-\\
-\cline{2-6}
-&
-WP3 &
-\bf{0.9718}&
-0.7188&
-0.7799&
-0.7846
-
-\\
-\cline{2-6}
-&
-All &
-\bf{0.9603}&
-0.6553&
-0.7497&
-0.7081
-\\
-\hline
-
-\end{tabular} 
-\end{table} 
-
 \section{Comparisons of related works}
 The proposed system is a HD model with parallel branches. Conventionally, the descriptors [13, 15, 35-39] and learning model [27-28] are separated, so that the learning approaches only learn the distribution of descriptors but cannot adjust the distribution of descriptors. According to our surveys, there are no such descriptors construction can fit every case without manual intervention. Therefore, we propose to establish a learning approach which can adjust the distribution of descriptors to make the MLN-based descriptor can be refined during learning stage. This approach is proved by experimental results as shown in Table V and VI. The descriptors have to be constructed without manual intervention under the condition of without prior knowledge. 
 
 Moreover, the other distinct feature of our proposed system is that the learning knowledge in both image and rotation angle can be done by just only one model. Most of HD models [8-11] are focus on learning knowledge in the same domains, e.g.  handwriting [8], text categorization[9], Speech Recognition [10], images[11]. To handle the knowledge in different domains, we involve the technique of self-taught clustering and parallel structure model, and the experimental results also support the feasibility of learning knowledge in different domains by our proposed HD model.
+
+\begin{table}
+\tbl{Comparisons of different descriptors}
+{
+\resizebox*{8cm}{!}{\includegraphics{{j_table/table5.png}}}
+}
+\end{table}
+
+\begin{table}
+\tbl{Comparisons of different learning approaches}
+{
+\resizebox*{8cm}{!}{\includegraphics{{j_table/table6.png}}}
+}
+\end{table}
 
 \section{Conclusion}
 An automatic learning system for vision system is an important part in assembling production line with small-volume, large-variety components. In this work, we reverse the concept of traditional vision system. The robustness of feature points and descriptor is not main concerns. Instead, the relation between input and output is the most essential. 
@@ -972,17 +460,8 @@ To learn the relationship between input and output, we propose a HD model which 
 Moreover, proposed system includes image features, descriptors and rotation angles for robot arm. These different domain features are impossible to be learned simultaneously by traditional single layer model, but the experimental results prove proposed HD model can transfer and learn different domain knowledge, and recognize 3D object without manual intervention. We believe this system is practical in real industrial assembling production line, and save labor cost.
 
 
- 
 
-.
-\ifCLASSOPTIONcaptionsoff
-  \newpage
-\fi
-
-
-
-
-\begin{thebibliography}{1}
+\begin{thebibliography}{12}
 \bibitem{c01} Torgny Brogrdh, ``Present and future robot control development - An industrial perspective,'' \textit{Annual Reviews in Control}, Vol. 31, no. 1, pp. 69-79, 2007.
 \bibitem{c02} Ebrahim Mattar, ``Robotics Arm Visual Servo: Estimation of Arm-Space Kinematics Relations with Epipolar Geometry, Robotic Systems - Applications, Control and Programming,"\textit{Dr. Ashish Dutta (Ed.)}, ISBN: 978-953-307-941-7, InTech, DOI: 10.5772/25605.
 \bibitem{c03} So-Youn Park ,Yeoun-Jae Kim ,Ju-Jang Lee ,Byung Soo Kim, and Khalid A.Alsaif, ``Controlling robot arm manipulator using image-based visual servoing without pre-depth information,'' in \textit{Proc. IEEE Int. Conf. Ind. Ele.}, 2011, pp. 3157-3161.
@@ -1026,9 +505,78 @@ Chapter of the Association for Computational Linguistics on Human Language Techn
 \bibitem{c38} L. Seidenari, G. Serra, AD. Bagdanov, and A. Del Bimbo, ``Local Pyramidal Descriptors for Image Recognition,'' \textit{IEEE Transactions on Pattern Analysis and Machine Intelligence}, vol. 36, no. 5,pp.1033-1040, May,2014.
 \bibitem{c39} Liefeng Bo, Xiaofeng Ren, and D. Fox, ``Multipath Sparse Coding Using Hierarchical Matching Pursuit,'' in \textit{Proc. Computer Vision and Pattern Recognition}, 2013, pp. 660-667.
 \bibitem{c40} Matthew D Zeiler, and Rob Fergus, ``Visualizing and Understanding Convolutional Networks,'' in \textit{Proc. ECCV}, 2014,  pp. 818-833.
+
 \end{thebibliography}
+
+%\bigskip
+%\noindent This was produced by typing:
+%\medskip
+%
+%\begin{verbatim}
+%\begin{thebibliography}{12}
+%
+%\bibitem{neu83}
+%Neumann M. Parallel GRASP with path-relinking for job shop scheduling. Mol
+% Phys. 1983;50:841--843.
+%
+%\bibitem{ed84}
+%Edwards DMF, McDonald IR. Positive bases in numerical optimization. Comput
+% Optim Appl. 1984;21:169--175.
+%
+%\bibitem{aiex00}
+%Aiex RM, Pierce IF, Donizetti G, von~Weber CM, Bizet G, Bach CPE, Strauss R,
+% van~Beethoven L, Mozart WA, Dukas P. Computing tools for modelling orchestral
+% performance. University of Cambridge, Cambridge, UK; 2000.
+% Tech Rep DAMTP 2000/NA10.
+%
+%\bibitem{Eri1984}
+%Ericsson KA, Simon HA. Protocol analysis: verbal reports as data. Cambridge
+% (MA): MIT Press; 1984.
+%
+%\bibitem{glov00}
+%Glover F. Multi-start and strategic oscillation methods -- principles to
+% exploit adaptive memory. In: Laguna M, Gonz\'{a}les-Velarde JL, editors.
+% Computing tools for modeling, optimization and simulation: interfaces in
+% computer science and operations research. 2nd ed. Vol.~2. Boston (MA): Kluwer
+% Academic; 2000. p. 1--24.
+%
+%\bibitem{hk97}
+%Kern H. The resurgent Japanese economy and a Japan--United States free trade
+% agreement. In: Lambert C, Holst G, editors. 4th International Conference on
+% the Restructuring of the Economic and Political System in Japan and Europe.
+% Milan, Italy, 1996 May 21--25. Singapore: World Scientific; 1997. p. 147--156.
+%
+%\bibitem{glov86}
+%Glover F. Hilbert modular forms and the Galois representations associated to
+% Hilbert--Blumenthal abelian varieties [Ph.D. thesis]. Harvard University,
+% Cambridge (MA); 1986.
+%
+%\bibitem{Agu95}
+%Agutter AJ. The linguistic significance of current British slang [unpublished
+% doctoral dissertation]. Edinburgh University, UK; 1995.
+%
+%\bibitem{Holl04}
+%Holland M. Guide to citing internet sources. 2004 [cited~2012 Nov 4].
+% Available from:
+% http://www.bournemouth.ac.uk/library/using/guide\_to\_citing\_internet\_sourc.html.
+%
+%\bibitem{Maz91}
+%Mazzeo J. Comparability of computer and paper-and-pencil scores (College Board
+% Rep. No. 91). Princeton (NJ): Educational Testing Service; 1991.
+%
+%\bibitem{Mil93}
+%Miller ME. The interactive tester (version 4.0) [computer software].
+%  Westminster (CA): Psytek Services; 1993.
+%
+%\bibitem{cwm73}
+%Misner CW. Efficient algorithms for layer assignment problems. In: Gottlob I,
+% editor. Gravitation in a collapsing Universe. 2nd ed. Vol.~5, Einstein's
+% Legacy. San Francisco (CA): Freeman; 1973. p. 63--83.
+%
+%\end{thebibliography}
+%\end{verbatim}
+
+
 
 
 \end{document}
-
-
